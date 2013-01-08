@@ -1,0 +1,51 @@
+/* =============================================================================
+   Mixins
+   ========================================================================== */
+
+/* Convert px to em */
+@function pxtoem($pxval, $base: $baseFontSize){
+  @return ($pxval / $base) * 1em; // multiply by 1em to convert px to ems.
+}
+
+/* Convert em to px */
+@function emtopx($emval, $base: $baseFontSize){
+  @return ($emval * $base) / 1em;
+}
+
+/* Show grid background for development
+@mixin susy-grid-background {
+  $col-width: emtopx($column-width);
+  $gutt-width: emtopx($gutter-width);
+  $grid-padd: emtopx($grid-padding);
+  @include grid-background($total-columns, $col-width, $gutt-width, $baseLineHeight, $grid-padd, $force-fluid: true);
+}*/
+
+/* Element to 100% */
+@mixin full() {
+  min-width: 100%;
+  clear: both;
+}
+
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}
+
+@mixin visible {
+  display: inherit;
+  visibility: visible;
+}
+
+
+@mixin all_columns() {
+  $i: $total-columns;
+  @while $i > 0 {
+    .grid_#{$i} {
+      @include span-columns($i, $total-columns);
+    }
+    .ogrid_#{$i} {
+      @include span-columns($i omega, $total-columns);
+    }
+    $i: $i - 1;
+  }
+}

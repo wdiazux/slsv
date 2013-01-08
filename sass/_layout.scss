@@ -1,0 +1,234 @@
+/* Table of Contents
+ * ==================================================
+ *  # Default start off style (Portrait)
+ *    - 320px Gutters  = 1.5em(21px) Columns(4) = 3.8em(53.75px)
+ *
+ *  # Mobile (Landscape)
+ *    - 480px Gutters  = 1.5em(21px) Columns(6) = 3.9em(55.5px)
+ *
+ *  # Small Tablet (Portrait)
+ *    - 600px Gutters  = 1.5em(21px) Columns(8) = 5.39em(75.5px)
+ *
+ *  # Tablet (Portrait)
+ *    - 768px Gutters  = 1.5em(21px) Columns(8) = 7.39em(53.75px)
+ *
+ *  # Small Tablet (Landscape)
+ *    - 800px Gutters  = 1.5em(21px) Columns(8) =
+ *
+ *  # Netbooks
+ *    - 980px Gutters  = 1.5em(21px) Columns(8) = 7.16em(100.375px)
+ *
+ *  # Desktops and Widescreen laptops
+ *    - 1382px Gutters = 1.5em(21px) Columns(12) = 6.6em(92.41px)
+ */
+
+$layout-font-size: 16;
+
+
+/* # Default start off style (Portrait)
+   ================================================== */
+
+#mainHeader,
+#mainContent,
+#footer,
+#footerTop,
+#footerBottom {
+  @include full;
+}
+
+.container {
+  @include container;
+  width: auto;
+  //@include susy-grid-background;
+}
+
+#logo-wrapper,
+#menu-wrapper,
+#breadcrumb-wrapper {
+  @include full;
+}
+
+#mainMenu {
+  width: 100%;
+  .nav {
+   @include hidden; 
+  }
+  .responsive-nav {
+    display: inline;
+    width: 100%;
+    padding: 0.18em;
+    margin: 10px auto 10px auto;
+  }
+}
+
+#footerBottom {
+  .bottom1 {
+    text-align: center;
+  }
+  .bottom2 {
+    text-align: center;
+    .footerNav {
+      text-align: center;
+      li {
+        display: inline;
+        list-style: none;
+        padding: 0 5px;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* # Mobile (Landscape)
+   ================================================== */
+
+@include at-breakpoint(480px $layout-font-size) {
+
+  @include with-grid-settings(6,60px,15px,10px) {
+    .container{
+      @include set-container-width(6);
+      //@include susy-grid-background;
+    }
+  }
+}
+
+
+/*  # Small Tablet (Portrait)
+    ================================================== */
+
+@include at-breakpoint(600px $layout-font-size) {
+
+  @include with-grid-settings(8,70px,20px,10px) {
+    .container{
+      @include set-container-width(8);
+      //@include susy-grid-background;
+    }
+  }
+
+  #mainContent{
+    div[role=main] {
+      @include span-columns(6, 8)
+    }
+    aside[role=menu] {
+      @include span-columns(2 omega, 8)
+    }
+  }
+
+}
+
+
+/* # Tablet (Portrait)
+   ================================================== */
+
+@include at-breakpoint(768px $layout-font-size) {
+
+  #footerTop {
+    .footer1 {
+      @include span-columns(4, 8);
+    }
+    .footer2 {
+      @include span-columns(4 omega, 8);
+    }
+    .footer3 {
+      clear: both;
+    }
+  }
+}
+
+
+/* # Small Tablet (Landscape)
+   ================================================== */
+
+@include at-breakpoint(800px $layout-font-size) {
+
+  @include with-grid-settings(8,70px,20px,10px) {
+    .container{
+      @include set-container-width(8);
+      //@include susy-grid-background;
+    }
+  }
+
+  #footerBottom {
+    .bottom1 {
+      @include span-columns(4, 8);
+      text-align: left;
+    }
+
+    .bottom2 {
+      text-align: right;
+      .footerNav {
+        text-align: right;
+      }
+    }
+  }
+}
+
+
+/* # Netbooks
+   ================================================== */
+
+@include at-breakpoint(980px $layout-font-size) {
+
+  @include with-grid-settings(12,60px,20px,10px) {
+    .container {
+      @include all_columns;
+      @include set-container-width(12);
+      //@include susy-grid-background;
+    }
+  }
+
+
+  #logo-wrapper {
+    @include span-columns(3, 12);
+  }
+  #menu-wrapper {
+    @include span-columns(9 omega, 12);
+  }
+
+  #logo-wrapper,
+  #menu-wrapper {
+    min-width: 0;
+    clear: none;
+  }
+
+  #mainMenu {
+    width: auto;
+    .nav {
+      @include visible;
+    }
+    .responsive-nav {
+      @include hidden;
+    }
+  }
+  
+  #mainContent{
+    div[role=main] {
+      @include span-columns(9, 12)
+    }
+    aside[role=menu] {
+      @include span-columns(3 omega, 12)
+    }
+  }
+
+  #footerTop {
+    .footer1, .footer2, {
+      @include span-columns(4, 12);
+    }
+    .footer3 {
+      @include span-columns(4 omega, 12);
+      clear: none;
+    }
+  }
+
+  #footerBottom {
+    .bottom1 {
+      @include span-columns(6,12);
+    }
+    .bottom2 {
+      @include span-columns(6 omega,12);
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* #Imports
+   ================================================== */
+
+@import "base";
+@import "bootstrap";
+//@import "bootstrap-responsive";
+@import "compass/css3";
+@import "mixins";
+@import "layout";
+@import "type";
+@import "forms";
+
+
+/* #Base styles
+   ================================================== */
+
+/* #For devel */
+div,
+nav,
+header,
+footer,
+section {
+  //outline: 1px solid #B94A48 !important;
+}
+
+
+/* #Custom Reset (on top of normalize in bootstrap)
+   ================================================== */
+
+ol, ul {
+  list-style: none;
+  margin:0;
+}
+
+
+/* #Site Styles
+   ================================================== */
+
+#mainHeader {
+  background-color: #fff;
+  border-top: 1px solid #D4D4D4;
+  .navbar-inner {
+    @include border-radius(0);
+  }
+  .navbar {
+    margin: 0;
+    .nav > li {
+      position: relative;
+      > a {
+        text-shadow: none;
+        padding: 25px 15px;
+      }
+    }
+  }
+  .nav li.active {
+    border-top: 4px solid #8ECD44;
+    margin-top: -4px;
+    &:before{
+      content: '';
+      border: 4px solid transparent;
+      border-top-color: #8ECD44;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -4px;
+    }
+  }
+  .dropdown li {
+    font-size: $baseFontSize - 1px;
+  }
+}
+
+
+#breadcrumb-wrapper {
+  background-color: #333;
+  @include box-shadow(inset 0 0 1px 1px #000);
+}
+.breadcrumb {
+  margin: 0;
+  padding: 3px 0;
+  font-size: $baseFontSize - 2px;
+  background-color: transparent;
+  @include border-radius(0);
+  > li {
+    text-shadow: none;
+    > .divider{
+      color: #CCC;
+    }
+  }
+  .active {
+    color: #FFF;
+  }
+}
+
+
+#content {
+  margin: 30px 0;
+}
+
+/* #Footer
+   ================================================== */
+
+#footer {
+  font-size: $baseFontSize - 1px;
+  position: relative;
+  background-color: #333;
+  &:before {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -10px;
+  }
+}
+
+#footerTop {
+  padding: 30px 0;
+  color: #aaa;
+  h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .form input,
+  .form textarea {
+    color: #ddd;
+    border-color: #222;
+    background-color: #444;
+  }
+}
+
+#footerBottom {
+  background-color: #282828;
+  color: #aaa;
+  border-top: 1px solid #3f3f3f;
+  padding: 10px 0;
+}
+
+.bottom2 {
+  .footerNav li {
+    a {
+      color:#aaa;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

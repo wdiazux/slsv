@@ -1,0 +1,56 @@
+/* =============================================================================
+   BASE
+   ========================================================================== */
+
+
+/* #Grid
+   ================================================== */
+
+$total-columns:         4;             // a 4-column grid for Mobile First
+$column-width:          3.8em;         // each column is 3.8em wide
+$gutter-width:          1.5em;         // 1em gutters between columns
+$grid-padding:          $gutter-width; // grid-padding equal to gutters
+
+/* Container Style */
+$container-style:       magic;
+
+/* For develop */
+$show-grid-backgrounds: true;
+
+
+/* #Fonts
+   ================================================== */
+
+$relative-font-sizing:  true;
+$default-rhythm-border-style: solid;
+
+
+/* #Bootstrap
+   ================================================== */
+
+@import "bootstrap/variables";
+
+$textColor:             #555;
+
+$linkColor:             #8ecd44;
+$linkColorHover:        #679b29;
+
+$baseFontFamily:        'Open Sans',Arial,Helvetica,sans-serif;
+$baseLineHeight:        23px;
+
+$headingsFontWeight:    normal;
+$headingsColor:         #444;
+
+$btnPrimaryBackground:           $linkColor;
+$btnPrimaryBackgroundHighlight:  $linkColorHover;
+
+$dropdownLinkBackgroundHover:    $linkColor;
+$dropdownLinkBackgroundActive:   $linkColor;
+
+$navbarLinkBackgroundHover:      $navbarLinkBackgroundActive;
+
+
+/* #Imports
+   ================================================== */
+
+@import "susy"; /* Add the susy responsive layout mixins. */

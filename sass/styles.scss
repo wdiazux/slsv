@@ -92,9 +92,23 @@ ol, ul {
   }
 }
 
-
-#content {
-  margin: 30px 0;
+.entry-meta {
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  margin: 0 0 7px 0;
+  padding: 3px 0;
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.8em;
+    color: $textColor;
+    a {
+      color: $textColor;
+      &:hover {
+        color: $linkColorHover;
+      }
+    }
+  }
 }
 
 /* #Footer

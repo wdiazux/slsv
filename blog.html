@@ -40,7 +40,7 @@
             </div><!-- /logo-wrapper -->
 
             <div id="menu-wrapper">
-              <div id="mainMenu" class="nav-collapse collapse pull-right">
+              <div id="mainMenu" class="pull-right">
                 <ul class="nav">
                   <li><a href="index.html">Inicio</a></li>
                   <li class="active"><a href="blog.html">Blog</a></li>
@@ -77,29 +77,54 @@
 
     </header><!-- /header -->
 
-    <div id="mainContent">
-      <section id="content">
-        <div class="container">
-          <div role="main">
-            <p>hola mundo :)</p>
-
-            <div class="pagination pagination-centered">
-              <ul>
-                <li class="disabled"><a href="#">Previo</a></li>
-                <li class="disabled"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">Siguiente</a></li>
+    <section role="main">
+      <div class="container">
+        <div class="content-inner">
+          <article>
+            <header>
+              <h3 class="title">Título de post 1 :)</h3>
+              <ul class="entry-meta">
+                <li>
+                  <i class="icon-user"></i> 
+                  <a href="#">leprosys</a>
+                </li>
+                <li>
+                  <i class="icon-comment"></i> 
+                  <a href="#">11 Comentarios</a></li>
+                <li>
+                  <i class="icon-tag"></i> 
+                  <a href="#">Noticias</a>, 
+                  <a href="#">Proyectos</a>
+                </li>
               </ul>
+            </header>
+            <div class="date">
             </div>
+            <div>
+              <img src="img/SoftwareLibre.jpg" class="img-polaroid"></img>
+              <p> Ut varius porta lectus ac consectetur. Aliquam ullamcorper sodales augue, et varius orci molestie sit amet. Fusce elementum accumsan mattis. Cras mollis, leo ut ultrices aliquam, turpis nisi lobortis neque, nec accumsan ipsum magna sit amet lectus. Duis ultricies est ut libero placerat posuere. Integer mi lacus, lacinia eu rutrum eget, euismod ut lorem. Nulla in nulla risus. Suspendisse molestie viverra dui, vel auctor purus lacinia et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque tortor purus, volutpat sed commodo sit amet, lacinia id lorem. In quam massa, auctor sit amet volutpat a, feugiat id justo. Ut egestas condimentum erat sed molestie.</p>
+            </div>
+          </article>
+          <div class="pagination pagination-centered">
+            <ul>
+              <li class="disabled"><a href="#">Previo</a></li>
+              <li class="disabled"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">Siguiente</a></li>
+            </ul>
           </div>
-          <aside role="menu">
-            menu
-          </aside>
-        </div>
-      </section>
-    </div><!-- /mainContent -->
+        </div><!-- /content-inner -->
+        <aside role="menu">
+          <form class="form-search">
+            <div class="input-append">
+              <input type="text" class="span2 search-query">
+              <button type="submit" class="btn">Buscar</button>
+            </div>
+        </aside>
+      </div><!-- /container -->
+    </section><!-- /main -->
 
 
     <footer id="footer">

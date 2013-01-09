@@ -7355,15 +7355,40 @@ ol, ul {
   color: #679b29;
 }
 
+/* line 114, ../sass/styles.scss */
+.error-page {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 460px;
+  width: auto;
+}
+/* line 120, ../sass/styles.scss */
+.error-page .form {
+  margin-top: 40px;
+}
+/* line 123, ../sass/styles.scss */
+.error-page .error-code {
+  font-size: 160px;
+  line-height: 1.2;
+  color: #333;
+  color: rgba(51, 51, 51, 0.85);
+  text-shadow: 1px 4px 6px white, 0 0 0 black, 1px 4px 6px white;
+}
+/* line 130, ../sass/styles.scss */
+.error-page h2, .error-page h3 {
+  font-weight: bold;
+}
+
 /* #Footer
    ================================================== */
-/* line 117, ../sass/styles.scss */
+/* line 139, ../sass/styles.scss */
 #footer {
   font-size: 13px;
   position: relative;
   background-color: #333;
 }
-/* line 121, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 #footer:before {
   content: '';
   border: 10px solid transparent;
@@ -7374,17 +7399,17 @@ ol, ul {
   margin-left: -10px;
 }
 
-/* line 132, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 #footerTop {
   padding: 30px 0;
   color: #aaa;
 }
-/* line 135, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 #footerTop h1, #footerTop h2, #footerTop h3, #footerTop h4, #footerTop h5 {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 140, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 #footerTop .form input,
 #footerTop .form textarea {
   color: #ddd;
@@ -7392,7 +7417,7 @@ ol, ul {
   background-color: #444;
 }
 
-/* line 147, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 #footerBottom {
   background-color: #282828;
   color: #aaa;
@@ -7400,11 +7425,11 @@ ol, ul {
   padding: 10px 0;
 }
 
-/* line 156, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .bottom2 .footerNav li a {
   color: #aaa;
 }
-/* line 158, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .bottom2 .footerNav li a:hover {
   color: #fff;
 }

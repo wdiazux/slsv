@@ -111,6 +111,28 @@ ol, ul {
   }
 }
 
+.error-page {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 460px;
+  width: auto;
+  .form{
+    margin-top: 40px;
+  }
+  .error-code{
+    font-size: 160px;
+    line-height: 1.2;
+    color: #333;
+    color: rgba(51,51,51,0.85);
+    text-shadow: 1px 4px 6px #fff,0 0 0 #000,1px 4px 6px #fff;
+  }
+  h2, h3 {
+    font-weight:bold;
+  }
+}
+
+
 /* #Footer
    ================================================== */
 

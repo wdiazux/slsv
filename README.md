@@ -1,4 +1,4 @@
-[SLSV Theme](http://leprosys.github.com/slsv/)
+OB[SLSV Theme](http://leprosys.github.com/slsv/)
 ==========
 Es un diseño adaptativo en html para http://www.slsv.org utilizando [Twitter Bootstrap](http://twitter.github.com/bootstrap/) y Susy.
 
@@ -13,8 +13,10 @@ Dependencias
 ------------
 
 Las siguientes aplicaciones son necesarias para poder modificar las hojas de estilo con sass:
-* [.bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass) -- `gem install bootstrap-sass`
-* [.susy](http://susy.oddbird.net/) -- `gem install susy`
+
+* [rubygems](http://rubygems.org/) -- `apt-get install rubygems`
+* [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass) -- `gem install bootstrap-sass`
+* [susy](http://susy.oddbird.net/) -- `gem install susy`
 
 
 Contribuir

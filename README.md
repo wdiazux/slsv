@@ -1,6 +1,6 @@
-SLSV Theme
+[SLSV Theme](http://leprosys.github.com/slsv/)
 ==========
-Es un diseño adaptativo en html para http://www.slsv.org
+Es un diseño adaptativo en html para http://www.slsv.org utilizando [Twitter Bootstrap](http://twitter.github.com/bootstrap/) y Susy.
 
 
 Dependencias

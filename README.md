@@ -1,6 +1,12 @@
-[SLSV Theme](http://leprosys.github.com/slsv/)
+OB[SLSV Theme](http://leprosys.github.com/slsv/)
 ==========
 Es un diseño adaptativo en html para http://www.slsv.org utilizando [Twitter Bootstrap](http://twitter.github.com/bootstrap/) y Susy.
+
+**¿Porque en HTML?**
+Es desarrollo del diseño es más sencillo cuando se realiza en primera instalacia en HTML. Este tema esta pensado para ser utilizado en Drupal como siguiente paso.
+
+**Demo**
+http://leprosys.github.com/slsv/
 
 
 Dependencias

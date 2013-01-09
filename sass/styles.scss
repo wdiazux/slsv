@@ -2,13 +2,14 @@
    ================================================== */
 
 @import "base";
-@import "bootstrap";
-//@import "bootstrap-responsive";
+@import "mybootstrap";
 @import "compass/css3";
 @import "mixins";
 @import "layout";
 @import "type";
 @import "forms";
+/* For demo only */
+@import "template";
 
 
 /* #Base styles
@@ -49,6 +50,11 @@ ol, ul {
       > a {
         text-shadow: none;
         padding: 25px 15px;
+      }
+      ul li.active {
+        &:before{
+          content: none;
+        }
       }
     }
   }

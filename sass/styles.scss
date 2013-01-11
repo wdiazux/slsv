@@ -3,7 +3,6 @@
 
 @import "base";
 @import "mybootstrap";
-@import "compass/css3";
 @import "mixins";
 @import "layout";
 @import "type";
@@ -129,6 +128,7 @@ section {
   }
 }
 
+#footer,
 section[role=main] {
   .divider {
     height: 1px;
@@ -143,7 +143,54 @@ section[role=main] {
     }
   }
 }
+#footer .divider {
+  border: none;
+  background: #777;
+}
 
+
+.tweet_list {
+  @include border-radius(0.5em);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  li {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5em;
+    list-style-type: none;
+  }
+  .tweet_avatar {
+    padding-right: .5em; float: left;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+
+.flickr-stream ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+    padding: 3px;
+    background: #EEE;
+    @include box-shadow(0 0 2px #000);
+  }
+}
+
+input.search-query {
+  @include border-radius(4px);
+}
+
+.form-search .input-append .search-query {
+  @include border-radius(4px 0 0 4px);
+}
 
 /* #Footer
    ================================================== */
@@ -160,10 +207,6 @@ section[role=main] {
     left: 50%;
     top: 0;
     margin-left: -10px;
-  }
-  .divider{
-    border:none;
-    background:#777;
   }
 }
 

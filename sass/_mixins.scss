@@ -40,10 +40,10 @@
 @mixin all_columns() {
   $i: $total-columns;
   @while $i > 0 {
-    .grid_#{$i} {
+    .row .span#{$i} {
       @include span-columns($i, $total-columns);
     }
-    .ogrid_#{$i} {
+    .row .ospan#{$i} {
       @include span-columns($i omega, $total-columns);
     }
     $i: $i - 1;

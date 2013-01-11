@@ -28,6 +28,7 @@ $layout-font-size: 16;
 /* # Default start off style (Portrait)
    ================================================== */
 
+.row,
 #mainHeader,
 section[role=main],
 #footer,
@@ -62,7 +63,7 @@ section[role=main],
 }
 
 section[role=main] {
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 #footerBottom {

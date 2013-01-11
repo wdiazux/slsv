@@ -1,3 +1,53 @@
+/*
+  |--------------------------------------------------------------------------
+  | DOCUMENT READY
+  |--------------------------------------------------------------------------
+*/  
+
+$(document).ready(function() {
+    
+    
+    /*
+      |----------------------------------------------------------------------
+      | TWEETS - SEA OF CLOUD WIDGET
+      |----------------------------------------------------------------------
+    */ 
+    
+    jQuery(function($){
+        $(".tweet").tweet({
+            username: "leprosys",
+            /* join_text: "<br />",*/
+	    template: "{avatar}{text}",
+            avatar_size: 32,
+            count: 2,
+            /* auto_join_text_default: "we said,", 
+               auto_join_text_ed: "we",
+               auto_join_text_ing: "we were",
+               auto_join_text_reply: "we replied to",
+               auto_join_text_url: "we were checking out",*/
+            loading_text: "cargando tuits..."
+        });
+    });
+
+    // Flickr Feed Widget
+    if( $.fn.jflickrfeed ) {
+	$('.flickr-stream ul').jflickrfeed({
+	    qstrings: {
+		id: '77307054@N00', tags:'slsv' 
+	    }, 
+	    limit: 6, 
+	    itemTemplate:
+            '<li>' +
+                '<a href="{{link}}" title="{{title}}" target="_blank">' +
+                    '<img src="{{image_s}}" alt="{{title}}" />' +
+                '</a>' +
+            '</li>'
+	});
+    }
+
+    //END DOCUMENT READY   
+});
+
 /* MAIN MENU (submenu slide and setting up of a select box on small screen)*/
 (function() {
 

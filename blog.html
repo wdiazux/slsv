@@ -136,9 +136,10 @@
               <input type="text" class="span2 search-query">
               <button type="submit" class="btn">Buscar</button>
             </div>
+          </form>
         </aside>
       </div><!-- /container -->
-    </section><!-- /main -->
+    </section><!-- /role=main -->
 
 
     <footer id="footer">
@@ -148,6 +149,7 @@
 
           <div class="footer1">
 	    <h3>Acerca de</h3>
+            <div class="divider"><span></span></div>
 	    <p>Sed at elit nisi, sed vehicula nisi. Donec sed velit leo. Integer vitae mi purus. Praesent id mauris est. Pellentesque sed dolor a tellus malesuada posuere.</p>
 
 	    <h3>Suscribase a nuestras noticias</h3>
@@ -160,11 +162,13 @@
 
           <div class="footer2">
 	    <h3>Tuits Recientes</h3>
-	    <div class="tweet-stream"></div>
+            <div class="divider"><span></span></div>
+            <div class="tweet"></div>
           </div>
 
           <div class="footer3">
 	    <h3>Galería</h3>
+            <div class="divider"><span></span></div>
 	    <div class="flickr-stream"><ul></ul></div>
           </div>
 
@@ -180,7 +184,7 @@
           <div class="bottom2">
 	    <ul class="footerNav">
 	      <li><a href="index.html">Inicio</a></li>
-              <li><a href="blog.html">Blog</a></li>
+	      <li><a href="blog.html">Blog</a></li>
 	      <li><a href="#">Portafolio</a></li>
 	      <li><a href="#">Contactenos</a></li>
 	    </ul>
@@ -195,7 +199,14 @@
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery.plugins.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Third party plugins  -->
+    <script type="text/javascript" src="plugins/tweet/jquery.tweet.js"></script>
+    <script type="text/javascript" src="plugins/jflickrfeed/jflickrfeed.min.js"></script>
+
+    <!-- Custom  -->
     <script src="js/custom.js"></script>
+
 
   </body>
 

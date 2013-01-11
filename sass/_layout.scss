@@ -39,8 +39,14 @@ section[role=main],
 
 .container {
   @include container;
-  width: auto;
   //@include susy-grid-background;
+}
+
+.navbar {
+  .navbar-inner {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 #logo-wrapper,
@@ -184,7 +190,6 @@ section[role=main] {
       //@include susy-grid-background;
     }
   }
-
 
   #logo-wrapper {
     @include span-columns(3, 12);

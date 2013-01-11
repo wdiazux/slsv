@@ -1,76 +1,71 @@
 /*
-  |--------------------------------------------------------------------------
-  | DOCUMENT READY
-  |--------------------------------------------------------------------------
-*/  
+ * SLSV - Plugins options
+ *
+ */  
 
-$(document).ready(function() {
-    
-    
-    /*
-      |----------------------------------------------------------------------
-      | TWEETS - SEA OF CLOUD WIDGET
-      |----------------------------------------------------------------------
-    */ 
-    
-    jQuery(function($){
-        $(".tweet").tweet({
-            username: "leprosys",
-            /* join_text: "<br />",*/
-	    template: "{avatar}{text}",
-            avatar_size: 32,
-            count: 2,
-            /* auto_join_text_default: "we said,", 
-               auto_join_text_ed: "we",
-               auto_join_text_ing: "we were",
-               auto_join_text_reply: "we replied to",
-               auto_join_text_url: "we were checking out",*/
-            loading_text: "cargando tuits..."
-        });
-    });
+;(function( $, window, document, undefined ) {
 
-    // Flickr Feed Widget
-    if( $.fn.jflickrfeed ) {
-	$('.flickr-stream ul').jflickrfeed({
-	    qstrings: {
-		id: '77307054@N00', tags:'slsv' 
-	    }, 
-	    limit: 6, 
-	    itemTemplate:
-            '<li>' +
-                '<a href="{{link}}" title="{{title}}" target="_blank">' +
+    $(document).ready(function() {
+
+
+	// Tweets Widget
+	if( $.fn.tweet ) {
+	    $('.tweet').tweet({
+		username: "leprosys", 
+	        template: "{avatar}{text}",
+                avatar_size: 32,
+                count: 2,
+                loading_text: "Cargando tuits..."
+	    });
+	}
+
+        // Flickr Feed Widget
+        if( $.fn.jflickrfeed ) {
+	    $('.flickr-stream ul').jflickrfeed({
+	        qstrings: {
+		    id: '77307054@N00', tags:'slsv' 
+	        }, 
+	        limit: 6, 
+	        itemTemplate:
+                '<li>' +
+                    '<a href="{{link}}" title="{{title}}" target="_blank">' +
                     '<img src="{{image_s}}" alt="{{title}}" />' +
-                '</a>' +
-            '</li>'
-	});
-    }
-
-    //END DOCUMENT READY   
-});
-
-/* MAIN MENU (submenu slide and setting up of a select box on small screen)*/
-(function() {
-
-    // ul to select
-    var $mainMenu = $('#mainMenu').children('ul');
-    var optionsList = '<option value="" selected>Navegar...</option>';
-    $mainMenu.find('li').each(function() {
-        var $this   = $(this),
-        $anchor = $this.children('a'),
-        depth   = $this.parents('ul').length - 1,
-        indent  = '';
-
-        if( depth ) {
-            while( depth > 0 ) {
-                indent += ' - ';
-                depth--;
-            }
+                    '</a>' +
+                    '</li>'
+	    });
         }
 
-        optionsList += '<option value="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() + '</option>';
-    }).end().after('<select class="selectpicker responsive-nav" data-size="auto">' + optionsList + '</select>');
+    });
 
-    $('.responsive-nav').on('change', function() {
-        window.location = $(this).val();
-    }); 
-})();
+
+    /*
+     * MAIN MENU
+     * (submenu slide and setting up of a select box on small screen)
+     */
+    (function() {
+
+        // ul to select
+        var $mainMenu = $('#mainMenu').children('ul');
+        var optionsList = '<option value="" selected>Navegar...</option>';
+        $mainMenu.find('li').each(function() {
+            var $this   = $(this),
+            $anchor = $this.children('a'),
+            depth   = $this.parents('ul').length - 1,
+            indent  = '';
+
+            if( depth ) {
+                while( depth > 0 ) {
+                    indent += ' - ';
+                    depth--;
+                }
+            }
+
+            optionsList += '<option value="' + $anchor.attr('href') + '">' + indent + ' ' + $anchor.text() + '</option>';
+        }).end().after('<select class="selectpicker responsive-nav" data-size="auto">' + optionsList + '</select>');
+
+        $('.responsive-nav').on('change', function() {
+            window.location = $(this).val();
+        }); 
+    })();
+
+}) (jQuery, window, document);

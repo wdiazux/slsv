@@ -118,6 +118,13 @@ section[role=main] {
       //@include susy-grid-background;
     }
   }
+}
+
+
+/* # Tablet (Portrait)
+   ================================================== */
+
+@include at-breakpoint(768px $layout-font-size) {
 
   section[role=main]{
     .content-inner {
@@ -127,14 +134,6 @@ section[role=main] {
       @include span-columns(2 omega, 8)
     }
   }
-
-}
-
-
-/* # Tablet (Portrait)
-   ================================================== */
-
-@include at-breakpoint(768px $layout-font-size) {
 
   #footerTop {
     .footer1 {

@@ -11,7 +11,7 @@
 	// Tweets Widget
 	if( $.fn.tweet ) {
 	    $('.tweet').tweet({
-		username: "leprosys", 
+		username: "leprosys",
 	        template: "{avatar}{text}",
                 avatar_size: 32,
                 count: 2,
@@ -25,13 +25,13 @@
 	        qstrings: {
 		    id: '77307054@N00', tags:'slsv' 
 	        }, 
-	        limit: 6, 
+	        limit: 6,
 	        itemTemplate:
                 '<li>' +
                     '<a href="{{link}}" title="{{title}}" target="_blank">' +
-                    '<img src="{{image_s}}" alt="{{title}}" />' +
+                        '<img src="{{image_s}}" alt="{{title}}" />' +
                     '</a>' +
-                    '</li>'
+                '</li>'
 	    });
         }
 

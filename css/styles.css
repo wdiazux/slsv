@@ -6172,7 +6172,7 @@ section[role=main],
 #footer,
 #footerTop,
 #footerBottom {
-  min-width: 100%;
+  width: 100%;
   clear: both;
 }
 
@@ -6203,7 +6203,7 @@ section[role=main],
 #logo-wrapper,
 #menu-wrapper,
 #breadcrumb-wrapper {
-  min-width: 100%;
+  width: 100%;
   clear: both;
 }
 
@@ -6626,7 +6626,7 @@ p {
   line-height: 46px;
 }
 
-/* line 20, ../sass/_forms.scss */
+/* line 23, ../sass/_forms.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -6649,7 +6649,7 @@ input[type="color"],
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 25, ../sass/_forms.scss */
+/* line 28, ../sass/_forms.scss */
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -6672,7 +6672,12 @@ input[type="color"]:focus,
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(142, 205, 68, 0.6);
 }
 
-/* line 32, ../sass/_forms.scss */
+/* line 34, ../sass/_forms.scss */
+textarea {
+  height: auto;
+}
+
+/* line 42, ../sass/_forms.scss */
 input.search-query,
 .form-search .input-append .search-query {
   padding: 4px 14px 4px 24px;
@@ -6682,9 +6687,55 @@ input.search-query,
   background: white url(../img/ico-search.png) 4px 7px no-repeat;
 }
 
-/* line 40, ../sass/_forms.scss */
+/* line 50, ../sass/_forms.scss */
 aside[role=menu] .input-append,
 aside[role=menu] input.search-query {
+  width: 100%;
+}
+
+/* line 60, ../sass/_forms.scss */
+#footer input,
+#footer textarea {
+  color: #dddddd;
+  border-color: #222;
+  background-color: #444;
+}
+/* line 83, ../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+#footer input:-moz-placeholder,
+#footer textarea:-moz-placeholder {
+  color: #838383;
+}
+/* line 86, ../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+#footer input:-ms-input-placeholder,
+#footer textarea:-ms-input-placeholder {
+  color: #838383;
+}
+/* line 89, ../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
+#footer input::-webkit-input-placeholder,
+#footer textarea::-webkit-input-placeholder {
+  color: #838383;
+}
+
+/* line 87, ../sass/_forms.scss */
+.contact input[type="text"],
+.contact input[type="password"],
+.contact input[type="datetime"],
+.contact input[type="datetime-local"],
+.contact input[type="date"],
+.contact input[type="month"],
+.contact input[type="time"],
+.contact input[type="week"],
+.contact input[type="number"],
+.contact input[type="email"],
+.contact input[type="url"],
+.contact input[type="search"],
+.contact input[type="tel"],
+.contact input[type="color"],
+.contact .uneditable-input {
+  width: 270px;
+}
+/* line 90, ../sass/_forms.scss */
+.contact textarea {
   width: 100%;
 }
 
@@ -6831,7 +6882,11 @@ aside[role="menu"] .widget {
 .error-page .form {
   margin-top: 40px;
 }
-/* line 132, ../sass/styles.scss */
+/* line 131, ../sass/styles.scss */
+.error-page .form .search-query {
+  width: 70%;
+}
+/* line 135, ../sass/styles.scss */
 .error-page .error-code {
   font-size: 160px;
   line-height: 1.2;
@@ -6839,12 +6894,12 @@ aside[role="menu"] .widget {
   color: rgba(51, 51, 51, 0.85);
   text-shadow: 1px 4px 6px white, 0 0 0 black, 1px 4px 6px white;
 }
-/* line 139, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .error-page h2, .error-page h3 {
   font-weight: bold;
 }
 
-/* line 146, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 #footer .divider,
 section[role=main] .divider {
   height: 1px;
@@ -6852,7 +6907,7 @@ section[role=main] .divider {
   background-color: #dadada;
   border-bottom: 1px solid white;
 }
-/* line 151, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 #footer .divider span,
 section[role=main] .divider span {
   display: block;
@@ -6861,13 +6916,13 @@ section[role=main] .divider span {
   background-color: #8ecd44;
 }
 
-/* line 159, ../sass/styles.scss */
+/* line 162, ../sass/styles.scss */
 #footer .divider {
   border: none;
   background: #777;
 }
 
-/* line 165, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 .tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -6877,37 +6932,37 @@ section[role=main] .divider span {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 171, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
   list-style-type: none;
 }
-/* line 177, ../sass/styles.scss */
+/* line 180, ../sass/styles.scss */
 .tweet_list .tweet_avatar {
   padding-right: .5em;
   float: left;
 }
-/* line 179, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
 
-/* line 185, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .flickr-stream ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
   text-align: center;
 }
-/* line 190, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .flickr-stream ul li {
   display: inline-block;
   list-style: none;
   margin: 5px 10px 5px 0;
 }
-/* line 194, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .flickr-stream ul li img {
   border: 1px solid #353535;
   background-color: #1a1a1a;
@@ -6915,7 +6970,7 @@ section[role=main] .divider span {
   height: 70px;
   padding: 5px;
 }
-/* line 200, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .flickr-stream ul li img:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -6926,13 +6981,13 @@ section[role=main] .divider span {
 
 /* #Footer
    ================================================== */
-/* line 213, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 #footer {
   font-size: 13px;
   position: relative;
   background-color: #252525;
 }
-/* line 217, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 #footer:before {
   content: '';
   border: 10px solid transparent;
@@ -6943,36 +6998,29 @@ section[role=main] .divider span {
   margin-left: -10px;
 }
 
-/* line 228, ../sass/styles.scss */
+/* line 231, ../sass/styles.scss */
 #footerTop {
   padding: 30px 0;
   color: #aaa;
 }
-/* line 231, ../sass/styles.scss */
+/* line 234, ../sass/styles.scss */
 #footerTop h1, #footerTop h2, #footerTop h3, #footerTop h4, #footerTop h5 {
   text-transform: uppercase;
   color: #fff;
 }
-/* line 236, ../sass/styles.scss */
-#footerTop .form input,
-#footerTop .form textarea {
-  color: #ddd;
-  border-color: #222;
-  background-color: #444;
-}
 
-/* line 243, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 #footerBottom {
   background-color: #1a1a1a;
   color: #aaa;
   padding: 10px 0;
 }
 
-/* line 251, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .bottom2 .footerNav li a {
   color: #aaa;
 }
-/* line 253, ../sass/styles.scss */
+/* line 250, ../sass/styles.scss */
 .bottom2 .footerNav li a:hover {
   color: #fff;
 }

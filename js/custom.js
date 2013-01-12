@@ -8,13 +8,20 @@
     $(document).ready(function() {
 
 
+        // Tooltips
+        if( $.fn.tooltip() ) {
+	    $('[rel="tooltip"]').tooltip();
+	}
+
+	// Accordion
+	$( '.accordion' ).accordion();
+
 	// Tweets Widget
 	if( $.fn.tweet ) {
 	    $('.tweet').tweet({
-		username: "leprosys",
-	        template: "{avatar}{text}",
                 avatar_size: 32,
                 count: 2,
+                query: "#slsv",
                 loading_text: "Cargando tuits..."
 	    });
 	}

@@ -48,7 +48,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                       <li><a href="about.html">Acerca de</a></li>
-                      <li class="active"><a href="404.html">404</a></li>
+                      <li><a href="404.html">404</a></li>
                       <li class="divider"></li>
                       <li class="dropdown-submenu">
                         <a tabindex="-1" href="#">Tercer nivel</a>
@@ -70,27 +70,86 @@
                       <li><a href="elements.html">Elementos</a></li>
                     </ul>
                   </li>
-                  <li><a href="contact.html">Contactenos</a></li>
+                  <li class="active"><a href="contact.html">Contactenos</a></li>
                 </ul>
               </div><!-- /nav-collapse -->
             </div><!-- /menu-wrapper -->
           </div><!-- /container -->
         </div><!-- /navbar-inner -->
       </div><!-- /navbar -->
+
+      <div id="breadcrumb-wrapper">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a href="index.html">Inicio</a>
+              <span class="divider">/</span>
+            </li>
+            <li class="active">Contactenos</li>
+          </ul>
+        </div>
+      </div><!-- /breadcrumb-wrapper -->
+
     </header><!-- /header -->
 
     <section role="main">
       <div class="container">
-	<div class="error-page">
-	  <h2 class="error-code">404</h2>
-	  <h3>Ooops, página no encontrada...</h3>
-	  <p>La página que está buscando puede que haya sido eliminada, ha cambiado de nombre, o está temporalmente no disponible.</p>
-	  <form class="form">
-	    <div class="form-item">
-	      <input type="text" class="search-query" placeholder="Buscar en el Sitio...">
+
+	<!-- Page Header -->
+	<div class="page-header">
+	  <h1>Contactenos</h1>
+        </div>
+	<!-- End Page Header -->
+
+	<!-- Contact Form -->
+        <div class="row">
+	  <div class="span8">
+	    <h2>Envie un mensaje</h2>
+            <div class="divider"><span></span></div>
+
+	    <form method="post" class="form-horizontal contact">
+              <div class="control-group">
+	        <label>Nombre</label>
+	        <input type="text">
+              </div>
+              <div class="control-group">
+	        <label>Correo</label>
+	        <input type="email">
+              </div>
+              <div class="control-group">
+	        <label>Asunto</label>
+	        <input type="text">
+              </div>
+              <div class="control-group">
+	        <label>Mensaje</label>
+	        <textarea rows="5" cols=""></textarea>
+              </div>
+              <div class="control-group">
+	        <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+	    </form>
+	  </div>
+	  <!-- END Contact Form -->
+
+	  <div class="ospan4">
+
+	    <p>Utilice el formulario de contacto de la izquierda si desea enviarnos cualquier pregunta, consulta o simplemente quiere decir hola</p>
+
+	    <h2>Estamos en redes sociales</h2>
+            <div class="divider"><span></span></div>
+	    <div class="social">
+	      <ul>
+	        <li><a href="#"><i class="icos-facebook"></i></a></li>
+	        <li><a href="#"><i class="icos-twitter"></i></a></li>
+	        <li><a href="#"><i class="icos-google"></i></a></li>
+	        <li><a href="#"><i class="icos-picasa"></i></a></li>
+	        <li><a href="#"><i class="icos-dribbble"></i></a></li>
+	      </ul>
 	    </div>
-	  </form>
-	</div>
+
+	  </div>
+
+        </div><!-- /row -->
+
       </div><!-- /container -->
     </section><!-- /main -->
 

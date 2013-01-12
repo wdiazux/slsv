@@ -22,7 +22,7 @@
 
 /* Element to 100% */
 @mixin full() {
-  min-width: 100%;
+  width: 100%;
   clear: both;
 }
 

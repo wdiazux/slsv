@@ -2,6 +2,9 @@
 // Forms
 // --------------------------------------------------
 
+// Form controls
+// -------------------------
+
 textarea,
 input[type="text"],
 input[type="password"],
@@ -28,6 +31,13 @@ input[type="color"],
   }
 }
 
+textarea {
+  height: auto;
+}
+
+// SEARCH FORM
+// -----------
+
 input.search-query,
 .form-search .input-append .search-query {
   padding: 4px 14px 4px 24px;
@@ -38,6 +48,46 @@ input.search-query,
 aside[role=menu] {
   .input-append,
   input.search-query {
+    width: 100%;
+  }
+}
+
+// FOOTER STYLE
+// ------------
+
+#footer {
+  input,
+  textarea {
+    color: #dddddd;
+    border-color: #222;
+    background-color: #444;
+    @include placeholder(#838383);
+  }
+}
+
+
+// Contact Form
+// -------------
+
+.contact {
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"],
+  .uneditable-input {
+    width: 270px;
+  }
+  textarea {
     width: 100%;
   }
 }

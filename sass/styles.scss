@@ -126,10 +126,13 @@ aside[role="menu"] {
   text-align: center;
   max-width: 460px;
   width: auto;
-  .form{
+  .form {
     margin-top: 40px;
+    .search-query {
+      width: 70%;
+    }
   }
-  .error-code{
+  .error-code {
     font-size: 160px;
     line-height: 1.2;
     color: #333;
@@ -231,12 +234,6 @@ section[role=main] {
   h1, h2, h3, h4, h5 {
     text-transform: uppercase;
     color: #fff;
-  }
-  .form input,
-  .form textarea {
-    color: #ddd;
-    border-color: #222;
-    background-color: #444;
   }
 }
 

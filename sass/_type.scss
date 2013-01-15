@@ -1,6 +1,10 @@
 /* #Typography
 ================================================== */
 
+html {
+  font-size: 62.5%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   a {
@@ -9,14 +13,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1, h2, h3 { line-height:32px }
+h1, h2, h3 { line-height: 3.2rem }
 
-h1 { font-size:21px; }
-h2 { font-size:18px; }
-h3 { font-size:15px; }
-h4 { font-size:14px; }
-h5 { font-size:13px; }
-h6 { font-size:12px; }
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.3rem; }
+h6 { font-size: 1.2rem; }
 
 a {
   @include transition(color .1s ease-in-out);
@@ -25,9 +29,9 @@ a {
   }
 }
 
-p {  margin-bottom:14px; }
+p {  margin-bottom: 14px; }
 
 .title {
-  font-size: 21px;
-  line-height: 46px;
+  font-size: 2.1rem;
+  line-height: 4.6rem;
 }

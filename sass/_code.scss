@@ -1,0 +1,9 @@
+// Inline and block code styles
+code,
+pre {
+  font-size: $baseFontSize - .2rem;
+}
+
+pre {
+  font-size: $baseFontSize - .1rem;
+}

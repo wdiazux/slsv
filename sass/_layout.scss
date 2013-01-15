@@ -22,7 +22,26 @@
  *    - 1382px Gutters = 1.5em(21px) Columns(12) = 6.6em(92.41px)
  */
 
-$layout-font-size: 16;
+$mobile_l: 30rem 6;
+$s_tablet_p: 37.5rem 8;
+$tablet: 48rem 8;
+$s_tablet_l: 50rem 8;
+$desktop: 60rem 12;
+
+$layout-font-size: 1.6rem;
+
+
+
+/*// For develop
+.container {
+  @include susy-grid-background;
+  @include at-breakpoint($mobile_l) { @include susy-grid-background; }
+  @include at-breakpoint($s_tablet_p) { @include susy-grid-background; }
+  @include at-breakpoint($tablet) { @include susy-grid-background; }
+  @include at-breakpoint($s_tablet_l) { @include susy-grid-background; }
+  @include at-breakpoint($desktop) { @include susy-grid-background; }
+}
+*/
 
 
 /* # Default start off style (Portrait)
@@ -37,8 +56,11 @@ section[role=main],
   @include full;
 }
 
+@include border-box-sizing;
+
 .container {
   @include container;
+  //soverflow: hidden;
   //@include susy-grid-background;
 }
 
@@ -96,12 +118,11 @@ section[role=main] {
 /* # Mobile (Landscape)
    ================================================== */
 
-@include at-breakpoint(480px $layout-font-size) {
+@include at-breakpoint($mobile_l) {
 
-  @include with-grid-settings(6,60px,15px,10px) {
+  @include with-grid-settings(6,6rem,1.5rem,1rem) {
     .container{
       @include set-container-width(6);
-      //@include susy-grid-background;
     }
   }
 }
@@ -110,12 +131,11 @@ section[role=main] {
 /*  # Small Tablet (Portrait)
     ================================================== */
 
-@include at-breakpoint(600px $layout-font-size) {
+@include at-breakpoint($s_tablet_p) {
 
-  @include with-grid-settings(8,70px,20px,10px) {
+  @include with-grid-settings(8,7rem,2rem,1rem) {
     .container{
       @include set-container-width(8);
-      //@include susy-grid-background;
     }
   }
 }
@@ -124,7 +144,7 @@ section[role=main] {
 /* # Tablet (Portrait)
    ================================================== */
 
-@include at-breakpoint(768px $layout-font-size) {
+@include at-breakpoint($tablet) {
 
   section[role=main]{
     .content-inner {
@@ -152,14 +172,7 @@ section[role=main] {
 /* # Small Tablet (Landscape)
    ================================================== */
 
-@include at-breakpoint(800px $layout-font-size) {
-
-  @include with-grid-settings(8,70px,20px,10px) {
-    .container{
-      @include set-container-width(8);
-      //@include susy-grid-background;
-    }
-  }
+@include at-breakpoint($s_tablet_l) {
 
   #footerBottom {
     .bottom1 {
@@ -180,9 +193,9 @@ section[role=main] {
 /* # Netbooks
    ================================================== */
 
-@include at-breakpoint(980px $layout-font-size) {
+@include at-breakpoint($desktop) {
 
-  @include with-grid-settings(12,60px,20px,10px) {
+  @include with-grid-settings(12,6rem,2rem,1rem) {
     .container {
       @include all_columns;
       @include set-container-width(12);

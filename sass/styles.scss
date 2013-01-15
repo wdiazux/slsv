@@ -3,10 +3,12 @@
 
 @import "base";
 @import "mybootstrap";
+@import "bootstrap/variables";
 @import "compass/css3/transform";
 @import "mixins";
 @import "layout";
 @import "type";
+@import "code";
 @import "forms";
 /* For demo only */
 @import "template";
@@ -62,8 +64,14 @@ section {
       margin-left: -4px;
     }
   }
-  .dropdown li {
-    font-size: $baseFontSize - 1px;
+  .dropdown {
+    li {
+      font-size: $baseFontSize - .1rem;
+    }
+    .divider {
+      height: 2px;
+      margin: 5px 1px;
+    }
   }
 }
 
@@ -75,7 +83,7 @@ section {
 .breadcrumb {
   margin: 0;
   padding: 3px 0;
-  font-size: $baseFontSize - 2px;
+  font-size: $baseFontSize - .2rem;
   background-color: transparent;
   @include border-radius(0);
   > li {
@@ -97,7 +105,7 @@ section {
   li {
     display: inline-block;
     margin-right: 10px;
-    font-size: 0.8em;
+    font-size: $baseFontSize - .3rem;
     color: $textColor;
     a {
       color: $textColor;
@@ -109,7 +117,7 @@ section {
 }
 
 .more-link {
-  font-size: 15px;
+  font-size: $baseFontSize + .1rem;
   font-weight: bold;
   display: inline-block;
 }
@@ -117,6 +125,25 @@ section {
 aside[role="menu"] {
   .widget {
     margin-bottom: 10px;
+  }
+}
+
+.simple-list {
+  margin: 0;
+    width: 100%;
+  display: inline-block;
+  list-style: none;
+  color: $gray;
+  li {
+    width: 100%;
+    border-bottom: solid 1px #e8e8e8;
+    a {
+      width: 100%;
+      padding: 4px 0;
+      display: inline-block;
+      color: $gray;
+      text-decoration: none;
+    }
   }
 }
 
@@ -133,21 +160,20 @@ aside[role="menu"] {
     }
   }
   .error-code {
-    font-size: 160px;
+    font-size: 16rem;
     line-height: 1.2;
     color: #333;
     color: rgba(51,51,51,0.85);
     text-shadow: 1px 4px 6px #fff,0 0 0 #000,1px 4px 6px #fff;
   }
   h2, h3 {
-    font-weight:bold;
+    font-weight: bold;
   }
 }
 
 #footer,
 section[role=main] {
   .divider {
-    height: 1px;
     margin: 0.5em 0 1.5em 0;
     background-color: #dadada;
     border-bottom: 1px solid #fff;
@@ -214,7 +240,7 @@ section[role=main] {
    ================================================== */
 
 #footer {
-  font-size: $baseFontSize - 1px;
+  font-size: $baseFontSize - 0.1rem;
   position: relative;
   background-color: #252525;
   &:before {
@@ -243,13 +269,13 @@ section[role=main] {
   padding: 10px 0;
 }
 
-.bottom2 {
-  .footerNav li {
-    a {
-      color:#aaa;
-      &:hover {
-        color: #fff;
-      }
+
+.footerNav {
+  margin: 0;
+  li a {
+    color:#aaa;
+    &:hover {
+      color: #fff;
     }
   }
 }

@@ -14,16 +14,6 @@ $grid-padding:          $gutter-width; // grid-padding equal to gutters
 /* Container Style */
 $container-style:       magic;
 
-/* For develop */
-$show-grid-backgrounds: true;
-
-
-/* #Fonts
-   ================================================== */
-
-$relative-font-sizing:  true;
-$default-rhythm-border-style: solid;
-
 
 /* #Bootstrap
    ================================================== */
@@ -36,6 +26,7 @@ $linkColor:             #8ecd44;
 $linkColorHover:        #679b29;
 
 $baseFontFamily:        'Open Sans',Arial,Helvetica,sans-serif;
+$baseFontSize:          1.4rem;
 $baseLineHeight:        23px;
 
 $headingsFontWeight:    normal;

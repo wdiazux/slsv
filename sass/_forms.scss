@@ -21,7 +21,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  height: auto;
+  height: 30px;
   font-size: $baseFontSize - .1rem;
   @include box-sizing(border-box);
   // Focus state

@@ -61,7 +61,6 @@ section[role=main],
 .container {
   @include container;
   //soverflow: hidden;
-  //@include susy-grid-background;
 }
 
 .navbar {
@@ -85,7 +84,7 @@ section[role=main],
   .responsive-nav {
     display: inline;
     width: 100%;
-    padding: 0.18em;
+    padding: 0.18rem;
     margin: 10px auto 10px auto;
   }
 }
@@ -199,7 +198,6 @@ section[role=main] {
     .container {
       @include all_columns;
       @include set-container-width(12);
-      //@include susy-grid-background;
     }
   }
 

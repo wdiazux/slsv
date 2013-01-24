@@ -7,8 +7,8 @@
    ================================================== */
 
 $total-columns:         4;             // a 4-column grid for Mobile First
-$column-width:          3.8em;         // each column is 3.8em wide
-$gutter-width:          1.5em;         // 1em gutters between columns
+$column-width:          3.8rem;         // each column is 3.8em wide
+$gutter-width:          1.5rem;         // 1em gutters between columns
 $grid-padding:          $gutter-width; // grid-padding equal to gutters
 
 /* Container Style */
@@ -20,14 +20,12 @@ $container-style:       magic;
 
 @import "bootstrap/variables";
 
-$textColor:             #777;
+$textColor:             #444;
 
 $linkColor:             #8ecd44;
 $linkColorHover:        #679b29;
 
-$baseFontFamily:        'Open Sans',Arial,Helvetica,sans-serif;
 $baseFontSize:          1.4rem;
-$baseLineHeight:        23px;
 
 $headingsFontWeight:    normal;
 $headingsColor:         #444;

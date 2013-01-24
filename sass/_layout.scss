@@ -1,25 +1,25 @@
 /* Table of Contents
  * ==================================================
  *  # Default start off style (Portrait)
- *    - 320px Gutters  = 1.5em(21px) Columns(4) = 3.8em(53.75px)
+ *    - 320px Gutters  = Columns(4)
  *
  *  # Mobile (Landscape)
- *    - 480px Gutters  = 1.5em(21px) Columns(6) = 3.9em(55.5px)
+ *    - 480px Gutters  = 30rem Columns(6)
  *
  *  # Small Tablet (Portrait)
- *    - 600px Gutters  = 1.5em(21px) Columns(8) = 5.39em(75.5px)
+ *    - 600px Gutters  = 37.5re, Columns(8)
  *
  *  # Tablet (Portrait)
- *    - 768px Gutters  = 1.5em(21px) Columns(8) = 7.39em(53.75px)
+ *    - 768px Gutters  = 48rem Columns(8)
  *
  *  # Small Tablet (Landscape)
- *    - 800px Gutters  = 1.5em(21px) Columns(8) =
+ *    - 800px Gutters  = 50rem Columns(8)
  *
  *  # Netbooks
- *    - 980px Gutters  = 1.5em(21px) Columns(8) = 7.16em(100.375px)
+ *    - 980px Gutters  = 60rem Columns(12)
  *
  *  # Desktops and Widescreen laptops
- *    - 1382px Gutters = 1.5em(21px) Columns(12) = 6.6em(92.41px)
+ *    - 1382px Gutters = 60rem Columns(12)
  */
 
 $mobile_l: 30rem 6;
@@ -28,26 +28,24 @@ $tablet: 48rem 8;
 $s_tablet_l: 50rem 8;
 $desktop: 60rem 12;
 
-$layout-font-size: 1.6rem;
-
-
-
-/*// For develop
+// For develop
 .container {
-  @include susy-grid-background;
-  @include at-breakpoint($mobile_l) { @include susy-grid-background; }
-  @include at-breakpoint($s_tablet_p) { @include susy-grid-background; }
-  @include at-breakpoint($tablet) { @include susy-grid-background; }
-  @include at-breakpoint($s_tablet_l) { @include susy-grid-background; }
-  @include at-breakpoint($desktop) { @include susy-grid-background; }
+  //@include susy-grid-background;
+  //@include at-breakpoint($mobile_l) { @include susy-grid-background; }
+  //@include at-breakpoint($s_tablet_p) { @include susy-grid-background; }
+  //@include at-breakpoint($tablet) { @include susy-grid-background; }
+  //@include at-breakpoint($s_tablet_l) { @include susy-grid-background; }
+  //@include at-breakpoint($desktop) { @include susy-grid-background; }
 }
-*/
+
 
 
 /* # Default start off style (Portrait)
    ================================================== */
 
 .row,
+.slides,
+.slider-wrap,
 #mainHeader,
 section[role=main],
 #footer,

@@ -4,10 +4,12 @@ Es un tema de Drupal para  http://www.slsv.org utilizando [Twitter Bootstrap](ht
 
 Instalacion
 -----------
-(`git clone git://github.com/leprosys/slsv.git`)
+`git clone git://github.com/leprosys/slsv.git`
 
-Dependencias
-------------
+Colocar la carpeta slsv en sites/all/themes/
+
+Dependencias para desarrollo
+----------------------------
 
 Las siguientes aplicaciones solo son necesarias para poder modificar las hojas de estilo con sass:
 

@@ -2,17 +2,30 @@
    BASE
    ========================================================================== */
 
+/*
+ * To make it easier to use all variables and mixins in any Sass file in this
+ * theme, each .scss file has a @import "base" declaration. And this
+ * _base.scss file is in charge of importing all the other partials needed
+ * for the theme.
+ */
+
 
 /* #Grid
    ================================================== */
 
 $total-columns:         4;             // a 4-column grid for Mobile First
-$column-width:          3.8rem;         // each column is 3.8em wide
-$gutter-width:          1.5rem;         // 1em gutters between columns
+$column-width:          6.5rem;         // each column is 3.8em wide
+$gutter-width:          2rem;         // 1em gutters between columns
 $grid-padding:          $gutter-width; // grid-padding equal to gutters
 
 /* Container Style */
 $container-style:       magic;
+
+
+/* #Fonts
+   ================================================== */
+
+$ubuntuFontFamily:      'Ubuntu', Arial, sans-serif;
 
 
 /* #Bootstrap
@@ -20,14 +33,16 @@ $container-style:       magic;
 
 @import "bootstrap/variables";
 
-$textColor:             #444;
+$textColor:             #4C4C4C;
 
-$linkColor:             #8ecd44;
-$linkColorHover:        #679b29;
+$linkGreen:             #8ecd44;
+$linkGreenHover:        #56A100;
 
 $baseFontSize:          1.4rem;
+$baseFontFamily:        $sansFontFamily;
 
-$headingsFontWeight:    normal;
+$headingsFontFamily:    $ubuntuFontFamily;
+$headingsFontWeight:    400;
 $headingsColor:         #444;
 
 $btnPrimaryBackground:           $linkColor;

@@ -3,17 +3,18 @@
 
 @import "base";
 @import "mybootstrap";
+@import "bootstrap/responsive-navbar";
 @import "bootstrap/variables";
 @import "compass/css3/transform";
+@import "compass/css3/box-sizing";
 @import "mixins";
+@import "drupal";
 @import "layout";
 @import "type";
 @import "code";
 @import "forms";
 @import "font-awesome";
 @import "patterns";
-/* For demo only */
-@import "template";
 
 
 /* #Base styles
@@ -28,6 +29,141 @@ section {
   //outline: 1px solid #B94A48 !important;
 }
 
+/* Readmore link as button */ 
+ul.links > .node-readmore > a {
+  &:active,
+  &:hover,
+  &:focus { color: $textColor; }
+}
+
+/* List of links to text color */
+ul.links > li > a {
+  color: $textColor;
+  &:active,
+  &:hover,
+  &:focus { color: $linkColor; }
+}
+
+#block-system-navigation {
+  .menu > li {
+    border-bottom: solid 1px #dadada;
+    &:last-child { border-bottom: 0; }
+    > a {
+      padding: 6px 0 6px 0;
+    }
+  }
+}
+
+.node footer {
+  margin-top: 10px;
+}
+
+.navbar .btn-navbar {
+  background-color: rgb(122, 168, 85);
+  background-image: linear-gradient(to bottom, rgb(161, 233, 105), rgb(90, 168, 18));
+  &:focus, &:hover, &:active {
+    background-image: $linkGreenHover;
+    background-color: $linkGreenHover;
+  }
+}
+
+/* ----------------- Comments ----------------- */
+
+.comment h3.comment-title {
+  margin-bottom: 0.5rem;
+  a { @include redefine-link($textColor,$linkColor); }
+}
+.comment div.user-picture img {
+  margin-left: 0; /* LTR */
+}
+.comment {
+  margin-bottom: 20px;
+  display: table;
+  vertical-align: top;
+}
+.comment .attribution {
+  display: block;
+  width: 100px;
+  padding: 0 30px 0 0; /* LTR */
+  vertical-align: top;
+  overflow: hidden;
+  .username {
+    @include redefine-link($textColor,$linkColor);
+    font-family: $ubuntuFontFamily;
+  }
+  .user-picture {
+    border: 1px solid #DDDDDD;
+    display: inline-block;
+    padding: 6px;
+    @include box-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+    @include border-radius(500px);
+    img {
+      margin: 0;
+      width: 55px;
+      height: 55px;
+      @extend .img-circle;
+    }
+  }
+}
+.comment_forbidden a {
+  @include redefine-link($textColor,$linkColor);
+}
+.comment .submitted p {
+  margin: 4px 0;
+  font-size: 1.071em;
+  line-height: 1.2;
+}
+.comment .submitted .comment-time {
+  font-size: 0.786em;
+  color: #68696b;
+}
+.comment .submitted .comment-permalink {
+  font-size: 0.786em;
+  text-transform: lowercase;
+}
+.comment .content {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+.comment .comment-arrow {
+  background: url(../img/comment-arrow.gif) no-repeat 0 center transparent; /* LTR */
+  height: 40px;
+  margin-left: -47px; /* LTR */
+  margin-top: 10px;
+  position: absolute;
+  width: 20px;
+}
+.comment .comment-text {
+  padding: 10px 25px;
+  border: 1px solid #d3d7d9;
+  display: table-cell;
+  vertical-align: top;
+  position: relative;
+  width: 100%;
+}
+.comment .indented {
+  margin-left: 40px; /* LTR */
+}
+.comment ul.links {
+  padding: 0 0 0.25em 0;
+  li {
+    padding: 0 0.5em 0 0; /* LTR */
+  }
+  .comment-reply {
+    text-align: right;
+    display: inline-block;
+    float: right;
+  }
+}
+.comment-unpublished {
+  margin-right: 5px; /* LTR */
+  padding: 5px 2px 5px 5px; /* LTR */
+}
+.comment-unpublished .comment-text .comment-arrow {
+  border-left: 1px solid #fff4f4;
+  border-right: 1px solid #fff4f4;
+}
+
 
 /* #Site Styles
    ================================================== */
@@ -36,55 +172,24 @@ body {
   line-height: 2.3rem;
 }
 
-#mainHeader {
+#skip-link {
+  margin: 0;
+}
+
+#header {
   background-color: #fff;
   border-top: 1px solid #D4D4D4;
-  .navbar-inner {
-    @include border-radius(0);
-  }
-  .navbar {
-    margin: 0;
-    .nav > li {
-      position: relative;
-      > a {
-        text-shadow: none;
-        padding: 25px 15px;
-      }
-      ul li.active {
-        &:before{
-          content: none;
-        }
-      }
-    }
-  }
-  .nav li.active {
-    border-top: 4px solid #8ECD44;
-    margin-top: -4px;
-    &:before{
-      content: '';
-      border: 4px solid transparent;
-      border-top-color: #8ECD44;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -4px;
-    }
-  }
-  .dropdown {
-    li {
-      font-size: $baseFontSize - .1rem;
-    }
-    .divider {
-      height: 2px;
-      margin: 5px 1px;
-    }
-  }
+  .navbar-inner { @include border-radius(0); }
+  .navbar { margin: 0; }
 }
 
 
 #breadcrumb-wrapper {
-  background-color: #252525;
-  @include box-shadow(inset 0 0 1px 1px #000);
+  background-color: rgba(0,0,0,0.7);
+  border: 1px solid #696d72;
+  border-color: rgba(0,0,0,0.2);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  @include box-shadow(0 1px 1px 0 rgba(255,255,255,0.3),inset 0 1px 5px rgba(0,0,0,0.1));
 }
 .breadcrumb {
   margin: 0;
@@ -93,14 +198,23 @@ body {
   background-color: transparent;
   @include border-radius(0);
   > li {
-    text-shadow: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     > .divider{
-      color: #CCC;
+      color: #B9B9B9;
     }
   }
   .active {
-    color: #FFF;
+    color: $white;
   }
+  a { @include redefine-link(#B9B9B9,$linkGreen); }
+}
+
+.nav-tabs > li > a {
+  @include redefine-link($grayLight,$black);
+}
+
+.pagination a {
+  @include redefine-link($textColor,$linkColor);
 }
 
 .entry-meta {
@@ -110,7 +224,7 @@ body {
   padding: 3px 0;
   li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 13px;
     font-size: $baseFontSize - .3rem;
     color: $textColor;
     a {
@@ -119,6 +233,15 @@ body {
         color: $linkColorHover;
       }
     }
+    [class^="icon-"],
+    [class*=" icon-"] {
+      margin-right: 3px;
+    }
+  }
+  .links {
+    display: inline-block;
+    margin: 0;
+    li { margin-right: 1px; }
   }
 }
 
@@ -129,9 +252,10 @@ body {
 }
 
 aside[role="menu"] {
-  .widget {
+  .block {
     margin-bottom: 10px;
   }
+  a { @include redefine-link($textColor,$linkColor); }
 }
 
 .simple-list {
@@ -187,7 +311,7 @@ section[role=main] {
       display: block;
       width: 50px;
       height: 1px;
-      background-color: #8ecd44;
+      background-color: $linkGreen;
     }
   }
 }
@@ -424,6 +548,9 @@ aside .social ul {
     left: 50%;
     top: 0;
     margin-left: -10px;
+  }
+  a {
+   @include redefine-link($linkGreen,$linkGreenHover);
   }
 }
 

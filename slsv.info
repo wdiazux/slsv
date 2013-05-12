@@ -1,0 +1,80 @@
+name        = SLSV
+screenshot  = screenshot.png
+description = Drupal the for <a href="http://www.slsv.org">SLSV</a>.
+core        = 7.x
+
+; The stylesheet.
+stylesheets[all][] = css/styles.css
+
+
+; JavaScripts
+scripts[] = js/bootstrap.min.js
+scripts[] = js/custom.js
+scripts[] = js/jquery.plugins.min.js
+
+; Regions
+regions[header]      = Header
+regions[help]        = Help
+regions[navigation]  = Navigation bar
+regions[highlighted] = Highlighted
+
+regions[content]        = Content
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+
+regions[footer_firstcolumn]  = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn]  = Footer third column
+regions[bottom_firstcolumn]  = Page bottom first column
+regions[bottom_secondcolumn] = Page bottom second column
+
+regions[page_top]    = Page top    ; is required, don't delete
+regions[page_bottom] = Page bottom ; is required, don't delete
+
+; Features
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = comment_user_picture
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; Settings
+settings[slsv_breadcrumb]           = yes
+settings[slsv_breadcrumb_separator] = ' › '
+settings[slsv_breadcrumb_home]      = 0
+settings[slsv_breadcrumb_trailing]  = 0
+settings[slsv_breadcrumb_title]     = 1
+settings[slsv_skip_link_anchor]     = main-menu
+settings[slsv_skip_link_text]       = Jump to navigation
+settings[slsv_rebuild_registry]     = 1
+settings[slsv_wireframes]           = 1
+
+; Exclude
+;css
+exclude[css][] = 'modules/aggregator/aggregator.css'
+exclude[css][] = 'modules/block/block.css'
+exclude[css][] = 'modules/book/book.css'
+exclude[css][] = 'modules/comment/comment.css'
+exclude[css][] = 'modules/dblog/dblog.css'
+exclude[css][] = 'modules/file/file.css'
+exclude[css][] = 'modules/filter/filter.css'
+exclude[css][] = 'modules/forum/forum.css'
+exclude[css][] = 'modules/help/help.css'
+exclude[css][] = 'modules/menu/menu.css'
+exclude[css][] = 'modules/node/node.css'
+exclude[css][] = 'modules/openid/openid.css'
+exclude[css][] = 'modules/poll/poll.css'
+exclude[css][] = 'modules/search/search.css'
+exclude[css][] = 'modules/statistics/statistics.css'
+exclude[css][] = 'modules/syslog/syslog.css'
+exclude[css][] = 'modules/system/maintenance.css'
+exclude[css][] = 'modules/system/system.maintenance.css'
+exclude[css][] = 'modules/system/system.menus.css'
+exclude[css][] = 'modules/system/system.messages.css'
+exclude[css][] = 'modules/system/system.theme.css'
+exclude[css][] = 'modules/taxonomy/taxonomy.css'
+exclude[css][] = 'modules/tracker/tracker.css'
+exclude[css][] = 'modules/update/update.css'
+exclude[css][] = 'modules/user/user.css'

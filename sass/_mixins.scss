@@ -26,16 +26,27 @@
   clear: both;
 }
 
-@mixin hidden {
-  display: none;
+@mixin hidden() {
   visibility: hidden;
+  display: none;
 }
 
-@mixin visible {
-  display: inherit;
+@mixin visible() {
   visibility: visible;
 }
 
+@mixin redefine-link($color1, $color2) {
+  color: $color1;
+  &:active,
+  &:hover,
+  &:focus { color: $color2; }
+}
+
+@mixin icon-before($icon) {
+  @extend [class^="icon-"];
+  margin-right: 0.5em;
+  content: $icon;
+}
 
 @mixin all_columns() {
   $i: $total-columns;

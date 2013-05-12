@@ -23,10 +23,9 @@ input[type="color"],
 .uneditable-input {
   height: 30px;
   font-size: $baseFontSize - .1rem;
-  @include box-sizing(border-box);
   // Focus state
   &:focus {
-    border-color: rgba(142,205,68,.8);
+    border-color: rgba(121, 216, 0, 0.8);
     @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(142,205,68,.6));
   }
 }
@@ -40,16 +39,24 @@ textarea {
 
 input.search-query,
 .form-search .input-append .search-query {
-  padding: 4px 14px 4px 24px;
   @include border-radius(4px);
-  background: #fff url(../img/ico-search.png) 4px 7px no-repeat;
 }
 
 aside[role=menu] {
   .input-append,
   input.search-query {
-    width: 100%;
+    background: #fff url(../img/ico-search.png) no-repeat;
+    background-position: 96% center;
+    padding-right: 30px !important;
   }
+}
+
+.search-results h3.title {
+  font-weight: bold;
+}
+
+.content-inner .search-form .control-group {
+  display: inline-block;
 }
 
 // FOOTER STYLE
@@ -89,5 +96,32 @@ aside[role=menu] {
   }
   textarea {
     width: 100%;
+  }
+}
+
+// Login Form
+// -------------
+#user-login-form {
+  a { @include redefine-link($textColor, $linkColor); }
+  a[href*="http://openid.net/"]:before {
+    @include icon-before("\f059");
+  }
+  a[href="#openid-login"]:before {
+    @include icon-before("\f00c");
+  }
+  a[href="#"]:before {
+    @include icon-before("\f00d");
+  }
+  ul {
+    margin-left: 0;
+    li {
+      list-style: none;
+      a[href*="user/register"]:before {
+        @include icon-before("\f007");
+      }
+      a[href*="user/password"]:before {
+        @include icon-before("\f084");
+      }
+    }
   }
 }

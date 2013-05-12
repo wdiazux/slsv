@@ -9,7 +9,7 @@ Instalacion
 Dependencias
 ------------
 
-Las siguientes aplicaciones son necesarias para poder modificar las hojas de estilo con sass:
+Las siguientes aplicaciones solo son necesarias para poder modificar las hojas de estilo con sass:
 
 * [rubygems](http://rubygems.org/) -- `apt-get install rubygems`
 * [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass) -- `gem install bootstrap-sass`

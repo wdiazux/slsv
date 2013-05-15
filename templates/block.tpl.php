@@ -11,8 +11,10 @@
 
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
-    <h3<?php print $title_attributes; ?>><?php print $title; ?></h3>
-    <div class="divider"><span></span></div>
+    <div class="headline">
+      <h3<?php print $title_attributes; ?>><?php print $title; ?></h3>
+      <div class="divider"><span></span></div>
+    </div>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 

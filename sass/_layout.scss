@@ -109,13 +109,21 @@ section[role=main] {
   }
 }
 
-/* Search input */
-.sidebar input.search-query {
-  width: 85%;
-}
-.sidebar #block-user-login {
+.sidebar .block {
   input[type="text"],
-  input[type="password"] { width: 100%; }
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"] { width: 100%; }
 }
 
 
@@ -141,10 +149,6 @@ section[role=main] {
     .container{
       @include set-container-width(8);
     }
-  }
-  /* Search input */
-  .sidebar input.search-query {
-    width: 90%;
   }
   input, textarea, select, .uneditable-input {
     width: auto;
@@ -197,11 +201,6 @@ section[role=main] {
         text-align: right;
       }
     }
-  }
-
-  /* Search input */
-  .sidebar input.search-query {
-    width: 70%;
   }
 }
 
@@ -289,10 +288,5 @@ section[role=main] {
     .bottom2 {
       @include span-columns(6 omega,12);
     }
-  }
-
-  /* Search input */
-  .sidebar input.search-query {
-    width: 80%;
   }
 }

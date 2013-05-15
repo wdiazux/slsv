@@ -21,7 +21,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  height: 30px;
+  height: auto;
   font-size: $baseFontSize - .1rem;
   // Focus state
   &:focus {
@@ -40,6 +40,9 @@ textarea {
 input.search-query,
 .form-search .input-append .search-query {
   @include border-radius(4px);
+}
+input[type="search"] {
+  @include box-sizing(border-box);
 }
 
 aside[role=menu] {
@@ -69,33 +72,6 @@ aside[role=menu] {
     border-color: #222;
     background-color: #444;
     @include placeholder(#838383);
-  }
-}
-
-
-// Contact Form
-// -------------
-
-.contact {
-  input[type="text"],
-  input[type="password"],
-  input[type="datetime"],
-  input[type="datetime-local"],
-  input[type="date"],
-  input[type="month"],
-  input[type="time"],
-  input[type="week"],
-  input[type="number"],
-  input[type="email"],
-  input[type="url"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="color"],
-  .uneditable-input {
-    width: 270px;
-  }
-  textarea {
-    width: 100%;
   }
 }
 

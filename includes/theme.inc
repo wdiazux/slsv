@@ -221,6 +221,7 @@ function slsv_item_list($variables) {
  * Implements hook_css_alter().
  */
 function slsv_css_alter(&$css) {
+	$theme_path = drupal_get_path('theme', 'slsv');
 	// Load excluded CSS files from theme.
 	$excludes = _slsv_alter(slsv_theme_get_info('exclude'), 'css');
 	$css = array_diff_key($css, $excludes);

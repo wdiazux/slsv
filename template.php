@@ -375,29 +375,34 @@ function slsv_preprocess_node(&$variables, $hook) {
   $variables['unpublished'] = (!$variables['status']) ? TRUE : FALSE;
 
   // Add pubdate to submitted variable.
+  $variables['date'] = format_date($variables['node']->created, 'custom', 'M j, Y');
   $variables['pubdate'] = '<time pubdate datetime="' . format_date($variables['node']->created, 'custom', 'c') . '">' . $variables['date'] . '</time>';
   if ($variables['display_submitted']) {
 
+    // Publication date
+    $submitted = '<li><i class="icon-calendar"></i>';
+    $submitted .= $variables['pubdate'] . '</li>';
+  
     // Username
-	$submitted = '<li><i class="icon-user"></i>';
-	$submitted .= $variables['name'] . '</li>';
+    $submitted .= '<li><i class="icon-user"></i>';
+    $submitted .= $variables['name'] . '</li>';
 
     // Comments
-	$nid = $variables['node']->nid;
-	$comments = l(format_plural($variables['node']->comment_count, '1 ' . t('comment'), '@count ' . t('comments')),
-				  'node/' . $nid,
-				  array('fragment' => 'comments'));
-	$submitted .= '<li><i class="icon-comment"></i>';
-	$submitted .= $comments . '</li>';
+    $nid = $variables['node']->nid;
+    $comments = l(format_plural($variables['node']->comment_count, '1 ' . t('comment'), '@count ' . t('comments')),
+	'node/' . $nid,
+	array('fragment' => 'comments'));
+    $submitted .= '<li><i class="icon-comments"></i>';
+    $submitted .= $comments . '</li>';
 
     // Tags
-	$tags = render($variables['content']['field_tags']);
-	if (!empty($variables['node']->field_tags)) {
-		$submitted .= '<li><i class="icon-tag"></i>';
-		$submitted .= $tags . '</li>';
-	}
+    $tags = render($variables['content']['field_tags']);
+    if (!empty($variables['node']->field_tags)) {
+	$submitted .= '<li><i class="icon-tag"></i>';
+	$submitted .= $tags . '</li>';
+    }
 
-	$variables['submitted'] = $submitted;
+    $variables['submitted'] = $submitted;
 
   }
 

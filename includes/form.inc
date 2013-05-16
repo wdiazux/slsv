@@ -20,8 +20,8 @@ function slsv_form_alter(&$form, &$form_state, $form_id) {
 }  
 
 /**
-* Preprocess variables for the search block form.
-*/
+ * Preprocess variables for the search block form.
+ */
 function slsv_preprocess_search_block_form(&$vars) {
   // Changes the search form to use the "search" input element attribute (HTML5)
   // We have to replace the string because FAPI don't know what type=search is, i.e.

@@ -23,10 +23,10 @@ function slsv_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
     '#title'         => t('Display breadcrumb'),
     '#default_value' => theme_get_setting('slsv_breadcrumb'),
     '#options'       => array(
-                          'yes'   => t('Yes'),
-                          'admin' => t('Only in admin section'),
-                          'no'    => t('No'),
-                        ),
+      'yes'   => t('Yes'),
+      'admin' => t('Only in admin section'),
+      'no'    => t('No'),
+    ),
   );
   $form['breadcrumb']['breadcrumb_options'] = array(
     '#type' => 'container',

@@ -60,12 +60,12 @@ function slsv_pager($variables) {
   if ($pager_total[$element] > 1) {
 
     /*
-    if ($li_first) {
+      if ($li_first) {
       $items[] = array(
-        'class' => array('pager-first'),
-        'data' => $li_first,
+      'class' => array('pager-first'),
+      'data' => $li_first,
       );
-    }
+      }
     */
     if ($li_previous) {
       $items[] = array(
@@ -86,7 +86,7 @@ function slsv_pager($variables) {
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
           $items[] = array(
-           // 'class' => array('pager-item'),
+            // 'class' => array('pager-item'),
             'data' => theme('pager_previous', array('text' => $i, 'element' => $element, 'interval' => ($pager_current - $i), 'parameters' => $parameters)),
           );
         }
@@ -118,17 +118,17 @@ function slsv_pager($variables) {
       );
     }
     /*
-    if ($li_last) {
+      if ($li_last) {
       $items[] = array(
-        'class' => array('pager-last'),
-        'data' => $li_last,
+      'class' => array('pager-last'),
+      'data' => $li_last,
       );
-    }
+      }
     */
 
-	$output = '<h2 class="element-invisible">' . t('Pages') . '</h2>';
-	$output .= '<div class="pagination pagination-centered">';
-	$output .= theme('item_list', array( 'items' => $items, )) . '</div>';
+    $output = '<h2 class="element-invisible">' . t('Pages') . '</h2>';
+    $output .= '<div class="pagination pagination-centered">';
+    $output .= theme('item_list', array( 'items' => $items, )) . '</div>';
   }
   return $output;
 }

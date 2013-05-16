@@ -2,7 +2,7 @@
 
 // Provide < PHP 5.3 support for the __DIR__ constant.
 if (!defined('__DIR__')) {
-	define('__DIR__', dirname(__FILE__));
+  define('__DIR__', dirname(__FILE__));
 }
 require_once __DIR__ . '/includes/slsv.inc';
 require_once __DIR__ . '/includes/theme.inc';
@@ -13,25 +13,25 @@ require_once __DIR__ . '/includes/menu.inc';
 // Load module specific files in the modules directory.
 $includes = file_scan_directory(__DIR__ . '/includes/modules', '/\.inc$/');
 foreach ($includes as $include) {
-	if (module_exists($include->name)) {
-		require_once $include->uri;
-	}    
+  if (module_exists($include->name)) {
+    require_once $include->uri;
+  }    
 }
 
 // Auto-rebuild the theme registry during theme development.
 if (theme_get_setting('slsv_rebuild_registry') && !defined('MAINTENANCE_MODE')) {
-    // Rebuild .info data.
-	system_rebuild_theme_data();
-    // Rebuild theme registry.
-	drupal_theme_rebuild();
+  // Rebuild .info data.
+  system_rebuild_theme_data();
+  // Rebuild theme registry.
+  drupal_theme_rebuild();
 }
 
 /**
  * Implements HOOK_theme().
  */
 function slsv_theme(&$existing, $type, $theme, $path) {
-	include_once './' . drupal_get_path('theme', 'slsv') . '/includes/template.theme-registry.inc';
-	return _slsv_theme($existing, $type, $theme, $path);
+  include_once './' . drupal_get_path('theme', 'slsv') . '/includes/template.theme-registry.inc';
+  return _slsv_theme($existing, $type, $theme, $path);
 }
 
 /**
@@ -172,27 +172,27 @@ function slsv_preprocess_html(&$variables, $hook) {
   // Store the menu item since it has some useful information.
   $variables['menu_item'] = menu_get_item();
   if ($variables['menu_item']) {
-	  switch ($variables['menu_item']['page_callback']) {
-	      case 'views_page':
-            // Is this a Views page?
-		    $variables['classes_array'][] = 'page-views';
-          break;
-	      case 'page_manager_blog':
-	      case 'page_manager_blog_user':
-	      case 'page_manager_contact_site':
-	      case 'page_manager_contact_user':
-	      case 'page_manager_node_add':
-	      case 'page_manager_node_edit':
-	      case 'page_manager_node_view_page':
-	      case 'page_manager_page_execute':
-	      case 'page_manager_poll':
-	      case 'page_manager_search_page':
-	      case 'page_manager_term_view_page':
-	      case 'page_manager_user_edit_page':
-	      case 'page_manager_user_view_page':
-          // Is this a Panels page?
-		    $variables['classes_array'][] = 'page-panels';
-          break;
+    switch ($variables['menu_item']['page_callback']) {
+      case 'views_page':
+        // Is this a Views page?
+        $variables['classes_array'][] = 'page-views';
+        break;
+      case 'page_manager_blog':
+      case 'page_manager_blog_user':
+      case 'page_manager_contact_site':
+      case 'page_manager_contact_user':
+      case 'page_manager_node_add':
+      case 'page_manager_node_edit':
+      case 'page_manager_node_view_page':
+      case 'page_manager_page_execute':
+      case 'page_manager_poll':
+      case 'page_manager_search_page':
+      case 'page_manager_term_view_page':
+      case 'page_manager_user_edit_page':
+      case 'page_manager_user_view_page':
+        // Is this a Panels page?
+        $variables['classes_array'][] = 'page-panels';
+        break;
 	  }
   }
 }
@@ -217,10 +217,10 @@ function slsv_process_html_tag(&$variables) {
 	$tag = &$variables['element'];
 
 	if ($tag['#tag'] == 'style' || $tag['#tag'] == 'script') {
-        // Remove redundant type attribute and CDATA comments.
+    // Remove redundant type attribute and CDATA comments.
 		unset($tag['#attributes']['type'], $tag['#value_prefix'], $tag['#value_suffix']);
 
-        // Remove media="all" but leave others unaffected.
+    // Remove media="all" but leave others unaffected.
 		if (isset($tag['#attributes']['media']) && $tag['#attributes']['media'] === 'all') {
 			unset($tag['#attributes']['media']);
 		}
@@ -231,7 +231,7 @@ function slsv_process_html_tag(&$variables) {
  * Implement hook_html_head_alter().
  */
 function slsv_html_head_alter(&$head) {
-    // Simplify the meta tag for character encoding.
+  // Simplify the meta tag for character encoding.
 	if (isset($head['system_meta_content_type']['#attributes']['content'])) {
 		$head['system_meta_content_type']['#attributes'] = array('charset' => str_replace('text/html; charset=', '', $head['system_meta_content_type']['#attributes']['content']));
 	}
@@ -246,21 +246,21 @@ function slsv_html_head_alter(&$head) {
  *   The name of the template being rendered ("page" in this case.)
  */
 function slsv_preprocess_page(&$variables, $hook) {
-    // Primary nav
+  // Primary nav
 	$variables['primary_nav'] = FALSE;
 	if ($variables['main_menu']) {
-        // Build links
+    // Build links
 		$variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
-        // Provide default theme wrapper function
+    // Provide default theme wrapper function
 		$variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
 	}
 
-     // Secondary nav
+  // Secondary nav
 	$variables['secondary_nav'] = FALSE;
 	if ($variables['secondary_menu']) {
-        // Build links
+    // Build links
 		$variables['secondary_nav'] = menu_tree(variable_get('menu_secondary_links_source', 'user-menu'));
-        // Provide default theme wrapper function
+    // Provide default theme wrapper function
 		$variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
 	}
 }
@@ -339,8 +339,8 @@ function slsv_menu_local_action($variables) {
  */
 function slsv_preprocess_maintenance_page(&$variables, $hook) {
 	slsv_preprocess_html($variables, $hook);
-    // There's nothing maintenance-related in slsv_preprocess_page(). Yet.
-    //slsv_preprocess_page($variables, $hook);
+  // There's nothing maintenance-related in slsv_preprocess_page(). Yet.
+  //slsv_preprocess_page($variables, $hook);
 }
 
 /**
@@ -390,16 +390,16 @@ function slsv_preprocess_node(&$variables, $hook) {
     // Comments
     $nid = $variables['node']->nid;
     $comments = l(format_plural($variables['node']->comment_count, '1 ' . t('comment'), '@count ' . t('comments')),
-	'node/' . $nid,
-	array('fragment' => 'comments'));
+                'node/' . $nid,
+                array('fragment' => 'comments'));
     $submitted .= '<li><i class="icon-comments"></i>';
     $submitted .= $comments . '</li>';
 
     // Tags
     $tags = render($variables['content']['field_tags']);
     if (!empty($variables['node']->field_tags)) {
-	$submitted .= '<li><i class="icon-tag"></i>';
-	$submitted .= $tags . '</li>';
+      $submitted .= '<li><i class="icon-tag"></i>';
+      $submitted .= $tags . '</li>';
     }
 
     $variables['submitted'] = $submitted;
@@ -456,22 +456,22 @@ function slsv_preprocess_comment(&$variables, $hook) {
 
   // Add icon to comment forbidden
   if (isset($variables['content']['links']['comment']['#links']['comment_forbidden'])) {
-	  $variables['content']['links']['comment']['#links']['comment_forbidden']['title'] = '<i class="icon-caret-right"></i> ' . theme('comment_post_forbidden', array('node' => $variables['node']));
+    $variables['content']['links']['comment']['#links']['comment_forbidden']['title'] = '<i class="icon-caret-right"></i> ' . theme('comment_post_forbidden', array('node' => $variables['node']));
   }
 
   // Add icon to reply link
   if (isset($variables['content']['links']['comment']['#links']['comment-reply'])) {
-	  $variables['content']['links']['comment']['#links']['comment-reply']['title'] = '<i class="icon-reply"></i> ' . t('reply');
+    $variables['content']['links']['comment']['#links']['comment-reply']['title'] = '<i class="icon-reply"></i> ' . t('reply');
   }
 
   // Add icon to delete link
   if (isset($variables['content']['links']['comment']['#links']['comment-delete'])) {
-	  $variables['content']['links']['comment']['#links']['comment-delete']['title'] = '<i class="icon-trash"></i> ' . t('delete');
+    $variables['content']['links']['comment']['#links']['comment-delete']['title'] = '<i class="icon-trash"></i> ' . t('delete');
   }
 
   // Add icon to edit link
   if (isset($variables['content']['links']['comment']['#links']['comment-edit'])) {
-	  $variables['content']['links']['comment']['#links']['comment-edit']['title'] = '<i class="icon-pencil"></i> ' . t('edit');
+    $variables['content']['links']['comment']['#links']['comment-edit']['title'] = '<i class="icon-pencil"></i> ' . t('edit');
   }
 
   // Zebra striping.
@@ -674,7 +674,7 @@ function slsv_status_messages($variables) {
     'status' => t('Status message'),
     'error' => t('Error message'),
     'warning' => t('Warning message'),
-	'info' => t('Informative message'),
+    'info' => t('Informative message'),
   );
 
   // Map Drupal message types to their corresponding Slsv classes.
@@ -683,30 +683,30 @@ function slsv_status_messages($variables) {
 	  'status' => 'success',
 	  'error' => 'error',
 	  'warning' => 'warning',
-      // Not supported, but in theory a module could send any type of message.
-      // @see drupal_set_message()
-      // @see theme_status_messages()
+    // Not supported, but in theory a module could send any type of message.
+    // @see drupal_set_message()
+    // @see theme_status_messages()
 	  'info' => 'info',
   );
   foreach (drupal_get_messages($display) as $type => $messages) {
-	$class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
-	$output .= "<div class=\"alert alert-block$class\">\n";
-	$output .= " <a class=\"close\" data-dismiss=\"alert\" href=\"#\">&times;</a>\n";
+    $class = (isset($status_class[$type])) ? ' alert-' . $status_class[$type] : '';
+    $output .= "<div class=\"alert alert-block$class\">\n";
+    $output .= " <a class=\"close\" data-dismiss=\"alert\" href=\"#\">&times;</a>\n";
 
     if (!empty($status_heading[$type])) {
       $output .= '<h4 class="element-invisible">' . $status_heading[$type] . "</h4>\n";
     }
 
-	if (count($messages) > 1) {
-		$output .= " <ul>\n";
-		foreach ($messages as $message) {
-			$output .= '  <li>' . $message . "</li>\n";
-		}
-		$output .= " </ul>\n";
-	}
-	else {
-		$output .= $messages[0];
-	}
+    if (count($messages) > 1) {
+      $output .= " <ul>\n";
+      foreach ($messages as $message) {
+        $output .= '  <li>' . $message . "</li>\n";
+      }
+      $output .= " </ul>\n";
+    }
+    else {
+      $output .= $messages[0];
+    }
 
     $output .= "</div>\n";
   }
@@ -744,13 +744,13 @@ function slsv_field__taxonomy_term_reference($variables) {
 	$output .= ($variables['element']['#label_display'] == 'inline') ? '<ul class="links">' : '<ul class="links">';
 	foreach ($variables['items'] as $delta => $item) {
 
-        // Set a delimiter, in this case a comma
-        $delimiter = ',';
+    // Set a delimiter, in this case a comma
+    $delimiter = ',';
 
-        // If the item is the last in the array remove the comma
-        if (end($variables['items']) === $item) {
-          $delimiter = '';
-        }
+    // If the item is the last in the array remove the comma
+    if (end($variables['items']) === $item) {
+      $delimiter = '';
+    }
 
 		$output .= '<li class="taxonomy-term-reference-' . $delta . '"';
 		$output .= $variables['item_attributes'][$delta] . '>';

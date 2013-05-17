@@ -146,6 +146,7 @@ function slsv_preprocess_html(&$variables, $hook) {
     $variables['rdf_namespaces'] = ' prefix="' . implode(' ', $prefixes) . '"';
   }
 
+  // Add Ubuntu fonts from Google
   drupal_add_css('http://fonts.googleapis.com/css?family=Ubuntu:500', array('type' => 'external'));
 
   // Classes for body element. Allows advanced theming based on context

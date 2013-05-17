@@ -43,7 +43,7 @@ features[] = secondary_menu
 ; Settings
 settings[slsv_breadcrumb]           = yes
 settings[slsv_breadcrumb_separator] = ' › '
-settings[slsv_breadcrumb_home]      = 0
+settings[slsv_breadcrumb_home]      = 1
 settings[slsv_breadcrumb_trailing]  = 0
 settings[slsv_breadcrumb_title]     = 1
 settings[slsv_skip_link_anchor]     = main-menu

@@ -32,8 +32,9 @@ html {
 }
 
 // Remove fixed toolbar
-body.toolbar-drawer {
-  padding-top: 0;
+body.toolbar-drawer,
+body.toolbar {
+  padding-top: 0 !important;
 }
 
 body {

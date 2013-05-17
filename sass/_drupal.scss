@@ -24,8 +24,11 @@ html {
 
 // Toolbar
 #toolbar {
+  margin: 0;
+  padding: 0;
   position: relative;
   min-width: 100%;
+  max-width: 100%
 }
 
 // Remove fixed toolbar

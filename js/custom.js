@@ -7,6 +7,14 @@
 
     $(document).ready(function() {
 
+        // Fix Drupal toolbar when jQuery is 1.8.2
+        if(jQuery && jQuery.fn.jquery == "1.8.2") {
+            jQuery.fn._outerHeight = jQuery.fn.outerHeight;
+            jQuery.fn.outerHeight = function() {
+                return jQuery(this)._outerHeight(false);
+            };
+        }
+
 
         // Tooltips
         if( $.fn.tooltip() ) {

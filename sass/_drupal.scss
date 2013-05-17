@@ -21,6 +21,18 @@ html {
   }
 }
 
+
+// Toolbar
+#toolbar {
+  position: relative;
+  min-width: 100%;
+}
+
+// Remove fixed toolbar
+body.toolbar-drawer {
+  padding-top: 0;
+}
+
 body {
   // Core admin toolbar.
   &.toolbar .navbar-fixed-top {

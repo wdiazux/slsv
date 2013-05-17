@@ -56,7 +56,7 @@ ul.links li a {
 
 .navbar .btn-navbar {
   background-color: rgb(122, 168, 85);
-  background-image: linear-gradient(to bottom, rgb(161, 233, 105), rgb(90, 168, 18));
+  @include background(linear-gradient(rgb(161, 233, 105), rgb(90, 168, 18)));
   &:focus, &:hover, &:active {
     background-image: $linkColorHover;
     background-color: $linkColorHover;
@@ -258,6 +258,7 @@ aside[role="menu"] {
     margin-bottom: 10px;
   }
   a { @include redefine-link($textColor,$linkColorHover); }
+  .dropdown-menu li a { @include redefine-link($textColor,$white); }
 }
 
 .simple-list {

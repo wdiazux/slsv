@@ -5764,7 +5764,9 @@ html.js input.throbbing {
   padding: 0;
   position: relative;
   min-width: 100%;
-  max-width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 /* line 35, ../sass/_drupal.scss */

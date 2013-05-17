@@ -28,7 +28,7 @@ html {
   padding: 0;
   position: relative;
   min-width: 100%;
-  max-width: 100%
+  @include box-shadow(none);
 }
 
 // Remove fixed toolbar

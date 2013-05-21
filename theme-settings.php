@@ -88,6 +88,16 @@ function slsv_form_system_theme_settings_alter(&$form, $form_state, $form_id = N
     '#description'   => t('For example: <em>Jump to navigation</em>, <em>Skip to content</em>'),
   );
 
+  $form['homepage'] = array(
+    '#type'          => 'fieldset',
+    '#title'         => t('Settings for home page'),
+  );
+  $form['homepage']['slsv_full_container'] = array(
+    '#type'          => 'checkbox',
+    '#title'         => t('Set width full to the container of the home page.'),
+    '#default_value' => theme_get_setting('slsv_full_container'),
+  );
+
   $form['themedev'] = array(
     '#type'          => 'fieldset',
     '#title'         => t('Theme development settings'),

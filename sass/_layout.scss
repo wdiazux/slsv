@@ -80,12 +80,24 @@ section[role=main],
   @include full;
 }
 
+.no-sidebars .content-inner {
+  margin: 0 !important;
+  width: 100% !important;
+  clear: both !important;
+}
+
 nav[role=navigation] {
   width: 100%;
 }
 
 section[role=main] {
+  display: table;
   margin: 40px 0;
+}
+.is-full {
+  section[role=main] {
+  margin: 0 0 40px 0;
+  }
 }
 
 #footerBottom {
@@ -125,7 +137,19 @@ section[role=main] {
   input[type="color"] { width: 100%; }
 }
 
-
+// Admin toolbar responsive
+.toolbar-menu {
+  width: 100%;
+  #toolbar-menu {
+   @include hidden; 
+  }
+  .responsive-nav {
+    display: inline;
+    width: 100%;
+    padding: 0.18rem;
+    margin: 10px auto 10px auto;
+  }
+}
 
 
 /* # Mobile (Landscape)
@@ -257,6 +281,16 @@ section[role=main] {
   nav[role=navigation] {
     float: right;
     width: auto;
+  }
+
+  .toolbar-menu {
+    width: auto;
+    #toolbar-menu {
+      @include visible;
+    }
+    .responsive-nav {
+      @include hidden;
+    }
   }
 
   #menu-icon {

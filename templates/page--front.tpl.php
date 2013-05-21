@@ -86,9 +86,18 @@
 
 </header><!-- /header -->
 
-<section role="main">
+<?php if (!theme_get_setting('slsv_full_container')): ?>
+  <section role="main">
+<?php else: ?>
+  <div class="is-full main">
+  <section role="main" class="is-full">
+<?php endif; ?>
   
-  <div class="container">
+  <?php if (!theme_get_setting('slsv_full_container')): ?>
+    <div class="container">
+  <?php else: ?>
+    <div class="full">
+  <?php endif; ?>
 
     <div class="content-inner">
     <?php print render($page['highlighted']); ?>

@@ -26,16 +26,10 @@ html {
 #toolbar {
   margin: 0;
   padding: 0;
-  position: relative;
   min-width: 100%;
   @include box-shadow(none);
 }
 
-// Remove fixed toolbar
-body.toolbar-drawer,
-body.toolbar {
-  padding-top: 0 !important;
-}
 
 body {
   // Core admin toolbar.

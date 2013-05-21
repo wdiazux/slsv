@@ -1,4 +1,6 @@
 // Inline and block code styles
+@import "compass/typography/text/force-wrap";
+
 code,
 pre {
   font-size: $baseFontSize - .2rem;
@@ -6,4 +8,8 @@ pre {
 
 pre {
   font-size: $baseFontSize - .1rem;
+}
+
+code {
+  @include force-wrap;
 }

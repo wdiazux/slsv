@@ -28,7 +28,7 @@
       unset($content['links']['comment']['#links']['comment_forbidden']);
       unset($content['links']['comment']['#links']['comment-new-comments']);
     }
-    if (isset($variables['disqus'])) {
+    if (module_exists('disqus')) {
       unset($content['links']['disqus']);
       unset($content['links']['node']['#links']['comment_forbidden']);
     }

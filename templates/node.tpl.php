@@ -22,24 +22,37 @@
   <?php endif; ?>
 
   <?php
- 	if ($teaser) {
-		unset($content['links']['comment']['#links']['comment-add']);
-		unset($content['links']['comment']['#links']['comment-comments']);
-		unset($content['links']['comment']['#links']['comment_forbidden']);
-		unset($content['links']['comment']['#links']['comment-new-comments']);
-	}
+   	if ($teaser) {
+	  	unset($content['links']['comment']['#links']['comment-add']);
+      unset($content['links']['comment']['#links']['comment-comments']);
+      unset($content['links']['comment']['#links']['comment_forbidden']);
+      unset($content['links']['comment']['#links']['comment-new-comments']);
+    }
+    if (isset($variables['disqus'])) {
+      unset($content['links']['disqus']);
+      unset($content['links']['node']['#links']['comment_forbidden']);
+    }
 
     // We hide the comments and links now so that we can render them later.
     hide($content['comments']);
+    hide($content['disqus']);
     hide($content['links']);
-	hide($content['field_tags']);
+    hide($content['field_tags']);
     print render($content);
   ?>
 
   <footer>
-    <?php print render($content['links']); ?></p>
+    <?php
+      if ($content['links']) { print render($content['links']); }
+    ?>
   </footer>
 
-  <?php print render($content['comments']); ?>
+  <?php
+    if (isset($variables['disqus'])) {
+      print render($content['disqus']);
+    } else {
+      print render($content['comments']);
+    }
+  ?>
 
 </article>

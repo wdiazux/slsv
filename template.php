@@ -388,11 +388,45 @@ function slsv_preprocess_node(&$variables, $hook) {
     $submitted .= '<li><i class="icon-user"></i>';
     $submitted .= $variables['name'] . '</li>';
 
+    // Create the variable disqus_comment_count
+    if (isset($variables['disqus'])) {
+      $disqus = $variables['disqus'];
+      $disqus_comment_count = array(
+        '#theme' => 'link',
+        '#text' => t('Comments'),
+        '#path' => $disqus['identifier'],
+        '#options' => array(
+          'fragment' => 'disqus_thread',
+          'attributes' => array(
+            // Identify the node for Disqus with the unique identifier:
+            // http://docs.disqus.com/developers/universal/#comment-count
+            'data-disqus-identifier' => $disqus['identifier'],
+          ),
+          'html' => FALSE,
+        ),
+      );
+      $disqus_comment_count['#attached'] = array(
+        'js' => array(
+          array('data' => drupal_get_path('module', 'disqus') . '/disqus.js'),
+          array(
+            'data' => array('disqusComments' => $disqus['domain']),
+            'type' => 'setting',
+          ),
+        ),
+      );
+      $variables['disqus_comment_count'] = $disqus_comment_count;
+    }
+
     // Comments
-    $nid = $variables['node']->nid;
-    $comments = l(format_plural($variables['node']->comment_count, '1 ' . t('comment'), '@count ' . t('comments')),
-                'node/' . $nid,
-                array('fragment' => 'comments'));
+    if (isset($variables['disqus'])) {
+      $comments = drupal_render($disqus_comment_count);
+    }
+    else {
+      $nid = $variables['node']->nid;
+      $comments = l(format_plural($variables['node']->comment_count, '1 ' . t('comment'), '@count ' . t('comments')),
+                  'node/' . $nid,
+                  array('fragment' => 'comments'));
+    }
     $submitted .= '<li><i class="icon-comments"></i>';
     $submitted .= $comments . '</li>';
 

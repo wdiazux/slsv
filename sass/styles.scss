@@ -44,8 +44,17 @@ ul.links li a {
   .menu > li {
     border-bottom: solid 1px #dadada;
     &:last-child { border-bottom: 0; }
+    
     > a {
-      padding: 6px 0 6px 0;
+      padding: 6px 0 6px 20px;
+      &:before {
+        content: "\f054";
+        font-size: 1rem;
+        font-family: FontAwesome;
+        display: inline-block;
+        margin-left: -1.2em;
+        width: 1.2em;
+      }
     }
   }
 }
@@ -405,7 +414,11 @@ aside .social ul {
   padding-top: 50px;
   padding-bottom: 10px;
   @include box-shadow(inset 0 0 20px #000000);
-  @include background(linear-gradient(135deg, rgb(134, 177, 59) 0%,rgb(169, 204, 115) 38%,rgb(150, 192, 84) 53%,rgb(91, 114, 50) 100%));
+  @include background(linear-gradient(135deg, #86B13B 0%,#A9CC73 38%,#96C054 53%,#5B7232));
+}
+
+.panels-flexible-row .slider {
+  @include container;
 }
 
 

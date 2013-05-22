@@ -1,6 +1,6 @@
 name        = SLSV
 screenshot  = screenshot.png
-description = Drupal the for <a href="http://www.slsv.org">SLSV</a>.
+description = Drupal theme for <a href="http://www.slsv.org">SLSV</a>.
 core        = 7.x
 
 ; The stylesheet.

@@ -97,9 +97,6 @@ aside[role=menu] {
   a[href*="http://openid.net/"]:before {
     @include icon-before("\f059");
   }
-  a[href="#openid-login"]:before {
-    @include icon-before("\f00c");
-  }
   a[href="#"]:before {
     @include icon-before("\f00d");
   }

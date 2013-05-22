@@ -2492,7 +2492,7 @@ button.close {
 }
 
 /* line 76, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-large [class^="icon-"], .btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn-large a[href*="http://openid.net/"]:before, .btn-large #user-login-form a[href="#openid-login"]:before, #user-login-form .btn-large a[href="#openid-login"]:before, .btn-large #user-login-form a[href="#"]:before, #user-login-form .btn-large a[href="#"]:before, .btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn-large a[href*="user/register"]:before, .btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn-large a[href*="user/password"]:before,
+.btn-large [class^="icon-"], .btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn-large a[href*="http://openid.net/"]:before, .btn-large #user-login-form a[href="#"]:before, #user-login-form .btn-large a[href="#"]:before, .btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn-large a[href*="user/register"]:before, .btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn-large a[href*="user/password"]:before,
 .btn-large [class*=" icon-"] {
   margin-top: 4px;
 }
@@ -2507,13 +2507,13 @@ button.close {
 }
 
 /* line 87, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-small [class^="icon-"], .btn-small #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn-small a[href*="http://openid.net/"]:before, .btn-small #user-login-form a[href="#openid-login"]:before, #user-login-form .btn-small a[href="#openid-login"]:before, .btn-small #user-login-form a[href="#"]:before, #user-login-form .btn-small a[href="#"]:before, .btn-small #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn-small a[href*="user/register"]:before, .btn-small #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn-small a[href*="user/password"]:before,
+.btn-small [class^="icon-"], .btn-small #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn-small a[href*="http://openid.net/"]:before, .btn-small #user-login-form a[href="#"]:before, #user-login-form .btn-small a[href="#"]:before, .btn-small #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn-small a[href*="user/register"]:before, .btn-small #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn-small a[href*="user/password"]:before,
 .btn-small [class*=" icon-"] {
   margin-top: 0;
 }
 
 /* line 91, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.1.1/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-mini [class^="icon-"], .btn-mini #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn-mini a[href*="http://openid.net/"]:before, .btn-mini #user-login-form a[href="#openid-login"]:before, #user-login-form .btn-mini a[href="#openid-login"]:before, .btn-mini #user-login-form a[href="#"]:before, #user-login-form .btn-mini a[href="#"]:before, .btn-mini #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn-mini a[href*="user/register"]:before, .btn-mini #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn-mini a[href*="user/password"]:before,
+.btn-mini [class^="icon-"], .btn-mini #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn-mini a[href*="http://openid.net/"]:before, .btn-mini #user-login-form a[href="#"]:before, #user-login-form .btn-mini a[href="#"]:before, .btn-mini #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn-mini a[href*="user/register"]:before, .btn-mini #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn-mini a[href*="user/password"]:before,
 .btn-mini [class*=" icon-"] {
   margin-top: -1px;
 }
@@ -3252,7 +3252,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 79, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.1.1/vendor/assets/stylesheets/bootstrap/_navs.scss */
-.nav-list [class^="icon-"], .nav-list #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .nav-list a[href*="http://openid.net/"]:before, .nav-list #user-login-form a[href="#openid-login"]:before, #user-login-form .nav-list a[href="#openid-login"]:before, .nav-list #user-login-form a[href="#"]:before, #user-login-form .nav-list a[href="#"]:before, .nav-list #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .nav-list a[href*="user/register"]:before, .nav-list #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .nav-list a[href*="user/password"]:before,
+.nav-list [class^="icon-"], .nav-list #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .nav-list a[href*="http://openid.net/"]:before, .nav-list #user-login-form a[href="#"]:before, #user-login-form .nav-list a[href="#"]:before, .nav-list #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .nav-list a[href*="user/register"]:before, .nav-list #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .nav-list a[href*="user/password"]:before,
 .nav-list [class*=" icon-"] {
   margin-right: 2px;
 }
@@ -5820,7 +5820,7 @@ ul.action-links li {
   padding-right: 1.5em;
 }
 /* line 81, ../sass/_drupal.scss */
-ul.action-links [class^="icon-"], ul.action-links #user-login-form a[href*="http://openid.net/"]:before, #user-login-form ul.action-links a[href*="http://openid.net/"]:before, ul.action-links #user-login-form a[href="#openid-login"]:before, #user-login-form ul.action-links a[href="#openid-login"]:before, ul.action-links #user-login-form a[href="#"]:before, #user-login-form ul.action-links a[href="#"]:before, #user-login-form ul.action-links li a[href*="user/register"]:before, #user-login-form ul.action-links li a[href*="user/password"]:before, ul.action-links [class*=" icon-"] {
+ul.action-links [class^="icon-"], ul.action-links #user-login-form a[href*="http://openid.net/"]:before, #user-login-form ul.action-links a[href*="http://openid.net/"]:before, ul.action-links #user-login-form a[href="#"]:before, #user-login-form ul.action-links a[href="#"]:before, #user-login-form ul.action-links li a[href*="user/register"]:before, #user-login-form ul.action-links li a[href*="user/password"]:before, ul.action-links [class*=" icon-"] {
   padding-right: 0.5em;
 }
 
@@ -6783,29 +6783,24 @@ aside[role=menu] input.search-query {
   content: "\f059";
 }
 /* line 100, ../sass/_forms.scss */
-#user-login-form a[href="#openid-login"]:before {
-  margin-right: 0.5em;
-  content: "\f00c";
-}
-/* line 103, ../sass/_forms.scss */
 #user-login-form a[href="#"]:before {
   margin-right: 0.5em;
   content: "\f00d";
 }
-/* line 106, ../sass/_forms.scss */
+/* line 103, ../sass/_forms.scss */
 #user-login-form ul {
   margin-left: 0;
 }
-/* line 108, ../sass/_forms.scss */
+/* line 105, ../sass/_forms.scss */
 #user-login-form ul li {
   list-style: none;
 }
-/* line 110, ../sass/_forms.scss */
+/* line 107, ../sass/_forms.scss */
 #user-login-form ul li a[href*="user/register"]:before {
   margin-right: 0.5em;
   content: "\f007";
 }
-/* line 113, ../sass/_forms.scss */
+/* line 110, ../sass/_forms.scss */
 #user-login-form ul li a[href*="user/password"]:before {
   margin-right: 0.5em;
   content: "\f084";
@@ -6848,7 +6843,7 @@ aside[role=menu] input.search-query {
 /* FONT AWESOME CORE
  * -------------------------- */
 /* line 5, ../sass/fontawesome/_core.scss */
-[class^="icon-"], #user-login-form a[href*="http://openid.net/"]:before, #user-login-form a[href="#openid-login"]:before, #user-login-form a[href="#"]:before, #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li a[href*="user/password"]:before,
+[class^="icon-"], #user-login-form a[href*="http://openid.net/"]:before, #user-login-form a[href="#"]:before, #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li a[href*="user/password"]:before,
 [class*=" icon-"] {
   font-family: FontAwesome;
   font-weight: normal;
@@ -6859,7 +6854,7 @@ aside[role=menu] input.search-query {
 }
 
 /* line 15, ../sass/fontawesome/_core.scss */
-[class^="icon-"]:before, #user-login-form a[href*="http://openid.net/"]:before:before, #user-login-form a[href="#openid-login"]:before:before, #user-login-form a[href="#"]:before:before, #user-login-form ul li a[href*="user/register"]:before:before, #user-login-form ul li a[href*="user/password"]:before:before,
+[class^="icon-"]:before, #user-login-form a[href*="http://openid.net/"]:before:before, #user-login-form a[href="#"]:before:before, #user-login-form ul li a[href*="user/register"]:before:before, #user-login-form ul li a[href*="user/password"]:before:before,
 [class*=" icon-"]:before {
   text-decoration: inherit;
   display: inline-block;
@@ -6875,7 +6870,7 @@ aside[role=menu] input.search-query {
 
 /* makes sure icons active on rollover in links */
 /* line 31, ../sass/fontawesome/_core.scss */
-a [class^="icon-"], a #user-login-form a[href*="http://openid.net/"]:before, #user-login-form a a[href*="http://openid.net/"]:before, a #user-login-form a[href="#openid-login"]:before, #user-login-form a a[href="#openid-login"]:before, a #user-login-form a[href="#"]:before, #user-login-form a a[href="#"]:before, a #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li a a[href*="user/register"]:before, a #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li a a[href*="user/password"]:before, a [class^="icon-"]:before, a #user-login-form a[href*="http://openid.net/"]:before:before, #user-login-form a a[href*="http://openid.net/"]:before:before, a #user-login-form a[href="#openid-login"]:before:before, #user-login-form a a[href="#openid-login"]:before:before, a #user-login-form a[href="#"]:before:before, #user-login-form a a[href="#"]:before:before, a #user-login-form ul li a[href*="user/register"]:before:before, #user-login-form ul li a a[href*="user/register"]:before:before, a #user-login-form ul li a[href*="user/password"]:before:before, #user-login-form ul li a a[href*="user/password"]:before:before,
+a [class^="icon-"], a #user-login-form a[href*="http://openid.net/"]:before, #user-login-form a a[href*="http://openid.net/"]:before, a #user-login-form a[href="#"]:before, #user-login-form a a[href="#"]:before, a #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li a a[href*="user/register"]:before, a #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li a a[href*="user/password"]:before, a [class^="icon-"]:before, a #user-login-form a[href*="http://openid.net/"]:before:before, #user-login-form a a[href*="http://openid.net/"]:before:before, a #user-login-form a[href="#"]:before:before, #user-login-form a a[href="#"]:before:before, a #user-login-form ul li a[href*="user/register"]:before:before, #user-login-form ul li a a[href*="user/register"]:before:before, a #user-login-form ul li a[href*="user/password"]:before:before, #user-login-form ul li a a[href*="user/password"]:before:before,
 a [class*=" icon-"],
 a [class*=" icon-"]:before {
   display: inline;
@@ -6883,14 +6878,14 @@ a [class*=" icon-"]:before {
 
 /* increased font size for icon-large */
 /* line 38, ../sass/fontawesome/_core.scss */
-[class^="icon-"].icon-fixed-width, #user-login-form a.icon-fixed-width[href*="http://openid.net/"]:before, #user-login-form a.icon-fixed-width[href="#openid-login"]:before, #user-login-form a.icon-fixed-width[href="#"]:before, #user-login-form ul li a.icon-fixed-width[href*="user/register"]:before, #user-login-form ul li a.icon-fixed-width[href*="user/password"]:before,
+[class^="icon-"].icon-fixed-width, #user-login-form a.icon-fixed-width[href*="http://openid.net/"]:before, #user-login-form a.icon-fixed-width[href="#"]:before, #user-login-form ul li a.icon-fixed-width[href*="user/register"]:before, #user-login-form ul li a.icon-fixed-width[href*="user/password"]:before,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;
   width: 18/14em;
   text-align: center;
 }
 /* line 42, ../sass/fontawesome/_core.scss */
-[class^="icon-"].icon-fixed-width.icon-large, #user-login-form a.icon-fixed-width.icon-large[href*="http://openid.net/"]:before, #user-login-form a.icon-fixed-width.icon-large[href="#openid-login"]:before, #user-login-form a.icon-fixed-width.icon-large[href="#"]:before, #user-login-form ul li a.icon-fixed-width.icon-large[href*="user/register"]:before, #user-login-form ul li a.icon-fixed-width.icon-large[href*="user/password"]:before,
+[class^="icon-"].icon-fixed-width.icon-large, #user-login-form a.icon-fixed-width.icon-large[href*="http://openid.net/"]:before, #user-login-form a.icon-fixed-width.icon-large[href="#"]:before, #user-login-form ul li a.icon-fixed-width.icon-large[href*="user/register"]:before, #user-login-form ul li a.icon-fixed-width.icon-large[href*="user/password"]:before,
 [class*=" icon-"].icon-fixed-width.icon-large {
   width: 22/14em;
 }
@@ -6909,7 +6904,7 @@ ul.icons-ul > li .icon-li {
 }
 
 /* line 65, ../sass/fontawesome/_core.scss */
-[class^="icon-"].hide, #user-login-form a.hide[href*="http://openid.net/"]:before, #user-login-form a.hide[href="#openid-login"]:before, #user-login-form a.hide[href="#"]:before, #user-login-form ul li a.hide[href*="user/register"]:before, #user-login-form ul li a.hide[href*="user/password"]:before,
+[class^="icon-"].hide, #user-login-form a.hide[href*="http://openid.net/"]:before, #user-login-form a.hide[href="#"]:before, #user-login-form ul li a.hide[href*="user/register"]:before, #user-login-form ul li a.hide[href*="user/password"]:before,
 [class*=" icon-"].hide {
   display: none;
 }
@@ -6997,12 +6992,12 @@ ul.icons-ul > li .icon-li {
 }
 
 /* line 126, ../sass/fontawesome/_core.scss */
-[class^="icon-"].pull-left, #user-login-form a.pull-left[href*="http://openid.net/"]:before, #user-login-form a.pull-left[href="#openid-login"]:before, #user-login-form a.pull-left[href="#"]:before, #user-login-form ul li a.pull-left[href*="user/register"]:before, #user-login-form ul li a.pull-left[href*="user/password"]:before,
+[class^="icon-"].pull-left, #user-login-form a.pull-left[href*="http://openid.net/"]:before, #user-login-form a.pull-left[href="#"]:before, #user-login-form ul li a.pull-left[href*="user/register"]:before, #user-login-form ul li a.pull-left[href*="user/password"]:before,
 [class*=" icon-"].pull-left {
   margin-right: .3em;
 }
 /* line 129, ../sass/fontawesome/_core.scss */
-[class^="icon-"].pull-right, #user-login-form a.pull-right[href*="http://openid.net/"]:before, #user-login-form a.pull-right[href="#openid-login"]:before, #user-login-form a.pull-right[href="#"]:before, #user-login-form ul li a.pull-right[href*="user/register"]:before, #user-login-form ul li a.pull-right[href*="user/password"]:before,
+[class^="icon-"].pull-right, #user-login-form a.pull-right[href*="http://openid.net/"]:before, #user-login-form a.pull-right[href="#"]:before, #user-login-form ul li a.pull-right[href*="user/register"]:before, #user-login-form ul li a.pull-right[href*="user/password"]:before,
 [class*=" icon-"].pull-right {
   margin-left: .3em;
 }
@@ -7011,7 +7006,7 @@ ul.icons-ul > li .icon-li {
  * -------------------------- */
 /* Bootstrap 2.0 sprites.less reset */
 /* line 6, ../sass/fontawesome/_bootstrap.scss */
-[class^="icon-"], #user-login-form a[href*="http://openid.net/"]:before, #user-login-form a[href="#openid-login"]:before, #user-login-form a[href="#"]:before, #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li a[href*="user/password"]:before,
+[class^="icon-"], #user-login-form a[href*="http://openid.net/"]:before, #user-login-form a[href="#"]:before, #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li a[href*="user/password"]:before,
 [class*=" icon-"] {
   display: inline;
   width: auto;
@@ -7029,14 +7024,12 @@ ul.icons-ul > li .icon-li {
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 #user-login-form .nav-pills > .active > a > a[href*="http://openid.net/"]:before,
-#user-login-form .nav-pills > .active > a > a[href="#openid-login"]:before,
 #user-login-form .nav-pills > .active > a > a[href="#"]:before,
 #user-login-form ul li .nav-pills > .active > a > a[href*="user/register"]:before,
 #user-login-form ul li .nav-pills > .active > a > a[href*="user/password"]:before,
 .nav-pills > .active > a > [class*=" icon-"],
 .nav-list > .active > a > [class^="icon-"],
 #user-login-form .nav-list > .active > a > a[href*="http://openid.net/"]:before,
-#user-login-form .nav-list > .active > a > a[href="#openid-login"]:before,
 #user-login-form .nav-list > .active > a > a[href="#"]:before,
 #user-login-form ul li .nav-list > .active > a > a[href*="user/register"]:before,
 #user-login-form ul li .nav-list > .active > a > a[href*="user/password"]:before,
@@ -7044,8 +7037,6 @@ ul.icons-ul > li .icon-li {
 .navbar-inverse .nav > .active > a > [class^="icon-"],
 .navbar-inverse #user-login-form .nav > .active > a > a[href*="http://openid.net/"]:before,
 #user-login-form .navbar-inverse .nav > .active > a > a[href*="http://openid.net/"]:before,
-.navbar-inverse #user-login-form .nav > .active > a > a[href="#openid-login"]:before,
-#user-login-form .navbar-inverse .nav > .active > a > a[href="#openid-login"]:before,
 .navbar-inverse #user-login-form .nav > .active > a > a[href="#"]:before,
 #user-login-form .navbar-inverse .nav > .active > a > a[href="#"]:before,
 .navbar-inverse #user-login-form ul li .nav > .active > a > a[href*="user/register"]:before,
@@ -7055,21 +7046,18 @@ ul.icons-ul > li .icon-li {
 .navbar-inverse .nav > .active > a > [class*=" icon-"],
 .dropdown-menu > li > a:hover > [class^="icon-"],
 #user-login-form .dropdown-menu > li > a:hover > a[href*="http://openid.net/"]:before,
-#user-login-form .dropdown-menu > li > a:hover > a[href="#openid-login"]:before,
 #user-login-form .dropdown-menu > li > a:hover > a[href="#"]:before,
 #user-login-form ul .dropdown-menu > li > a:hover > a[href*="user/register"]:before,
 #user-login-form ul .dropdown-menu > li > a:hover > a[href*="user/password"]:before,
 .dropdown-menu > li > a:hover > [class*=" icon-"],
 .dropdown-menu > .active > a > [class^="icon-"],
 #user-login-form .dropdown-menu > .active > a > a[href*="http://openid.net/"]:before,
-#user-login-form .dropdown-menu > .active > a > a[href="#openid-login"]:before,
 #user-login-form .dropdown-menu > .active > a > a[href="#"]:before,
 #user-login-form ul li .dropdown-menu > .active > a > a[href*="user/register"]:before,
 #user-login-form ul li .dropdown-menu > .active > a > a[href*="user/password"]:before,
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-submenu:hover > a > [class^="icon-"],
 #user-login-form .dropdown-submenu:hover > a > a[href*="http://openid.net/"]:before,
-#user-login-form .dropdown-submenu:hover > a > a[href="#openid-login"]:before,
 #user-login-form .dropdown-submenu:hover > a > a[href="#"]:before,
 #user-login-form ul li .dropdown-submenu:hover > a > a[href*="user/register"]:before,
 #user-login-form ul li .dropdown-submenu:hover > a > a[href*="user/password"]:before,
@@ -7079,64 +7067,64 @@ ul.icons-ul > li .icon-li {
 
 /* keeps Bootstrap styles with and without icons the same */
 /* line 41, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-large, .btn #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-large[href="#openid-login"]:before, #user-login-form .btn a.icon-large[href="#openid-login"]:before, .btn #user-login-form a.icon-large[href="#"]:before, #user-login-form .btn a.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-large[href*="user/password"]:before,
-.btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large, .nav #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-large[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-large[href="#openid-login"]:before, #user-login-form .nav a.icon-large[href="#openid-login"]:before, .nav #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav a.icon-large[href="#"]:before, .nav #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav a.icon-large[href*="user/register"]:before, .nav #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav a.icon-large[href*="user/password"]:before,
+.btn [class^="icon-"].icon-large, .btn #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-large[href="#"]:before, #user-login-form .btn a.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-large[href*="user/password"]:before,
+.btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large, .nav #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-large[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav a.icon-large[href="#"]:before, .nav #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav a.icon-large[href*="user/register"]:before, .nav #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav a.icon-large[href*="user/password"]:before,
 .nav [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 /* line 42, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin, .btn #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin[href="#openid-login"]:before, #user-login-form .btn a.icon-spin[href="#openid-login"]:before, .btn #user-login-form a.icon-spin[href="#"]:before, #user-login-form .btn a.icon-spin[href="#"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/password"]:before,
-.btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .nav #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-spin[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-spin[href="#openid-login"]:before, #user-login-form .nav a.icon-spin[href="#openid-login"]:before, .nav #user-login-form a.icon-spin[href="#"]:before, #user-login-form .nav a.icon-spin[href="#"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/register"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/password"]:before,
+.btn [class^="icon-"].icon-spin, .btn #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin[href="#"]:before, #user-login-form .btn a.icon-spin[href="#"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/password"]:before,
+.btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .nav #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-spin[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-spin[href="#"]:before, #user-login-form .nav a.icon-spin[href="#"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/register"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/password"]:before,
 .nav [class*=" icon-"].icon-spin {
   display: inline-block;
 }
 
 /* line 48, ../sass/fontawesome/_bootstrap.scss */
-.nav-tabs [class^="icon-"], .nav-tabs #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .nav-tabs a[href*="http://openid.net/"]:before, .nav-tabs #user-login-form a[href="#openid-login"]:before, #user-login-form .nav-tabs a[href="#openid-login"]:before, .nav-tabs #user-login-form a[href="#"]:before, #user-login-form .nav-tabs a[href="#"]:before, .nav-tabs #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .nav-tabs a[href*="user/register"]:before, .nav-tabs #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .nav-tabs a[href*="user/password"]:before, .nav-tabs [class^="icon-"].icon-large, .nav-tabs #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav-tabs a.icon-large[href*="http://openid.net/"]:before, .nav-tabs #user-login-form a.icon-large[href="#openid-login"]:before, #user-login-form .nav-tabs a.icon-large[href="#openid-login"]:before, .nav-tabs #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav-tabs a.icon-large[href="#"]:before, .nav-tabs #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav-tabs a.icon-large[href*="user/register"]:before, .nav-tabs #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav-tabs a.icon-large[href*="user/password"]:before,
+.nav-tabs [class^="icon-"], .nav-tabs #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .nav-tabs a[href*="http://openid.net/"]:before, .nav-tabs #user-login-form a[href="#"]:before, #user-login-form .nav-tabs a[href="#"]:before, .nav-tabs #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .nav-tabs a[href*="user/register"]:before, .nav-tabs #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .nav-tabs a[href*="user/password"]:before, .nav-tabs [class^="icon-"].icon-large, .nav-tabs #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav-tabs a.icon-large[href*="http://openid.net/"]:before, .nav-tabs #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav-tabs a.icon-large[href="#"]:before, .nav-tabs #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav-tabs a.icon-large[href*="user/register"]:before, .nav-tabs #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav-tabs a.icon-large[href*="user/password"]:before,
 .nav-tabs [class*=" icon-"],
-.nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"], .nav-pills #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .nav-pills a[href*="http://openid.net/"]:before, .nav-pills #user-login-form a[href="#openid-login"]:before, #user-login-form .nav-pills a[href="#openid-login"]:before, .nav-pills #user-login-form a[href="#"]:before, #user-login-form .nav-pills a[href="#"]:before, .nav-pills #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .nav-pills a[href*="user/register"]:before, .nav-pills #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .nav-pills a[href*="user/password"]:before, .nav-pills [class^="icon-"].icon-large, .nav-pills #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav-pills a.icon-large[href*="http://openid.net/"]:before, .nav-pills #user-login-form a.icon-large[href="#openid-login"]:before, #user-login-form .nav-pills a.icon-large[href="#openid-login"]:before, .nav-pills #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav-pills a.icon-large[href="#"]:before, .nav-pills #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav-pills a.icon-large[href*="user/register"]:before, .nav-pills #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav-pills a.icon-large[href*="user/password"]:before,
+.nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"], .nav-pills #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .nav-pills a[href*="http://openid.net/"]:before, .nav-pills #user-login-form a[href="#"]:before, #user-login-form .nav-pills a[href="#"]:before, .nav-pills #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .nav-pills a[href*="user/register"]:before, .nav-pills #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .nav-pills a[href*="user/password"]:before, .nav-pills [class^="icon-"].icon-large, .nav-pills #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav-pills a.icon-large[href*="http://openid.net/"]:before, .nav-pills #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav-pills a.icon-large[href="#"]:before, .nav-pills #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav-pills a.icon-large[href*="user/register"]:before, .nav-pills #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav-pills a.icon-large[href*="user/password"]:before,
 .nav-pills [class*=" icon-"],
 .nav-pills [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 
 /* line 55, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].pull-left.icon-2x, .btn #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-left.icon-2x[href="#openid-login"]:before, #user-login-form .btn a.pull-left.icon-2x[href="#openid-login"]:before, .btn #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn a.pull-left.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/password"]:before, .btn [class^="icon-"].pull-right.icon-2x, .btn #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-right.icon-2x[href="#openid-login"]:before, #user-login-form .btn a.pull-right.icon-2x[href="#openid-login"]:before, .btn #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn a.pull-right.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/password"]:before,
+.btn [class^="icon-"].pull-left.icon-2x, .btn #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn a.pull-left.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/password"]:before, .btn [class^="icon-"].pull-right.icon-2x, .btn #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn a.pull-right.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/password"]:before,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 /* line 57, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin.icon-large, .btn #user-login-form a.icon-spin.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin.icon-large[href="#openid-login"]:before, #user-login-form .btn a.icon-spin.icon-large[href="#openid-login"]:before, .btn #user-login-form a.icon-spin.icon-large[href="#"]:before, #user-login-form .btn a.icon-spin.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/password"]:before,
+.btn [class^="icon-"].icon-spin.icon-large, .btn #user-login-form a.icon-spin.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin.icon-large[href="#"]:before, #user-login-form .btn a.icon-spin.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/password"]:before,
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
 /* line 64, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-left.icon-2x[href="#openid-login"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href="#openid-login"]:before, .btn.btn-small #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-right.icon-2x[href="#openid-login"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href="#openid-login"]:before, .btn.btn-small #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/password"]:before,
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/password"]:before,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: .25em;
 }
 
 /* line 70, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"], .btn.btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a[href="#openid-login"]:before, #user-login-form .btn.btn-large a[href="#openid-login"]:before, .btn.btn-large #user-login-form a[href="#"]:before, #user-login-form .btn.btn-large a[href="#"]:before, .btn.btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a[href*="user/password"]:before,
+.btn.btn-large [class^="icon-"], .btn.btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a[href="#"]:before, #user-login-form .btn.btn-large a[href="#"]:before, .btn.btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a[href*="user/password"]:before,
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
 /* line 73, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#openid-login"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#openid-login"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#openid-login"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#openid-login"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-top: .05em;
 }
 /* line 75, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#openid-login"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#openid-login"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
   margin-right: .2em;
 }
 /* line 76, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#openid-login"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#openid-login"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
 .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: .2em;
 }
@@ -8575,207 +8563,208 @@ ul.icons-ul > li .icon-li {
   content: "\f122";
 }
 
-/* line 287, ../sass/fontawesome/_icons.scss */
+/* line 288, ../sass/fontawesome/_icons.scss */
+.icon-star-half-full:before,
 .icon-star-half-empty:before {
   content: "\f123";
 }
 
-/* line 288, ../sass/fontawesome/_icons.scss */
+/* line 289, ../sass/fontawesome/_icons.scss */
 .icon-location-arrow:before {
   content: "\f124";
 }
 
-/* line 289, ../sass/fontawesome/_icons.scss */
+/* line 290, ../sass/fontawesome/_icons.scss */
 .icon-crop:before {
   content: "\f125";
 }
 
-/* line 290, ../sass/fontawesome/_icons.scss */
+/* line 291, ../sass/fontawesome/_icons.scss */
 .icon-code-fork:before {
   content: "\f126";
 }
 
-/* line 291, ../sass/fontawesome/_icons.scss */
+/* line 292, ../sass/fontawesome/_icons.scss */
 .icon-unlink:before {
   content: "\f127";
 }
 
-/* line 292, ../sass/fontawesome/_icons.scss */
+/* line 293, ../sass/fontawesome/_icons.scss */
 .icon-question:before {
   content: "\f128";
 }
 
-/* line 293, ../sass/fontawesome/_icons.scss */
+/* line 294, ../sass/fontawesome/_icons.scss */
 .icon-info:before {
   content: "\f129";
 }
 
-/* line 294, ../sass/fontawesome/_icons.scss */
+/* line 295, ../sass/fontawesome/_icons.scss */
 .icon-exclamation:before {
   content: "\f12a";
 }
 
-/* line 295, ../sass/fontawesome/_icons.scss */
+/* line 296, ../sass/fontawesome/_icons.scss */
 .icon-superscript:before {
   content: "\f12b";
 }
 
-/* line 296, ../sass/fontawesome/_icons.scss */
+/* line 297, ../sass/fontawesome/_icons.scss */
 .icon-subscript:before {
   content: "\f12c";
 }
 
-/* line 297, ../sass/fontawesome/_icons.scss */
+/* line 298, ../sass/fontawesome/_icons.scss */
 .icon-eraser:before {
   content: "\f12d";
 }
 
-/* line 298, ../sass/fontawesome/_icons.scss */
+/* line 299, ../sass/fontawesome/_icons.scss */
 .icon-puzzle-piece:before {
   content: "\f12e";
 }
 
-/* line 300, ../sass/fontawesome/_icons.scss */
+/* line 301, ../sass/fontawesome/_icons.scss */
 .icon-microphone:before {
   content: "\f130";
 }
 
-/* line 301, ../sass/fontawesome/_icons.scss */
+/* line 302, ../sass/fontawesome/_icons.scss */
 .icon-microphone-off:before {
   content: "\f131";
 }
 
-/* line 302, ../sass/fontawesome/_icons.scss */
+/* line 303, ../sass/fontawesome/_icons.scss */
 .icon-shield:before {
   content: "\f132";
 }
 
-/* line 303, ../sass/fontawesome/_icons.scss */
+/* line 304, ../sass/fontawesome/_icons.scss */
 .icon-calendar-empty:before {
   content: "\f133";
 }
 
-/* line 304, ../sass/fontawesome/_icons.scss */
+/* line 305, ../sass/fontawesome/_icons.scss */
 .icon-fire-extinguisher:before {
   content: "\f134";
 }
 
-/* line 305, ../sass/fontawesome/_icons.scss */
+/* line 306, ../sass/fontawesome/_icons.scss */
 .icon-rocket:before {
   content: "\f135";
 }
 
-/* line 306, ../sass/fontawesome/_icons.scss */
+/* line 307, ../sass/fontawesome/_icons.scss */
 .icon-maxcdn:before {
   content: "\f136";
 }
 
-/* line 307, ../sass/fontawesome/_icons.scss */
+/* line 308, ../sass/fontawesome/_icons.scss */
 .icon-chevron-sign-left:before {
   content: "\f137";
 }
 
-/* line 308, ../sass/fontawesome/_icons.scss */
+/* line 309, ../sass/fontawesome/_icons.scss */
 .icon-chevron-sign-right:before {
   content: "\f138";
 }
 
-/* line 309, ../sass/fontawesome/_icons.scss */
+/* line 310, ../sass/fontawesome/_icons.scss */
 .icon-chevron-sign-up:before {
   content: "\f139";
 }
 
-/* line 310, ../sass/fontawesome/_icons.scss */
+/* line 311, ../sass/fontawesome/_icons.scss */
 .icon-chevron-sign-down:before {
   content: "\f13a";
 }
 
-/* line 311, ../sass/fontawesome/_icons.scss */
+/* line 312, ../sass/fontawesome/_icons.scss */
 .icon-html5:before {
   content: "\f13b";
 }
 
-/* line 312, ../sass/fontawesome/_icons.scss */
+/* line 313, ../sass/fontawesome/_icons.scss */
 .icon-css3:before {
   content: "\f13c";
 }
 
-/* line 313, ../sass/fontawesome/_icons.scss */
+/* line 314, ../sass/fontawesome/_icons.scss */
 .icon-anchor:before {
   content: "\f13d";
 }
 
-/* line 314, ../sass/fontawesome/_icons.scss */
+/* line 315, ../sass/fontawesome/_icons.scss */
 .icon-unlock-alt:before {
   content: "\f13e";
 }
 
-/* line 316, ../sass/fontawesome/_icons.scss */
+/* line 317, ../sass/fontawesome/_icons.scss */
 .icon-bullseye:before {
   content: "\f140";
 }
 
-/* line 317, ../sass/fontawesome/_icons.scss */
+/* line 318, ../sass/fontawesome/_icons.scss */
 .icon-ellipsis-horizontal:before {
   content: "\f141";
 }
 
-/* line 318, ../sass/fontawesome/_icons.scss */
+/* line 319, ../sass/fontawesome/_icons.scss */
 .icon-ellipsis-vertical:before {
   content: "\f142";
 }
 
-/* line 319, ../sass/fontawesome/_icons.scss */
+/* line 320, ../sass/fontawesome/_icons.scss */
 .icon-rss-sign:before {
   content: "\f143";
 }
 
-/* line 320, ../sass/fontawesome/_icons.scss */
+/* line 321, ../sass/fontawesome/_icons.scss */
 .icon-play-sign:before {
   content: "\f144";
 }
 
-/* line 321, ../sass/fontawesome/_icons.scss */
+/* line 322, ../sass/fontawesome/_icons.scss */
 .icon-ticket:before {
   content: "\f145";
 }
 
-/* line 322, ../sass/fontawesome/_icons.scss */
+/* line 323, ../sass/fontawesome/_icons.scss */
 .icon-minus-sign-alt:before {
   content: "\f146";
 }
 
-/* line 323, ../sass/fontawesome/_icons.scss */
+/* line 324, ../sass/fontawesome/_icons.scss */
 .icon-check-minus:before {
   content: "\f147";
 }
 
-/* line 324, ../sass/fontawesome/_icons.scss */
+/* line 325, ../sass/fontawesome/_icons.scss */
 .icon-level-up:before {
   content: "\f148";
 }
 
-/* line 325, ../sass/fontawesome/_icons.scss */
+/* line 326, ../sass/fontawesome/_icons.scss */
 .icon-level-down:before {
   content: "\f149";
 }
 
-/* line 326, ../sass/fontawesome/_icons.scss */
+/* line 327, ../sass/fontawesome/_icons.scss */
 .icon-check-sign:before {
   content: "\f14a";
 }
 
-/* line 327, ../sass/fontawesome/_icons.scss */
+/* line 328, ../sass/fontawesome/_icons.scss */
 .icon-edit-sign:before {
   content: "\f14b";
 }
 
-/* line 328, ../sass/fontawesome/_icons.scss */
+/* line 329, ../sass/fontawesome/_icons.scss */
 .icon-external-link-sign:before {
   content: "\f14c";
 }
 
-/* line 329, ../sass/fontawesome/_icons.scss */
+/* line 330, ../sass/fontawesome/_icons.scss */
 .icon-share-sign:before {
   content: "\f14d";
 }
@@ -9123,7 +9112,7 @@ ul.entry-meta li a:active, ul.entry-meta li a:hover, ul.entry-meta li a:focus {
   color: #679b29;
 }
 /* line 243, ../sass/styles.scss */
-ul.entry-meta li [class^="icon-"], ul.entry-meta li #user-login-form a[href*="http://openid.net/"]:before, #user-login-form ul.entry-meta li a[href*="http://openid.net/"]:before, ul.entry-meta li #user-login-form a[href="#openid-login"]:before, #user-login-form ul.entry-meta li a[href="#openid-login"]:before, ul.entry-meta li #user-login-form a[href="#"]:before, #user-login-form ul.entry-meta li a[href="#"]:before, #user-login-form ul.entry-meta li a[href*="user/register"]:before, #user-login-form ul.entry-meta li a[href*="user/password"]:before,
+ul.entry-meta li [class^="icon-"], ul.entry-meta li #user-login-form a[href*="http://openid.net/"]:before, #user-login-form ul.entry-meta li a[href*="http://openid.net/"]:before, ul.entry-meta li #user-login-form a[href="#"]:before, #user-login-form ul.entry-meta li a[href="#"]:before, #user-login-form ul.entry-meta li a[href*="user/register"]:before, #user-login-form ul.entry-meta li a[href*="user/password"]:before,
 ul.entry-meta li [class*=" icon-"] {
   margin-right: 3px;
 }
@@ -9239,12 +9228,11 @@ aside[role="menu"] .dropdown-menu li a:active, aside[role="menu"] .dropdown-menu
 }
 
 /* line 326, ../sass/styles.scss */
-#footer .divider {
-  border: none;
-  background: #777;
+#footer .block .headline {
+  border-bottom: 1px solid #777;
 }
 
-/* line 332, ../sass/styles.scss */
+/* line 330, ../sass/styles.scss */
 .tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -9254,37 +9242,37 @@ aside[role="menu"] .dropdown-menu li a:active, aside[role="menu"] .dropdown-menu
   padding: 0;
   overflow-y: hidden;
 }
-/* line 338, ../sass/styles.scss */
+/* line 336, ../sass/styles.scss */
 .tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
   list-style-type: none;
 }
-/* line 344, ../sass/styles.scss */
+/* line 342, ../sass/styles.scss */
 .tweet_list .tweet_avatar {
   padding-right: .5em;
   float: left;
 }
-/* line 346, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 .tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
 
-/* line 352, ../sass/styles.scss */
+/* line 350, ../sass/styles.scss */
 .flickr-stream ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
   text-align: center;
 }
-/* line 357, ../sass/styles.scss */
+/* line 355, ../sass/styles.scss */
 .flickr-stream ul li {
   display: inline-block;
   list-style: none;
   margin: 5px 10px 5px 0;
 }
-/* line 361, ../sass/styles.scss */
+/* line 359, ../sass/styles.scss */
 .flickr-stream ul li img {
   border: 1px solid #353535;
   background-color: #1a1a1a;
@@ -9296,7 +9284,7 @@ aside[role="menu"] .dropdown-menu li a:active, aside[role="menu"] .dropdown-menu
   -o-transition: 400ms linear 0s;
   transition: 400ms linear 0s;
 }
-/* line 368, ../sass/styles.scss */
+/* line 366, ../sass/styles.scss */
 .flickr-stream ul li img:hover {
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -9305,12 +9293,12 @@ aside[role="menu"] .dropdown-menu li a:active, aside[role="menu"] .dropdown-menu
   transform: scale(1.2);
 }
 
-/* line 376, ../sass/styles.scss */
+/* line 374, ../sass/styles.scss */
 .social ul {
   margin: 0;
   padding: 0;
 }
-/* line 379, ../sass/styles.scss */
+/* line 377, ../sass/styles.scss */
 .social ul li {
   display: inline-block;
   list-style: none;
@@ -9318,41 +9306,41 @@ aside[role="menu"] .dropdown-menu li a:active, aside[role="menu"] .dropdown-menu
   font-size: 2rem;
 }
 
-/* line 387, ../sass/styles.scss */
+/* line 385, ../sass/styles.scss */
 aside .social ul {
   text-align: center;
 }
-/* line 389, ../sass/styles.scss */
+/* line 387, ../sass/styles.scss */
 aside .social ul li {
   font-size: 4.8rem;
   margin: 0;
 }
 
-/* line 395, ../sass/styles.scss */
+/* line 393, ../sass/styles.scss */
 .bottom1 p {
   margin: 4px 0 0 0;
 }
 
-/* line 399, ../sass/styles.scss */
-.bottom2 .social ul li {
+/* line 397, ../sass/styles.scss */
+#footer .social ul li {
   padding: 4px;
   margin: 0 2px;
   background-color: #131313;
 }
-/* line 403, ../sass/styles.scss */
-.bottom2 .social ul li a {
+/* line 401, ../sass/styles.scss */
+#footer .social ul li a {
   color: #aaa;
   -webkit-transition: 500ms linear 0s;
   -moz-transition: 500ms linear 0s;
   -o-transition: 500ms linear 0s;
   transition: 500ms linear 0s;
 }
-/* line 406, ../sass/styles.scss */
-.bottom2 .social ul li a:hover {
+/* line 404, ../sass/styles.scss */
+#footer .social ul li a:hover {
   text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
 }
 
-/* line 412, ../sass/styles.scss */
+/* line 410, ../sass/styles.scss */
 .slider {
   margin-bottom: 30px;
   padding-top: 50px;
@@ -9366,7 +9354,7 @@ aside .social ul li {
   background: linear-gradient(135deg, #86b13b 0%, #a9cc73 38%, #96c054 53%, #5b7232);
 }
 
-/* line 420, ../sass/styles.scss */
+/* line 418, ../sass/styles.scss */
 .panels-flexible-row .slider {
   *zoom: 1;
   max-width: 576px;
@@ -9388,13 +9376,13 @@ aside .social ul li {
 
 /* #Footer
    ================================================== */
-/* line 428, ../sass/styles.scss */
+/* line 426, ../sass/styles.scss */
 #footer {
   font-size: 1.3rem;
   position: relative;
   background-color: #252525;
 }
-/* line 432, ../sass/styles.scss */
+/* line 430, ../sass/styles.scss */
 #footer:before {
   content: '';
   border: 10px solid transparent;
@@ -9404,7 +9392,7 @@ aside .social ul li {
   top: 0;
   margin-left: -10px;
 }
-/* line 441, ../sass/styles.scss */
+/* line 439, ../sass/styles.scss */
 #footer a {
   color: #8ecd44;
 }
@@ -9413,33 +9401,33 @@ aside .social ul li {
   color: #679b29;
 }
 
-/* line 446, ../sass/styles.scss */
+/* line 444, ../sass/styles.scss */
 #footerTop {
   padding: 30px 0;
   color: #aaa;
 }
-/* line 449, ../sass/styles.scss */
+/* line 447, ../sass/styles.scss */
 #footerTop h1, #footerTop h2, #footerTop h3, #footerTop h4, #footerTop h5 {
   text-transform: uppercase;
   color: #fff;
 }
 
-/* line 455, ../sass/styles.scss */
+/* line 453, ../sass/styles.scss */
 #footerBottom {
   background-color: #1a1a1a;
   color: #aaa;
   padding: 10px 0;
 }
 
-/* line 462, ../sass/styles.scss */
+/* line 460, ../sass/styles.scss */
 .footerNav {
   margin: 0;
 }
-/* line 464, ../sass/styles.scss */
+/* line 462, ../sass/styles.scss */
 .footerNav li a {
   color: #aaa;
 }
-/* line 466, ../sass/styles.scss */
+/* line 464, ../sass/styles.scss */
 .footerNav li a:hover {
   color: #fff;
 }

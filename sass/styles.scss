@@ -323,11 +323,9 @@ aside[role="menu"] {
   }
 }
 
-#footer .divider {
-  border: none;
-  background: #777;
+#footer .block .headline {
+  border-bottom: 1px solid #777;
 }
-
 
 .tweet_list {
   @include border-radius(0.5em);
@@ -396,7 +394,7 @@ aside .social ul {
   margin: 4px 0 0 0;
 }
 
-.bottom2 .social ul li {
+#footer .social ul li {
   padding: 4px;
   margin: 0 2px;
   background-color: #131313;

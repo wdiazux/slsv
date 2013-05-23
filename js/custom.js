@@ -27,25 +27,6 @@
 	$( '.accordion' ).accordion();
 
 
-	// Flexslider
-	if( $.fn.flexslider ) {
-	    $('.slider-wrap .slider').waitForImages(function() {
-		$( this ).flexslider({
-                    animation: 'slide', 
-		    slideshowSpeed: 4000
-		    //directionNav: false
-		});
-	    });
-
-	    $( '.portfolio .slider' ).waitForImages(function() {
-		$( this ).flexslider({
-		    controlNav: false
-		});
-	    });
-
-	}
-
-
 	// Tweets Widget
 	if( $.fn.tweet ) {
 	    $('.tweet').tweet({

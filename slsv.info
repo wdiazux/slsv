@@ -11,6 +11,7 @@ stylesheets[all][] = css/styles.css
 scripts[] = js/bootstrap.min.js
 scripts[] = js/custom.js
 scripts[] = js/jquery.plugins.min.js
+scripts[] = plugins/tweet/jquery.tweet.js
 
 ; Regions
 regions[header]      = Header

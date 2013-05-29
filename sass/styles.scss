@@ -190,6 +190,10 @@ body {
   @include background(linear-gradient(color-stops(#FAFAFA, #D3D3D3)));
 }
 
+.navbar .nav > li > a {
+  text-shadow: none;
+}
+
 
 .content-inner .node-teaser {
   margin-bottom: 15px;

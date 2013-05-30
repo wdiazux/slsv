@@ -22,21 +22,26 @@ $grid-padding:          $gutter-width; // grid-padding equal to gutters
 $container-style:       magic;
 
 
-/* #Fonts
-   ================================================== */
-
-$ubuntuFontFamily:      'Ubuntu', Arial, sans-serif;
-
-
 /* #Bootstrap
    ================================================== */
 
 @import "bootstrap/variables";
 
+
+// Scaffolding
+// -------------------------
 $textColor:             #4C4C4C;
 
+
+// Links
+// -------------------------
 $linkColor:             #8ecd44;
 $linkColorHover:        #679b29;
+
+
+// Typography
+// -------------------------
+$ubuntuFontFamily:      'Ubuntu', Arial, sans-serif;
 
 $baseFontSize:          1.4rem;
 $baseFontFamily:        $sansFontFamily;
@@ -45,9 +50,21 @@ $headingsFontFamily:    $ubuntuFontFamily;
 $headingsFontWeight:    400;
 $headingsColor:         #444;
 
+
+// Buttons
+// -------------------------
 $btnPrimaryBackground:           $linkColor;
 $btnPrimaryBackgroundHighlight:  $linkColorHover;
 
+
+// Dropdowns
+// -------------------------
+$dropdownLinkBackgroundActive:  $linkColor;
+$dropdownLinkBackgroundHover:   $dropdownLinkBackgroundActive;
+
+
+// Navbar
+// -------------------------
 $navbarBackgroundHighlight:      #FAFAFA;
 $navbarBackground:               #D3D3D3;
 

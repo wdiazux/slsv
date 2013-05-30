@@ -268,8 +268,8 @@ aside[role="menu"] {
   .block {
     margin-bottom: 10px;
   }
-  a { @include redefine-link($textColor,$linkColorHover); }
-  .dropdown-menu li a { @include redefine-link($textColor,$white); }
+  > a,
+  .nav > li > a { @include redefine-link($textColor,$linkColorHover); }
 }
 
 .simple-list {

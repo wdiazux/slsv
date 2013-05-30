@@ -12,8 +12,6 @@
 /* #Grid
    ================================================== */
 /* Container Style */
-/* #Fonts
-   ================================================== */
 /* #Bootstrap
    ================================================== */
 /* #Imports
@@ -2147,14 +2145,14 @@ table th[class*="span"],
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: white;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #88c93d;
+  background-image: -moz-linear-gradient(top, #8ecd44, #81c334);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8ecd44), to(#81c334));
+  background-image: -webkit-linear-gradient(top, #8ecd44, #81c334);
+  background-image: -o-linear-gradient(top, #8ecd44, #81c334);
+  background-image: linear-gradient(to bottom, #8ecd44, #81c334);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0077B3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8ECD44', endColorstr='#FF81C334', GradientType=0);
 }
 
 /* line 101, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.1.2/vendor/assets/stylesheets/bootstrap/_dropdowns.scss */
@@ -2164,14 +2162,14 @@ table th[class*="span"],
   color: white;
   text-decoration: none;
   outline: 0;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #88c93d;
+  background-image: -moz-linear-gradient(top, #8ecd44, #81c334);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8ecd44), to(#81c334));
+  background-image: -webkit-linear-gradient(top, #8ecd44, #81c334);
+  background-image: -o-linear-gradient(top, #8ecd44, #81c334);
+  background-image: linear-gradient(to bottom, #8ecd44, #81c334);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0077B3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8ECD44', endColorstr='#FF81C334', GradientType=0);
 }
 
 /* line 113, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.1.2/vendor/assets/stylesheets/bootstrap/_dropdowns.scss */
@@ -9147,21 +9145,17 @@ ul.entry-meta .links li a:active, ul.entry-meta .links li a:hover, ul.entry-meta
 aside[role="menu"] .block {
   margin-bottom: 10px;
 }
-/* line 271, ../sass/styles.scss */
-aside[role="menu"] a {
-  color: #4c4c4c;
-}
-/* line 43, ../sass/_mixins.scss */
-aside[role="menu"] a:active, aside[role="menu"] a:hover, aside[role="menu"] a:focus {
-  color: #679b29;
-}
 /* line 272, ../sass/styles.scss */
-aside[role="menu"] .dropdown-menu li a {
+aside[role="menu"] > a,
+aside[role="menu"] .nav > li > a {
   color: #4c4c4c;
 }
 /* line 43, ../sass/_mixins.scss */
-aside[role="menu"] .dropdown-menu li a:active, aside[role="menu"] .dropdown-menu li a:hover, aside[role="menu"] .dropdown-menu li a:focus {
-  color: white;
+aside[role="menu"] > a:active, aside[role="menu"] > a:hover, aside[role="menu"] > a:focus,
+aside[role="menu"] .nav > li > a:active,
+aside[role="menu"] .nav > li > a:hover,
+aside[role="menu"] .nav > li > a:focus {
+  color: #679b29;
 }
 
 /* line 275, ../sass/styles.scss */

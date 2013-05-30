@@ -1,9 +1,10 @@
+
 /*
  * SLSV - Plugins options
  *
  */
 
-;(function ($, Drupal, window, document, undefined) {
+;(function ($, window, document, undefined) {
 
     $(document).ready(function() {
 
@@ -21,10 +22,6 @@
         if( $.fn.tooltip() ) {
 	    $('[rel="tooltip"]').tooltip();
 	}
-
-
-	// Accordion
-	$( '.accordion' ).accordion();
 
 
 	// Tweets Widget
@@ -147,4 +144,4 @@
 
     });
 
-}) (jQuery, Drupal, this, this.document);
+})(jQuery);

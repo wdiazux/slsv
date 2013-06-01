@@ -11,6 +11,10 @@ $ git clone git://github.com/leprosys/slsv.git
 ```
 Colocar la carpeta slsv en `sites/all/themes/`
 
+Dependencias
+------------
+* [jQuery Update](https://drupal.org/project/jquery_update) -- Actualizar jQuery al menos a la versión 1.7
+
 Dependencias para desarrollo
 ----------------------------
 

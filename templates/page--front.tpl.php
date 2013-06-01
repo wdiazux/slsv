@@ -86,21 +86,17 @@
 
 </header><!-- /header -->
 
-<?php if (!theme_get_setting('slsv_full_container')): ?>
-  <section role="main">
-<?php else: ?>
-  <div class="is-full main">
-  <section role="main" class="is-full">
-<?php endif; ?>
-  
-  <?php if (!theme_get_setting('slsv_full_container')): ?>
+<section role="main" style="margin: 0;">
+
+  <div class="slider">
     <div class="container">
-  <?php else: ?>
-    <div class="full">
-  <?php endif; ?>
+      <?php print render($page['highlighted']); ?>
+    </div>
+   </div>
+ 
+  <div class="container">
 
     <div class="content-inner">
-    <?php print render($page['highlighted']); ?>
     <a id="main-content"></a>
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>

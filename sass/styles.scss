@@ -219,7 +219,7 @@ body {
   .active {
     color: $white;
   }
-  a { @include redefine-link(#B9B9B9,$linkColorHover); }
+  a { @include redefine-link(#B9B9B9,$linkColor); }
 }
 
 .nav-tabs > li > a {

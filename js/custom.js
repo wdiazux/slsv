@@ -1,10 +1,9 @@
-
 /*
  * SLSV - Plugins options
  *
  */
 
-;(function ($, window, document, undefined) {
+(function ($, Drupal, window, document, undefined) {
 
     $(document).ready(function() {
 
@@ -22,34 +21,6 @@
         if( $.fn.tooltip() ) {
 	    $('[rel="tooltip"]').tooltip();
 	}
-
-
-	// Tweets Widget
-	if( $.fn.tweet ) {
-	    $('.tweet').tweet({
-                avatar_size: 32,
-                count: 2,
-                query: "#slsv",
-                loading_text: "Cargando tuits..."
-	    });
-	}
-
-
-        // Flickr Feed Widget
-        if( $.fn.jflickrfeed ) {
-	    $('.flickr-stream ul').jflickrfeed({
-	        qstrings: {
-		    id: '77307054@N00', tags:'slsv' 
-	        }, 
-	        limit: 6,
-	        itemTemplate:
-                '<li>' +
-                    '<a href="{{link}}" title="{{title}}" target="_blank">' +
-                    '<img src="{{image_s}}" alt="{{title}}" />' +
-                    '</a>' +
-                    '</li>'
-	    });
-        }
 
         var $dropdowns = $('li.dropdown'); // Specifying the element is faster for older browsers
         /**
@@ -144,4 +115,5 @@
 
     });
 
-})(jQuery);
+})(jQuery, Drupal, this, this.document);
+

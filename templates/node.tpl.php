@@ -34,7 +34,6 @@
     }
 
     // We hide the comments and links now so that we can render them later.
-    hide($content['comments']);
     hide($content['disqus']);
     hide($content['links']);
     hide($content['field_tags']);
@@ -47,12 +46,13 @@
     ?>
   </footer>
 
-  <?php
-    if (isset($variables['disqus'])) {
-      print render($content['disqus']);
-    } else {
-      print render($content['comments']);
-    }
-  ?>
+  <?php if (isset($variables['disqus'])): ?>
+    <section id="comments">
+      <h2 class="title"><?php print t('Comments'); ?></h2>
+      <?php print render($content['disqus']); ?>
+    </section>
+  <?php elseif (isset($variables['comments'])): ?>
+    <? print render($content['comments']); ?>
+  <?php endif; ?>
 
 </article>

@@ -72,6 +72,12 @@ ul.links li a {
   }
 }
 
+.section-node section[role=main] .node {
+  footer {
+    margin-bottom: 30px;
+  }
+}
+
 /* ----------------- Comments ----------------- */
 
 .comment h3.comment-title {
@@ -164,6 +170,10 @@ ul.links li a {
 .comment-unpublished .comment-text .comment-arrow {
   border-left: 1px solid #fff4f4;
   border-right: 1px solid #fff4f4;
+}
+#comments h2.title {
+  border-bottom: 8px solid #F0F0F0;
+  margin-bottom: 20px;
 }
 
 

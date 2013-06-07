@@ -239,7 +239,7 @@ body {
 ul.entry-meta {
   border-top: 1px solid #e9E9E9;
   border-bottom: 1px solid #E9E9E9;
-  margin: 0 0 7px 0;
+  margin: 0;
   padding: 6px 0;
   i { color: #666666; }
   li {
@@ -266,6 +266,17 @@ ul.entry-meta {
       a { @include redefine-link($grayLight,$linkColorHover); }
     }
   }
+}
+
+.node {
+  header,
+  .field-type-image {
+    margin-bottom: 15px;
+  }
+}
+
+.node .field-type-image {
+  text-align: center;
 }
 
 .more-link {
@@ -334,6 +345,7 @@ aside[role="menu"] {
     border-bottom: 1px solid $linkColor;
   }
 }
+
 
 #footer .block .headline {
   border-bottom: 1px solid #777;

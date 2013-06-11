@@ -63,6 +63,7 @@ ul.links li a {
   margin-top: 10px;
 }
 
+// Responsive button
 .navbar .btn-navbar {
   background-color: rgb(122, 168, 85);
   @include background(linear-gradient(rgb(161, 233, 105), rgb(90, 168, 18)));
@@ -295,7 +296,7 @@ aside[role="menu"] {
 
 .simple-list {
   margin: 0;
-    width: 100%;
+  width: 100%;
   display: inline-block;
   list-style: none;
   color: $gray;
@@ -461,7 +462,7 @@ aside .social ul {
     margin-left: -10px;
   }
   a {
-   @include redefine-link($linkColor,$linkColorHover);
+    @include redefine-link($linkColor,$linkColorHover);
   }
 }
 

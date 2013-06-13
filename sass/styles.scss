@@ -79,6 +79,10 @@ ul.links li a {
   }
 }
 
+.page-blog #page-title {
+  @include hidden();
+}
+
 /* ----------------- Comments ----------------- */
 
 .comment h3.comment-title {
@@ -368,29 +372,6 @@ aside[role="menu"] {
     padding-right: .5em; float: left;
     img {
       vertical-align: middle;
-    }
-  }
-}
-
-.flickr-stream ul {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-align: center;
-  li {
-    display: inline-block;
-    list-style: none;
-    margin: 5px 10px 5px 0;
-    img {
-      border: 1px solid #353535;
-      background-color: #1a1a1a;
-      width: 80px;
-      height: 80px;
-      padding: 5px;
-      @include transition(400ms linear 0s);
-      &:hover {
-        @include transform(scale(1.2));
-      }
     }
   }
 }

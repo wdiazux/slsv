@@ -9448,13 +9448,12 @@ aside .social ul li {
   -webkit-box-shadow: inset 0 0 20px black;
   -moz-box-shadow: inset 0 0 20px black;
   box-shadow: inset 0 0 20px black;
-  background: -webkit-linear-gradient(135deg, #86b13b 0%, #a9cc73 38%, #96c054 53%, #5b7232);
-  background: -moz-linear-gradient(135deg, #86b13b 0%, #a9cc73 38%, #96c054 53%, #5b7232);
-  background: -o-linear-gradient(135deg, #86b13b 0%, #a9cc73 38%, #96c054 53%, #5b7232);
-  background: linear-gradient(135deg, #86b13b 0%, #a9cc73 38%, #96c054 53%, #5b7232);
+  background: url(../img/background-scroll.jpg) no-repeat fixed;
+  background-position: 50% 0px;
+  background-size: cover;
 }
 
-/* line 474, ../sass/styles.scss */
+/* line 476, ../sass/styles.scss */
 .panels-flexible-row .slider {
   *zoom: 1;
   max-width: 576px;
@@ -9476,13 +9475,13 @@ aside .social ul li {
 
 /* #Footer
    ================================================== */
-/* line 482, ../sass/styles.scss */
+/* line 484, ../sass/styles.scss */
 #footer {
   font-size: 1.3rem;
   position: relative;
   background-color: #252525;
 }
-/* line 486, ../sass/styles.scss */
+/* line 488, ../sass/styles.scss */
 #footer:before {
   content: '';
   border: 10px solid transparent;
@@ -9492,7 +9491,7 @@ aside .social ul li {
   top: 0;
   margin-left: -10px;
 }
-/* line 495, ../sass/styles.scss */
+/* line 497, ../sass/styles.scss */
 #footer a {
   color: #8ecd44;
 }
@@ -9501,33 +9500,33 @@ aside .social ul li {
   color: #679b29;
 }
 
-/* line 500, ../sass/styles.scss */
+/* line 502, ../sass/styles.scss */
 #footerTop {
   padding: 30px 0;
   color: #aaa;
 }
-/* line 503, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 #footerTop h1, #footerTop h2, #footerTop h3, #footerTop h4, #footerTop h5 {
   text-transform: uppercase;
   color: #fff;
 }
 
-/* line 509, ../sass/styles.scss */
+/* line 511, ../sass/styles.scss */
 #footerBottom {
   background-color: #1a1a1a;
   color: #aaa;
   padding: 10px 0;
 }
 
-/* line 516, ../sass/styles.scss */
+/* line 518, ../sass/styles.scss */
 .footerNav {
   margin: 0;
 }
-/* line 518, ../sass/styles.scss */
+/* line 520, ../sass/styles.scss */
 .footerNav li a {
   color: #aaa;
 }
-/* line 520, ../sass/styles.scss */
+/* line 522, ../sass/styles.scss */
 .footerNav li a:hover {
   color: #fff;
 }

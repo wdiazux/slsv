@@ -221,7 +221,7 @@ body {
 }
 .breadcrumb {
   margin: 0;
-  padding: 3px 0;
+  padding: 0;
   font-size: $baseFontSize - .2rem;
   background-color: transparent;
   @include border-radius(0);

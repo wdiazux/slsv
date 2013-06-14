@@ -22,6 +22,8 @@
 	    $('[rel="tooltip"]').tooltip();
 	}
 
+
+        // Dropdowns
         var $dropdowns = $('li.dropdown'); // Specifying the element is faster for older browsers
         /**
          * Mouse events

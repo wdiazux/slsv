@@ -90,6 +90,22 @@ nav[role=navigation] {
   width: 100%;
 }
 
+.nav-collapse.in.collapse {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: #C0C0C0;
+  ul.menu.nav {
+    margin: 0;
+    .active {
+      background-color: #96c054;
+      color: $white;
+    }
+  }
+}
+.nav-collapse.collapse {
+  margin-bottom: 0;
+}
+
 section[role=main] {
   display: table;
   margin: 40px 0;
@@ -302,6 +318,7 @@ section[role=main] {
   nav[role=navigation] {
     float: right;
     width: auto;
+    height: auto;
   }
 
   .toolbar-menu {

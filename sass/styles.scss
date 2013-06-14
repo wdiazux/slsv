@@ -379,6 +379,11 @@ aside[role="menu"] {
   }
 }
 */
+
+.sidebar .nav {
+  margin: 0;
+}
+
 .sidebar .block {
   .nav li.dropdown.open .caret,
   .nav li.dropdown.open.active .caret,

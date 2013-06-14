@@ -292,7 +292,7 @@ ul.entry-meta {
 
 aside[role="menu"] {
   .block {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   > a,
   .nav > li > a { @include redefine-link($textColor,$linkColorHover); }
@@ -348,6 +348,51 @@ aside[role="menu"] {
     margin-bottom: -1px;
     display: inline-block;
     border-bottom: 1px solid $linkColor;
+  }
+}
+
+/*
+.sidebar .block {
+  border: 1px solid #c9c9c9;
+  background-color: #FAFAFA;
+  border-radius: 3px;
+  .headline {
+    background-color: #f8f8f8;
+    @include background(linear-gradient(top, #f8f8f8, #f2f2f2));
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    text-shadow: 0px 1px #fff;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #fff;
+    padding: 3px 15px;
+    margin: 0;
+    h3 {
+      margin: 0;
+      border: 0;
+      color: #666;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+    }
+  }
+  .block-content {
+    padding: 10px 8px 8px 8px;
+  }
+}
+*/
+.sidebar .block {
+  .nav li.dropdown.open .caret,
+  .nav li.dropdown.open.active .caret,
+  .nav .dropdown-toggle .caret {
+    border-top-color: #4c4c4c;
+    border-bottom-color: #4c4c4c;
+  }
+  .nav li.dropdown.open a:hover .caret,
+  .nav li.dropdown.open a:focus .caret {
+    border-top-color: $linkColor;
+    border-bottom-color: $linkColor;
+  }
+  .form-search {
+    margin: 0;
   }
 }
 

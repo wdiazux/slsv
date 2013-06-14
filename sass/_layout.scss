@@ -245,9 +245,30 @@ section[role=main] {
   #header {
     .nav > li {
       position: relative;
+      border-left: 1px solid rgba(0,0,0,0.1);
+      &:last-child {
+        border-right: 1px solid rgba(0,0,0,0.1);
+      }
       > a {
+        font-size: 1.5rem;
         text-shadow: none;
-        padding: 25px 15px;
+        padding: 25px 20px;
+      }
+      &:hover, &:focus {
+        border-top: 4px solid $grayLight;
+        margin-top: -4px;
+        > a {
+          @include redefine-link(#555555,#555555);
+        }
+        &:before{
+          content: '';
+          border: 4px solid transparent;
+          border-top-color: $grayLight;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          margin-left: -4px;
+        } 
       }
     }
     .nav > li.active {

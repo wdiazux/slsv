@@ -90,20 +90,17 @@ nav[role=navigation] {
   width: 100%;
 }
 
-.nav-collapse.in.collapse {
+.nav-collapse .nav {
+  margin: 0;
   margin-bottom: 15px;
   border-radius: 3px;
   background-color: #C0C0C0;
-  ul.menu.nav {
-    margin: 0;
-    .active {
-      background-color: #96c054;
-      color: $white;
-    }
+  > .active > a,
+  > .active > a:focus,
+  > .active > a:hover {
+    background-color: #96c054;
+    color: $white;
   }
-}
-.nav-collapse.collapse {
-  margin-bottom: 0;
 }
 
 section[role=main] {
@@ -299,6 +296,18 @@ section[role=main] {
         left: 50%;
         margin-left: -4px;
       }
+    }
+  }
+
+  .nav-collapse .nav {
+    margin: 0;
+    border-radius: 0;
+    background-color: transparent;
+    > .active > a,
+    > .active > a:focus,
+    > .active > a:hover {
+      background-color: #e6e6e6;
+      color: $textColor;
     }
   }
 

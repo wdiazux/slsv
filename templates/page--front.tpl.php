@@ -92,25 +92,34 @@
     <div class="container">
       <?php print render($page['highlighted']); ?>
     </div>
-   </div>
- 
+  </div>
+  
+  <div class="quote hero-unit">
+    <div class="container">
+      <blockquote class="pull-right">
+        <p>Cuando decimos que el software es «libre», nos referimos a que respeta las libertades esenciales del usuario: la libertad de utilizarlo, ejecutarlo, estudiarlo y modificarlo, y de distribuir copias con o sin modificaciones. Es una cuestión de libertad y no de precio, por lo tanto piense en «libertad de expresión» y no en «barra libre»</p>
+        <small>Richard Stallman</small>
+      </blockquote>
+    </div>
+  </div>
+
   <div class="container">
 
     <div class="content-inner">
-    <a id="main-content"></a>
-    <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
-    <h1 class="page--title title" id="page-title"><?php print $title; ?></h1>
-    <?php endif; ?>
-    <?php print render($title_suffix); ?>
-    <?php print $messages; ?>
-    <?php print render($tabs); ?>
-    <?php print render($page['help']); ?>
-    <?php if ($action_links): ?>
-    <ul class="action-links"><?php print render($action_links); ?></ul>
-    <?php endif; ?>
-    <?php print render($page['content']); ?>
-    
+      <a id="main-content"></a>
+      <?php print render($title_prefix); ?>
+      <?php if ($title): ?>
+        <h1 class="page--title title" id="page-title"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
+      <?php print $messages; ?>
+      <?php print render($tabs); ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+      <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+      <?php print render($page['content']); ?>
+
     </div><!-- /content-inner -->
     
     <?php

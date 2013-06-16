@@ -49,7 +49,7 @@
   content: $icon;
 }
 
-@mixin all_columns() {
+@mixin all-columns() {
   $i: $total-columns;
   @while $i > 0 {
     .row .span#{$i} {

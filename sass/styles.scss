@@ -83,6 +83,20 @@ ul.links li a {
   @include hidden();
 }
 
+.flex-ctrl-out .flex-direction-nav a {
+  display: block !important;
+  left: auto !important;
+  top: -15px !important;
+  opacity: 1 !important;
+  background: url(../img/bg_direction_nav.png) no-repeat 0 0;
+  &.flex-prev {
+    right: 37px !important;
+  }
+  &.flex-next {
+    right: 5px !important;
+  }
+}
+
 /* ----------------- Comments ----------------- */
 
 .comment h3.comment-title {
@@ -241,6 +255,10 @@ body {
   @include redefine-link($grayLight,$black);
 }
 
+.align-center {
+  text-align: center;
+}
+
 ul.entry-meta {
   border-top: 1px solid #e9E9E9;
   border-bottom: 1px solid #E9E9E9;
@@ -380,6 +398,40 @@ aside[role="menu"] {
 }
 */
 
+.flexslider {
+  background: transparent;
+  border: 0;
+  @include box-shadow(none);
+}
+
+
+.titles .views-row-odd,
+.titles .views-row-even {
+  margin-right: 15px;
+  padding: 15px;
+  background-color: #eff0f2;
+  border-radius: 6px;
+  border: 1px solid #C0C0C0;
+  &:last-child { margin-right: 0; }
+  .views-field-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: $ubuntuFontFamily;
+    line-height: 2.5rem;
+    a { @include redefine-link($textColor,$textColor); }
+  }
+  .views-field-created {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .views-field-view-node a {
+    @extend .btn;
+    @extend .btn-success;
+    width: 100%;
+  }
+}
+
 .sidebar .nav {
   margin: 0;
 }
@@ -464,7 +516,7 @@ aside .social ul {
 }
 
 .slider {
-  margin-bottom: 30px;
+  margin-bottom: 0;
   padding-top: 50px;
   padding-bottom: 10px;
   background: url(../img/background-scroll.jpg) no-repeat fixed;
@@ -473,9 +525,37 @@ aside .social ul {
   @include box-shadow(inset 0 0 20px #000000);
 }
 
+.quote blockquote {
+  margin: 0;
+  border-right: 5px solid #9E9E9E;
+  p { font-style: italic; }
+}
+
 .panels-flexible-row .slider {
   @include container;
 }
+
+.icon-64 {
+  display: block !important;
+  width: 150px;
+  height: 150px;
+  padding: 33px 33.25px;
+  font-size: 7rem;
+  margin: 0 auto;
+  color: #3C3F5E;
+  border: 6px solid #3C3F5E;
+  @include border-radius(50%);
+  @include transition(all 0.4s ease-in-out);
+  @include transform(rotate(0deg));
+  &:hover {
+    color: $white;
+    border-color: $white;
+    background-color: #3C3F5E;
+    @include transform(rotate(359deg));
+    @include box-shadow(0 0 4px rgba(0, 0, 0, 0.28));
+  }
+}
+
 
 
 /* #Footer

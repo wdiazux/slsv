@@ -250,7 +250,7 @@ section[role=main] {
 
   @include with-grid-settings(12,6rem,2rem,1rem) {
     .container {
-      @include all_columns;
+      @include all-columns;
       @include set-container-width(12);
     }
   }

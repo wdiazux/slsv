@@ -1480,9 +1480,17 @@ select:focus:invalid:focus {
 /* line 468, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append .add-on,
 .input-append .btn,
+.input-append .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .input-append a,
+.input-append .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-append a,
 .input-append .btn-group > .dropdown-toggle,
 .input-prepend .add-on,
 .input-prepend .btn,
+.input-prepend .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .input-prepend a,
+.input-prepend .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-prepend a,
 .input-prepend .btn-group > .dropdown-toggle {
   vertical-align: top;
   -webkit-border-radius: 0;
@@ -1498,12 +1506,20 @@ select:focus:invalid:focus {
 
 /* line 480, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend .add-on,
-.input-prepend .btn {
+.input-prepend .btn,
+.input-prepend .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .input-prepend a,
+.input-prepend .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-prepend a {
   margin-right: -1px;
 }
 /* line 484, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend .add-on:first-child,
-.input-prepend .btn:first-child {
+.input-prepend .btn:first-child,
+.input-prepend .titles .views-row-odd .views-field-view-node a:first-child,
+.titles .views-row-odd .views-field-view-node .input-prepend a:first-child,
+.input-prepend .titles .views-row-even .views-field-view-node a:first-child,
+.titles .views-row-even .views-field-view-node .input-prepend a:first-child {
   -webkit-border-radius: 4px 0 0 4px;
   -moz-border-radius: 4px 0 0 4px;
   border-radius: 4px 0 0 4px;
@@ -1518,9 +1534,19 @@ select:focus:invalid:focus {
   border-radius: 4px 0 0 4px;
 }
 /* line 495, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.input-append input + .btn-group .btn:last-child,
+.input-append input + .btn-group .btn:last-child, .input-append input + .btn-group .titles .views-row-odd .views-field-view-node a:last-child, .titles .views-row-odd .views-field-view-node .input-append input + .btn-group a:last-child,
+.input-append input + .btn-group .titles .views-row-even .views-field-view-node a:last-child,
+.titles .views-row-even .views-field-view-node .input-append input + .btn-group a:last-child,
 .input-append select + .btn-group .btn:last-child,
-.input-append .uneditable-input + .btn-group .btn:last-child {
+.input-append select + .btn-group .titles .views-row-odd .views-field-view-node a:last-child,
+.titles .views-row-odd .views-field-view-node .input-append select + .btn-group a:last-child,
+.input-append select + .btn-group .titles .views-row-even .views-field-view-node a:last-child,
+.titles .views-row-even .views-field-view-node .input-append select + .btn-group a:last-child,
+.input-append .uneditable-input + .btn-group .btn:last-child,
+.input-append .uneditable-input + .btn-group .titles .views-row-odd .views-field-view-node a:last-child,
+.titles .views-row-odd .views-field-view-node .input-append .uneditable-input + .btn-group a:last-child,
+.input-append .uneditable-input + .btn-group .titles .views-row-even .views-field-view-node a:last-child,
+.titles .views-row-even .views-field-view-node .input-append .uneditable-input + .btn-group a:last-child {
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
@@ -1528,12 +1554,20 @@ select:focus:invalid:focus {
 /* line 501, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append .add-on,
 .input-append .btn,
+.input-append .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .input-append a,
+.input-append .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-append a,
 .input-append .btn-group {
   margin-left: -1px;
 }
 /* line 506, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append .add-on:last-child,
 .input-append .btn:last-child,
+.input-append .titles .views-row-odd .views-field-view-node a:last-child,
+.titles .views-row-odd .views-field-view-node .input-append a:last-child,
+.input-append .titles .views-row-even .views-field-view-node a:last-child,
+.titles .views-row-even .views-field-view-node .input-append a:last-child,
 .input-append .btn-group:last-child > .dropdown-toggle {
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
@@ -1549,16 +1583,30 @@ select:focus:invalid:focus {
   border-radius: 0;
 }
 /* line 517, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.input-prepend.input-append input + .btn-group .btn,
+.input-prepend.input-append input + .btn-group .btn, .input-prepend.input-append input + .btn-group .titles .views-row-odd .views-field-view-node a, .titles .views-row-odd .views-field-view-node .input-prepend.input-append input + .btn-group a,
+.input-prepend.input-append input + .btn-group .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-prepend.input-append input + .btn-group a,
 .input-prepend.input-append select + .btn-group .btn,
-.input-prepend.input-append .uneditable-input + .btn-group .btn {
+.input-prepend.input-append select + .btn-group .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .input-prepend.input-append select + .btn-group a,
+.input-prepend.input-append select + .btn-group .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-prepend.input-append select + .btn-group a,
+.input-prepend.input-append .uneditable-input + .btn-group .btn,
+.input-prepend.input-append .uneditable-input + .btn-group .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .input-prepend.input-append .uneditable-input + .btn-group a,
+.input-prepend.input-append .uneditable-input + .btn-group .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .input-prepend.input-append .uneditable-input + .btn-group a {
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
   border-radius: 0 4px 4px 0;
 }
 /* line 522, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend.input-append .add-on:first-child,
-.input-prepend.input-append .btn:first-child {
+.input-prepend.input-append .btn:first-child,
+.input-prepend.input-append .titles .views-row-odd .views-field-view-node a:first-child,
+.titles .views-row-odd .views-field-view-node .input-prepend.input-append a:first-child,
+.input-prepend.input-append .titles .views-row-even .views-field-view-node a:first-child,
+.titles .views-row-even .views-field-view-node .input-prepend.input-append a:first-child {
   margin-right: -1px;
   -webkit-border-radius: 4px 0 0 4px;
   -moz-border-radius: 4px 0 0 4px;
@@ -1566,7 +1614,11 @@ select:focus:invalid:focus {
 }
 /* line 527, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend.input-append .add-on:last-child,
-.input-prepend.input-append .btn:last-child {
+.input-prepend.input-append .btn:last-child,
+.input-prepend.input-append .titles .views-row-odd .views-field-view-node a:last-child,
+.titles .views-row-odd .views-field-view-node .input-prepend.input-append a:last-child,
+.input-prepend.input-append .titles .views-row-even .views-field-view-node a:last-child,
+.titles .views-row-even .views-field-view-node .input-prepend.input-append a:last-child {
   margin-left: -1px;
   -webkit-border-radius: 0 4px 4px 0;
   -moz-border-radius: 0 4px 4px 0;
@@ -1607,7 +1659,9 @@ input.search-query {
 }
 
 /* line 559, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-search .input-append .btn {
+.form-search .input-append .btn, .form-search .input-append .titles .views-row-odd .views-field-view-node a, .titles .views-row-odd .views-field-view-node .form-search .input-append a,
+.form-search .input-append .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .form-search .input-append a {
   -webkit-border-radius: 0 14px 14px 0;
   -moz-border-radius: 0 14px 14px 0;
   border-radius: 0 14px 14px 0;
@@ -1621,7 +1675,9 @@ input.search-query {
 }
 
 /* line 565, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-search .input-prepend .btn {
+.form-search .input-prepend .btn, .form-search .input-prepend .titles .views-row-odd .views-field-view-node a, .titles .views-row-odd .views-field-view-node .form-search .input-prepend a,
+.form-search .input-prepend .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .form-search .input-prepend a {
   -webkit-border-radius: 14px 0 0 14px;
   -moz-border-radius: 14px 0 0 14px;
   border-radius: 14px 0 0 14px;
@@ -2403,7 +2459,8 @@ button.close {
 }
 
 /* line 10, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn {
+.btn, .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-even .views-field-view-node a {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -2442,21 +2499,32 @@ button.close {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 513, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+.btn:hover, .titles .views-row-odd .views-field-view-node a:hover,
+.titles .views-row-even .views-field-view-node a:hover, .btn:focus, .titles .views-row-odd .views-field-view-node a:focus,
+.titles .views-row-even .views-field-view-node a:focus, .btn:active, .titles .views-row-odd .views-field-view-node a:active,
+.titles .views-row-even .views-field-view-node a:active, .btn.active, .titles .views-row-odd .views-field-view-node a.active,
+.titles .views-row-even .views-field-view-node a.active, .btn.disabled, .titles .views-row-odd .views-field-view-node a.disabled,
+.titles .views-row-even .views-field-view-node a.disabled, .btn[disabled], .titles .views-row-odd .views-field-view-node a[disabled],
+.titles .views-row-even .views-field-view-node a[disabled] {
   color: #333333;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
 /* line 521, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn:active, .btn.active {
+.btn:active, .titles .views-row-odd .views-field-view-node a:active,
+.titles .views-row-even .views-field-view-node a:active, .btn.active, .titles .views-row-odd .views-field-view-node a.active,
+.titles .views-row-even .views-field-view-node a.active {
   background-color: #cccccc \9;
 }
 /* line 61, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn:first-child {
+.btn:first-child, .titles .views-row-odd .views-field-view-node a:first-child,
+.titles .views-row-even .views-field-view-node a:first-child {
   *margin-left: 0;
 }
 /* line 30, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:hover, .btn:focus {
+.btn:hover, .titles .views-row-odd .views-field-view-node a:hover,
+.titles .views-row-even .views-field-view-node a:hover, .btn:focus, .titles .views-row-odd .views-field-view-node a:focus,
+.titles .views-row-even .views-field-view-node a:focus {
   color: #333333;
   text-decoration: none;
   background-position: 0 -15px;
@@ -2466,13 +2534,16 @@ button.close {
   transition: background-position 0.1s linear;
 }
 /* line 41, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn:focus {
+.btn:focus, .titles .views-row-odd .views-field-view-node a:focus,
+.titles .views-row-even .views-field-view-node a:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 /* line 47, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn.active, .btn:active {
+.btn.active, .titles .views-row-odd .views-field-view-node a.active,
+.titles .views-row-even .views-field-view-node a.active, .btn:active, .titles .views-row-odd .views-field-view-node a:active,
+.titles .views-row-even .views-field-view-node a:active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2480,7 +2551,9 @@ button.close {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 55, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn.disabled, .btn[disabled] {
+.btn.disabled, .titles .views-row-odd .views-field-view-node a.disabled,
+.titles .views-row-even .views-field-view-node a.disabled, .btn[disabled], .titles .views-row-odd .views-field-view-node a[disabled],
+.titles .views-row-even .views-field-view-node a[disabled] {
   cursor: default;
   background-image: none;
   opacity: 0.65;
@@ -2563,6 +2636,8 @@ input[type="button"].btn-block {
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
+.titles .views-row-odd .views-field-view-node a.active,
+.titles .views-row-even .views-field-view-node a.active,
 .btn-info.active,
 .btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);
@@ -2656,7 +2731,8 @@ input[type="button"].btn-block {
 }
 
 /* line 157, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
-.btn-success {
+.btn-success, .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-even .views-field-view-node a {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #5bb65b;
@@ -2674,13 +2750,21 @@ input[type="button"].btn-block {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 513, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+.btn-success:hover, .titles .views-row-odd .views-field-view-node a:hover,
+.titles .views-row-even .views-field-view-node a:hover, .btn-success:focus, .titles .views-row-odd .views-field-view-node a:focus,
+.titles .views-row-even .views-field-view-node a:focus, .btn-success:active, .titles .views-row-odd .views-field-view-node a:active,
+.titles .views-row-even .views-field-view-node a:active, .btn-success.active, .titles .views-row-odd .views-field-view-node a.active,
+.titles .views-row-even .views-field-view-node a.active, .btn-success.disabled, .titles .views-row-odd .views-field-view-node a.disabled,
+.titles .views-row-even .views-field-view-node a.disabled, .btn-success[disabled], .titles .views-row-odd .views-field-view-node a[disabled],
+.titles .views-row-even .views-field-view-node a[disabled] {
   color: white;
   background-color: #51a351;
   *background-color: #499249;
 }
 /* line 521, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
-.btn-success:active, .btn-success.active {
+.btn-success:active, .titles .views-row-odd .views-field-view-node a:active,
+.titles .views-row-even .views-field-view-node a:active, .btn-success.active, .titles .views-row-odd .views-field-view-node a.active,
+.titles .views-row-even .views-field-view-node a.active {
   background-color: #408140 \9;
 }
 
@@ -2838,14 +2922,22 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 10px;
 }
 /* line 29, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-toolbar > .btn + .btn,
+.btn-toolbar > .btn + .btn, .titles .views-row-odd .views-field-view-node .btn-toolbar > a + .btn,
+.titles .views-row-even .views-field-view-node .btn-toolbar > a + .btn, .titles .views-row-odd .views-field-view-node .btn-toolbar > .btn + a, .titles .views-row-odd .views-field-view-node .btn-toolbar > a + a,
+.titles .views-row-even .views-field-view-node .btn-toolbar > .btn + a,
+.titles .views-row-even .views-field-view-node .btn-toolbar > a + a,
 .btn-toolbar > .btn-group + .btn,
-.btn-toolbar > .btn + .btn-group {
+.titles .views-row-odd .views-field-view-node .btn-toolbar > .btn-group + a,
+.titles .views-row-even .views-field-view-node .btn-toolbar > .btn-group + a,
+.btn-toolbar > .btn + .btn-group,
+.titles .views-row-odd .views-field-view-node .btn-toolbar > a + .btn-group,
+.titles .views-row-even .views-field-view-node .btn-toolbar > a + .btn-group {
   margin-left: 5px;
 }
 
 /* line 35, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn {
+.btn-group > .btn, .titles .views-row-odd .views-field-view-node .btn-group > a,
+.titles .views-row-even .views-field-view-node .btn-group > a {
   position: relative;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2853,12 +2945,16 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 39, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn + .btn {
+.btn-group > .btn + .btn, .titles .views-row-odd .views-field-view-node .btn-group > a + .btn,
+.titles .views-row-even .views-field-view-node .btn-group > a + .btn, .titles .views-row-odd .views-field-view-node .btn-group > .btn + a, .titles .views-row-odd .views-field-view-node .btn-group > a + a,
+.titles .views-row-even .views-field-view-node .btn-group > .btn + a,
+.titles .views-row-even .views-field-view-node .btn-group > a + a {
   margin-left: -1px;
 }
 
 /* line 44, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn,
+.btn-group > .btn, .titles .views-row-odd .views-field-view-node .btn-group > a,
+.titles .views-row-even .views-field-view-node .btn-group > a,
 .btn-group > .dropdown-menu,
 .btn-group > .popover {
   font-size: 1.4rem;
@@ -2880,7 +2976,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 60, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .titles .views-row-odd .views-field-view-node .btn-group > a:first-child,
+.titles .views-row-even .views-field-view-node .btn-group > a:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 4px;
   -moz-border-radius-topleft: 4px;
@@ -2891,7 +2988,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 67, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:last-child,
+.btn-group > .btn:last-child, .titles .views-row-odd .views-field-view-node .btn-group > a:last-child,
+.titles .views-row-even .views-field-view-node .btn-group > a:last-child,
 .btn-group > .dropdown-toggle {
   -webkit-border-top-right-radius: 4px;
   -moz-border-radius-topright: 4px;
@@ -2902,7 +3000,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 72, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn.large:first-child {
+.btn-group > .btn.large:first-child, .titles .views-row-odd .views-field-view-node .btn-group > a.large:first-child,
+.titles .views-row-even .views-field-view-node .btn-group > a.large:first-child {
   margin-left: 0;
   -webkit-border-top-left-radius: 6px;
   -moz-border-radius-topleft: 6px;
@@ -2913,7 +3012,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 78, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn.large:last-child,
+.btn-group > .btn.large:last-child, .titles .views-row-odd .views-field-view-node .btn-group > a.large:last-child,
+.titles .views-row-even .views-field-view-node .btn-group > a.large:last-child,
 .btn-group > .large.dropdown-toggle {
   -webkit-border-top-right-radius: 6px;
   -moz-border-radius-topright: 6px;
@@ -2924,10 +3024,17 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 87, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn:hover,
+.btn-group > .btn:hover, .titles .views-row-odd .views-field-view-node .btn-group > a:hover,
+.titles .views-row-even .views-field-view-node .btn-group > a:hover,
 .btn-group > .btn:focus,
+.titles .views-row-odd .views-field-view-node .btn-group > a:focus,
+.titles .views-row-even .views-field-view-node .btn-group > a:focus,
 .btn-group > .btn:active,
-.btn-group > .btn.active {
+.titles .views-row-odd .views-field-view-node .btn-group > a:active,
+.titles .views-row-even .views-field-view-node .btn-group > a:active,
+.btn-group > .btn.active,
+.titles .views-row-odd .views-field-view-node .btn-group > a.active,
+.titles .views-row-even .views-field-view-node .btn-group > a.active {
   z-index: 2;
 }
 
@@ -2938,7 +3045,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 103, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group > .btn + .dropdown-toggle {
+.btn-group > .btn + .dropdown-toggle, .titles .views-row-odd .views-field-view-node .btn-group > a + .dropdown-toggle,
+.titles .views-row-even .views-field-view-node .btn-group > a + .dropdown-toggle {
   padding-left: 8px;
   padding-right: 8px;
   -webkit-box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.125), inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2978,7 +3086,9 @@ input[type="submit"].btn.btn-mini {
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 /* line 137, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group.open .btn.dropdown-toggle {
+.btn-group.open .btn.dropdown-toggle, .btn-group.open .titles .views-row-odd .views-field-view-node a.dropdown-toggle, .titles .views-row-odd .views-field-view-node .btn-group.open a.dropdown-toggle,
+.btn-group.open .titles .views-row-even .views-field-view-node a.dropdown-toggle,
+.titles .views-row-even .views-field-view-node .btn-group.open a.dropdown-toggle {
   background-color: #e6e6e6;
 }
 /* line 140, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
@@ -2994,7 +3104,9 @@ input[type="submit"].btn.btn-mini {
   background-color: #bd362f;
 }
 /* line 149, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group.open .btn-success.dropdown-toggle {
+.btn-group.open .btn-success.dropdown-toggle, .btn-group.open .titles .views-row-odd .views-field-view-node a.dropdown-toggle, .titles .views-row-odd .views-field-view-node .btn-group.open a.dropdown-toggle,
+.btn-group.open .titles .views-row-even .views-field-view-node a.dropdown-toggle,
+.titles .views-row-even .views-field-view-node .btn-group.open a.dropdown-toggle {
   background-color: #51a351;
 }
 /* line 152, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
@@ -3007,7 +3119,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 162, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn .caret {
+.btn .caret, .titles .views-row-odd .views-field-view-node a .caret,
+.titles .views-row-even .views-field-view-node a .caret {
   margin-top: 8px;
   margin-left: 0;
 }
@@ -3041,6 +3154,8 @@ input[type="submit"].btn.btn-mini {
 .btn-danger .caret,
 .btn-info .caret,
 .btn-success .caret,
+.titles .views-row-odd .views-field-view-node a .caret,
+.titles .views-row-even .views-field-view-node a .caret,
 .btn-inverse .caret {
   border-top-color: white;
   border-bottom-color: white;
@@ -3055,7 +3170,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 208, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn {
+.btn-group-vertical > .btn, .titles .views-row-odd .views-field-view-node .btn-group-vertical > a,
+.titles .views-row-even .views-field-view-node .btn-group-vertical > a {
   display: block;
   float: none;
   max-width: 100%;
@@ -3065,20 +3181,25 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 214, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn + .btn {
+.btn-group-vertical > .btn + .btn, .titles .views-row-odd .views-field-view-node .btn-group-vertical > a + .btn,
+.titles .views-row-even .views-field-view-node .btn-group-vertical > a + .btn, .titles .views-row-odd .views-field-view-node .btn-group-vertical > .btn + a, .titles .views-row-odd .views-field-view-node .btn-group-vertical > a + a,
+.titles .views-row-even .views-field-view-node .btn-group-vertical > .btn + a,
+.titles .views-row-even .views-field-view-node .btn-group-vertical > a + a {
   margin-left: 0;
   margin-top: -1px;
 }
 
 /* line 218, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:first-child {
+.btn-group-vertical > .btn:first-child, .titles .views-row-odd .views-field-view-node .btn-group-vertical > a:first-child,
+.titles .views-row-even .views-field-view-node .btn-group-vertical > a:first-child {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
 }
 
 /* line 221, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
-.btn-group-vertical > .btn:last-child {
+.btn-group-vertical > .btn:last-child, .titles .views-row-odd .views-field-view-node .btn-group-vertical > a:last-child,
+.titles .views-row-even .views-field-view-node .btn-group-vertical > a:last-child {
   -webkit-border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   border-radius: 0 0 4px 4px;
@@ -3751,15 +3872,27 @@ input[type="submit"].btn.btn-mini {
 }
 
 /* line 95, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar .btn,
+.navbar .btn, .navbar .titles .views-row-odd .views-field-view-node a, .titles .views-row-odd .views-field-view-node .navbar a,
+.navbar .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .navbar a,
 .navbar .btn-group {
   margin-top: 5px;
 }
 
 /* line 102, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
-.navbar .btn-group .btn,
+.navbar .btn-group .btn, .navbar .btn-group .titles .views-row-odd .views-field-view-node a, .titles .views-row-odd .views-field-view-node .navbar .btn-group a,
+.navbar .btn-group .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .navbar .btn-group a,
 .navbar .input-prepend .btn,
+.navbar .input-prepend .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .navbar .input-prepend a,
+.navbar .input-prepend .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .navbar .input-prepend a,
 .navbar .input-append .btn,
+.navbar .input-append .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .navbar .input-append a,
+.navbar .input-append .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .navbar .input-append a,
 .navbar .input-prepend .btn-group,
 .navbar .input-append .btn-group {
   margin-top: 0;
@@ -3790,7 +3923,11 @@ input[type="submit"].btn.btn-mini {
 /* line 119, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-form input,
 .navbar-form select,
-.navbar-form .btn {
+.navbar-form .btn,
+.navbar-form .titles .views-row-odd .views-field-view-node a,
+.titles .views-row-odd .views-field-view-node .navbar-form a,
+.navbar-form .titles .views-row-even .views-field-view-node a,
+.titles .views-row-even .views-field-view-node .navbar-form a {
   display: inline-block;
   margin-bottom: 0;
 }
@@ -4631,12 +4768,24 @@ input[type="submit"].btn.btn-mini {
   clear: both;
 }
 /* line 83, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn + .btn {
+.modal-footer .btn + .btn, .modal-footer .titles .views-row-odd .views-field-view-node a + .btn, .titles .views-row-odd .views-field-view-node .modal-footer a + .btn,
+.modal-footer .titles .views-row-even .views-field-view-node a + .btn,
+.titles .views-row-even .views-field-view-node .modal-footer a + .btn, .modal-footer .titles .views-row-odd .views-field-view-node .btn + a, .titles .views-row-odd .views-field-view-node .modal-footer .btn + a, .modal-footer .titles .views-row-odd .views-field-view-node a + a, .titles .views-row-odd .views-field-view-node .modal-footer a + a,
+.modal-footer .titles .views-row-even .views-field-view-node .btn + a,
+.titles .views-row-even .views-field-view-node .modal-footer .btn + a,
+.modal-footer .titles .views-row-even .views-field-view-node a + a,
+.titles .views-row-even .views-field-view-node .modal-footer a + a {
   margin-left: 5px;
   margin-bottom: 0;
 }
 /* line 88, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_modals.scss */
-.modal-footer .btn-group .btn + .btn {
+.modal-footer .btn-group .btn + .btn, .modal-footer .btn-group .titles .views-row-odd .views-field-view-node a + .btn, .titles .views-row-odd .views-field-view-node .modal-footer .btn-group a + .btn,
+.modal-footer .btn-group .titles .views-row-even .views-field-view-node a + .btn,
+.titles .views-row-even .views-field-view-node .modal-footer .btn-group a + .btn, .modal-footer .btn-group .titles .views-row-odd .views-field-view-node .btn + a, .titles .views-row-odd .views-field-view-node .modal-footer .btn-group .btn + a, .modal-footer .btn-group .titles .views-row-odd .views-field-view-node a + a, .titles .views-row-odd .views-field-view-node .modal-footer .btn-group a + a,
+.modal-footer .btn-group .titles .views-row-even .views-field-view-node .btn + a,
+.titles .views-row-even .views-field-view-node .modal-footer .btn-group .btn + a,
+.modal-footer .btn-group .titles .views-row-even .views-field-view-node a + a,
+.titles .views-row-even .views-field-view-node .modal-footer .btn-group a + a {
   margin-left: -1px;
 }
 /* line 92, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_modals.scss */
@@ -5147,8 +5296,11 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 /* line 73, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_labels-badges.scss */
-.btn .label,
-.btn .badge {
+.btn .label, .titles .views-row-odd .views-field-view-node a .label,
+.titles .views-row-even .views-field-view-node a .label,
+.btn .badge,
+.titles .views-row-odd .views-field-view-node a .badge,
+.titles .views-row-even .views-field-view-node a .badge {
   position: relative;
   top: -1px;
 }
@@ -5598,7 +5750,9 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   }
 
   /* line 75, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
-  .nav-collapse .btn {
+  .nav-collapse .btn, .nav-collapse .titles .views-row-odd .views-field-view-node a, .titles .views-row-odd .views-field-view-node .nav-collapse a,
+  .nav-collapse .titles .views-row-even .views-field-view-node a,
+  .titles .views-row-even .views-field-view-node .nav-collapse a {
     padding: 4px 10px 4px;
     font-weight: normal;
     -webkit-border-radius: 4px;
@@ -7134,14 +7288,36 @@ ul.icons-ul > li .icon-li {
 
 /* keeps Bootstrap styles with and without icons the same */
 /* line 41, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-large, .btn #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-large[href="#"]:before, #user-login-form .btn a.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-large[href*="user/password"]:before,
-.btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large, .nav #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-large[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav a.icon-large[href="#"]:before, .nav #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav a.icon-large[href*="user/register"]:before, .nav #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav a.icon-large[href*="user/password"]:before,
+.btn [class^="icon-"].icon-large, .titles .views-row-odd .views-field-view-node a [class^="icon-"].icon-large,
+.titles .views-row-even .views-field-view-node a [class^="icon-"].icon-large, .btn #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-large[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.icon-large[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.icon-large[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-large[href="#"]:before, #user-login-form .btn a.icon-large[href="#"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.icon-large[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.icon-large[href="#"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.icon-large[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-large[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.icon-large[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.icon-large[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-large[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.icon-large[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.icon-large[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.icon-large[href*="user/password"]:before,
+.btn [class*=" icon-"].icon-large,
+.titles .views-row-odd .views-field-view-node a [class*=" icon-"].icon-large,
+.titles .views-row-even .views-field-view-node a [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large, .nav #user-login-form a.icon-large[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-large[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-large[href="#"]:before, #user-login-form .nav a.icon-large[href="#"]:before, .nav #user-login-form ul li a.icon-large[href*="user/register"]:before, #user-login-form ul li .nav a.icon-large[href*="user/register"]:before, .nav #user-login-form ul li a.icon-large[href*="user/password"]:before, #user-login-form ul li .nav a.icon-large[href*="user/password"]:before,
 .nav [class*=" icon-"].icon-large {
   line-height: .9em;
 }
 /* line 42, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin, .btn #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin[href="#"]:before, #user-login-form .btn a.icon-spin[href="#"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/password"]:before,
-.btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .nav #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-spin[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-spin[href="#"]:before, #user-login-form .nav a.icon-spin[href="#"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/register"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/password"]:before,
+.btn [class^="icon-"].icon-spin, .titles .views-row-odd .views-field-view-node a [class^="icon-"].icon-spin,
+.titles .views-row-even .views-field-view-node a [class^="icon-"].icon-spin, .btn #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.icon-spin[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.icon-spin[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.icon-spin[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin[href="#"]:before, #user-login-form .btn a.icon-spin[href="#"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.icon-spin[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.icon-spin[href="#"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.icon-spin[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.icon-spin[href="#"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.icon-spin[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.icon-spin[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.icon-spin[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.icon-spin[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.icon-spin[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.icon-spin[href*="user/password"]:before,
+.btn [class*=" icon-"].icon-spin,
+.titles .views-row-odd .views-field-view-node a [class*=" icon-"].icon-spin,
+.titles .views-row-even .views-field-view-node a [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin, .nav #user-login-form a.icon-spin[href*="http://openid.net/"]:before, #user-login-form .nav a.icon-spin[href*="http://openid.net/"]:before, .nav #user-login-form a.icon-spin[href="#"]:before, #user-login-form .nav a.icon-spin[href="#"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/register"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/register"]:before, .nav #user-login-form ul li a.icon-spin[href*="user/password"]:before, #user-login-form ul li .nav a.icon-spin[href*="user/password"]:before,
 .nav [class*=" icon-"].icon-spin {
   display: inline-block;
 }
@@ -7156,43 +7332,153 @@ ul.icons-ul > li .icon-li {
 }
 
 /* line 55, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].pull-left.icon-2x, .btn #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn a.pull-left.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/password"]:before, .btn [class^="icon-"].pull-right.icon-2x, .btn #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn a.pull-right.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/password"]:before,
+.btn [class^="icon-"].pull-left.icon-2x, .titles .views-row-odd .views-field-view-node a [class^="icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a [class^="icon-"].pull-left.icon-2x, .btn #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-left.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn a.pull-left.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.pull-left.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.pull-left.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.pull-left.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.pull-left.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.pull-left.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-left.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.pull-left.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.pull-left.icon-2x[href*="user/password"]:before, .btn [class^="icon-"].pull-right.icon-2x, .titles .views-row-odd .views-field-view-node a [class^="icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a [class^="icon-"].pull-right.icon-2x, .btn #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn a.pull-right.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn a.pull-right.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.pull-right.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.pull-right.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.pull-right.icon-2x[href="#"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.pull-right.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.pull-right.icon-2x[href*="user/register"]:before, .btn #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn a.pull-right.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.pull-right.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.pull-right.icon-2x[href*="user/password"]:before,
 .btn [class*=" icon-"].pull-left.icon-2x,
-.btn [class*=" icon-"].pull-right.icon-2x {
+.titles .views-row-odd .views-field-view-node a [class*=" icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a [class*=" icon-"].pull-left.icon-2x,
+.btn [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-odd .views-field-view-node a [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em;
 }
 /* line 57, ../sass/fontawesome/_bootstrap.scss */
-.btn [class^="icon-"].icon-spin.icon-large, .btn #user-login-form a.icon-spin.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin.icon-large[href="#"]:before, #user-login-form .btn a.icon-spin.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/password"]:before,
-.btn [class*=" icon-"].icon-spin.icon-large {
+.btn [class^="icon-"].icon-spin.icon-large, .titles .views-row-odd .views-field-view-node a [class^="icon-"].icon-spin.icon-large,
+.titles .views-row-even .views-field-view-node a [class^="icon-"].icon-spin.icon-large, .btn #user-login-form a.icon-spin.icon-large[href*="http://openid.net/"]:before, #user-login-form .btn a.icon-spin.icon-large[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.icon-spin.icon-large[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.icon-spin.icon-large[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.icon-spin.icon-large[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.icon-spin.icon-large[href*="http://openid.net/"]:before, .btn #user-login-form a.icon-spin.icon-large[href="#"]:before, #user-login-form .btn a.icon-spin.icon-large[href="#"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form a.icon-spin.icon-large[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a a.icon-spin.icon-large[href="#"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form a.icon-spin.icon-large[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a a.icon-spin.icon-large[href="#"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/register"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.icon-spin.icon-large[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.icon-spin.icon-large[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.icon-spin.icon-large[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.icon-spin.icon-large[href*="user/register"]:before, .btn #user-login-form ul li a.icon-spin.icon-large[href*="user/password"]:before, #user-login-form ul li .btn a.icon-spin.icon-large[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a #user-login-form ul li a.icon-spin.icon-large[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a a.icon-spin.icon-large[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a #user-login-form ul li a.icon-spin.icon-large[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a a.icon-spin.icon-large[href*="user/password"]:before,
+.btn [class*=" icon-"].icon-spin.icon-large,
+.titles .views-row-odd .views-field-view-node a [class*=" icon-"].icon-spin.icon-large,
+.titles .views-row-even .views-field-view-node a [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em;
 }
 
 /* line 64, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/password"]:before,
+.btn.btn-small [class^="icon-"].pull-left.icon-2x, .titles .views-row-odd .views-field-view-node a.btn-small [class^="icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-small a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-small a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-left.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-small a.pull-left.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form a.pull-left.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-small a.pull-left.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-small a.pull-left.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-small a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-left.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-small a.pull-left.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-small a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-small [class^="icon-"].pull-right.icon-2x, .titles .views-row-odd .views-field-view-node a.btn-small [class^="icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-small [class^="icon-"].pull-right.icon-2x, .btn.btn-small #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-small a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-small a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-small #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-small a.pull-right.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-small a.pull-right.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form a.pull-right.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-small a.pull-right.icon-2x[href="#"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-small a.pull-right.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-small a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-small a.pull-right.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-small a.pull-right.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-small #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-small a.pull-right.icon-2x[href*="user/password"]:before,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-small [class*=" icon-"].pull-right.icon-2x {
+.titles .views-row-odd .views-field-view-node a.btn-small [class*=" icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-small [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-small [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-odd .views-field-view-node a.btn-small [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: .25em;
 }
 
 /* line 70, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"], .btn.btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a[href="#"]:before, #user-login-form .btn.btn-large a[href="#"]:before, .btn.btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a[href*="user/password"]:before,
-.btn.btn-large [class*=" icon-"] {
+.btn.btn-large [class^="icon-"], .titles .views-row-odd .views-field-view-node a.btn-large [class^="icon-"],
+.titles .views-row-even .views-field-view-node a.btn-large [class^="icon-"], .btn.btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a[href="#"]:before, #user-login-form .btn.btn-large a[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a[href="#"]:before, .btn.btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a[href*="user/password"]:before,
+.btn.btn-large [class*=" icon-"],
+.titles .views-row-odd .views-field-view-node a.btn-large [class*=" icon-"],
+.titles .views-row-even .views-field-view-node a.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
 /* line 73, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .titles .views-row-odd .views-field-view-node a.btn-large [class^="icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/password"]:before, .btn.btn-large [class^="icon-"].pull-right.icon-2x, .titles .views-row-odd .views-field-view-node a.btn-large [class^="icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
 .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
-.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+.titles .views-row-odd .views-field-view-node a.btn-large [class*=" icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class*=" icon-"].pull-left.icon-2x,
+.btn.btn-large [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-odd .views-field-view-node a.btn-large [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-top: .05em;
 }
 /* line 75, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before,
-.btn.btn-large [class*=" icon-"].pull-left.icon-2x {
+.btn.btn-large [class^="icon-"].pull-left.icon-2x, .titles .views-row-odd .views-field-view-node a.btn-large [class^="icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-left.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-left.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-left.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-left.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-left.icon-2x[href*="user/password"]:before,
+.btn.btn-large [class*=" icon-"].pull-left.icon-2x,
+.titles .views-row-odd .views-field-view-node a.btn-large [class*=" icon-"].pull-left.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class*=" icon-"].pull-left.icon-2x {
   margin-right: .2em;
 }
 /* line 76, ../sass/fontawesome/_bootstrap.scss */
-.btn.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
-.btn.btn-large [class*=" icon-"].pull-right.icon-2x {
+.btn.btn-large [class^="icon-"].pull-right.icon-2x, .titles .views-row-odd .views-field-view-node a.btn-large [class^="icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class^="icon-"].pull-right.icon-2x, .btn.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href*="http://openid.net/"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="http://openid.net/"]:before, .btn.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .btn.btn-large a.pull-right.icon-2x[href="#"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before, #user-login-form .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href="#"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form a.pull-right.icon-2x[href="#"]:before,
+#user-login-form .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href="#"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/register"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/register"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/register"]:before, .btn.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .btn.btn-large a.pull-right.icon-2x[href*="user/password"]:before, .titles .views-row-odd .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before, #user-login-form ul li .titles .views-row-odd .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
+.titles .views-row-even .views-field-view-node a.btn-large #user-login-form ul li a.pull-right.icon-2x[href*="user/password"]:before,
+#user-login-form ul li .titles .views-row-even .views-field-view-node a.btn-large a.pull-right.icon-2x[href*="user/password"]:before,
+.btn.btn-large [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-odd .views-field-view-node a.btn-large [class*=" icon-"].pull-right.icon-2x,
+.titles .views-row-even .views-field-view-node a.btn-large [class*=" icon-"].pull-right.icon-2x {
   margin-left: .2em;
 }
 
@@ -8917,12 +9203,29 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   display: none;
 }
 
+/* line 86, ../sass/styles.scss */
+.flex-ctrl-out .flex-direction-nav a {
+  display: block !important;
+  left: auto !important;
+  top: -15px !important;
+  opacity: 1 !important;
+  background: url(../img/bg_direction_nav.png) no-repeat 0 0;
+}
+/* line 92, ../sass/styles.scss */
+.flex-ctrl-out .flex-direction-nav a.flex-prev {
+  right: 37px !important;
+}
+/* line 95, ../sass/styles.scss */
+.flex-ctrl-out .flex-direction-nav a.flex-next {
+  right: 5px !important;
+}
+
 /* ----------------- Comments ----------------- */
-/* line 88, ../sass/styles.scss */
+/* line 102, ../sass/styles.scss */
 .comment h3.comment-title {
   margin-bottom: 0.5rem;
 }
-/* line 90, ../sass/styles.scss */
+/* line 104, ../sass/styles.scss */
 .comment h3.comment-title a {
   color: #4c4c4c;
 }
@@ -8931,20 +9234,20 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   color: #679b29;
 }
 
-/* line 92, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .comment div.user-picture img {
   margin-left: 0;
   /* LTR */
 }
 
-/* line 95, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 .comment {
   margin-bottom: 20px;
   display: table;
   vertical-align: top;
 }
 
-/* line 100, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .comment .attribution {
   display: block;
   width: 100px;
@@ -8953,7 +9256,7 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   vertical-align: top;
   overflow: hidden;
 }
-/* line 106, ../sass/styles.scss */
+/* line 120, ../sass/styles.scss */
 .comment .attribution .username {
   color: #4c4c4c;
   font-family: "Ubuntu", Arial, sans-serif;
@@ -8962,7 +9265,7 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
 .comment .attribution .username:active, .comment .attribution .username:hover, .comment .attribution .username:focus {
   color: #679b29;
 }
-/* line 110, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .comment .attribution .user-picture {
   border: 1px solid #DDDDDD;
   display: inline-block;
@@ -8974,39 +9277,39 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   -moz-border-radius: 500px;
   border-radius: 500px;
 }
-/* line 116, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .comment .attribution .user-picture img {
   margin: 0;
   width: 55px;
   height: 55px;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .comment .submitted p {
   margin: 4px 0;
   font-size: 1.071em;
   line-height: 1.2;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .comment .submitted .comment-time {
   font-size: 0.786em;
   color: #68696b;
 }
 
-/* line 133, ../sass/styles.scss */
+/* line 147, ../sass/styles.scss */
 .comment .submitted .comment-permalink {
   font-size: 0.786em;
   text-transform: lowercase;
 }
 
-/* line 137, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .comment .content {
   font-size: 1.2rem;
   line-height: 1.6;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .comment .comment-arrow {
   background: url(../img/comment-arrow.gif) no-repeat 0 center transparent;
   /* LTR */
@@ -9018,7 +9321,7 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   width: 20px;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .comment .comment-text {
   padding: 10px 25px;
   border: 1px solid #d3d7d9;
@@ -9028,29 +9331,29 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   width: 100%;
 }
 
-/* line 157, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .comment .indented {
   margin-left: 40px;
   /* LTR */
 }
 
-/* line 160, ../sass/styles.scss */
+/* line 174, ../sass/styles.scss */
 .comment ul.links {
   padding: 0 0 0.25em 0;
 }
-/* line 162, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 .comment ul.links li {
   padding: 0 0.5em 0 0;
   /* LTR */
 }
-/* line 165, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .comment ul.links .comment-reply {
   text-align: right;
   display: inline-block;
   float: right;
 }
 
-/* line 171, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .comment-unpublished {
   margin-right: 5px;
   /* LTR */
@@ -9058,13 +9361,13 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
   /* LTR */
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 .comment-unpublished .comment-text .comment-arrow {
   border-left: 1px solid #fff4f4;
   border-right: 1px solid #fff4f4;
 }
 
-/* line 179, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 #comments h2.title {
   border-bottom: 8px solid #F0F0F0;
   margin-bottom: 20px;
@@ -9072,27 +9375,27 @@ ul.links li a:active, ul.links li a:hover, ul.links li a:focus {
 
 /* #Site Styles
    ================================================== */
-/* line 188, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 body {
   line-height: 2.3rem;
 }
 
-/* line 192, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 #skip-link {
   margin: 0;
 }
 
-/* line 196, ../sass/styles.scss */
+/* line 210, ../sass/styles.scss */
 #header {
   background-color: #fff;
   border-top: 1px solid #D4D4D4;
 }
-/* line 199, ../sass/styles.scss */
+/* line 213, ../sass/styles.scss */
 #header .navbar {
   margin: 0;
 }
 
-/* line 202, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 .navbar .navbar-inner {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -9102,17 +9405,17 @@ body {
   box-shadow: 0 2px 12px -2px #555555;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 .navbar .nav > li > a {
   text-shadow: none;
 }
 
-/* line 211, ../sass/styles.scss */
+/* line 225, ../sass/styles.scss */
 .content-inner .node-teaser {
   margin-bottom: 15px;
 }
 
-/* line 215, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 #breadcrumb-wrapper {
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid #696d72;
@@ -9123,7 +9426,7 @@ body {
   box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.3), inset 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* line 222, ../sass/styles.scss */
+/* line 236, ../sass/styles.scss */
 .breadcrumb {
   margin: 0;
   padding: 0;
@@ -9133,19 +9436,19 @@ body {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-/* line 228, ../sass/styles.scss */
+/* line 242, ../sass/styles.scss */
 .breadcrumb > li {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
 }
-/* line 230, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
 .breadcrumb > li > .divider {
   color: #B9B9B9;
 }
-/* line 234, ../sass/styles.scss */
+/* line 248, ../sass/styles.scss */
 .breadcrumb .active {
   color: white;
 }
-/* line 237, ../sass/styles.scss */
+/* line 251, ../sass/styles.scss */
 .breadcrumb a {
   color: #b9b9b9;
 }
@@ -9154,7 +9457,7 @@ body {
   color: #8ecd44;
 }
 
-/* line 240, ../sass/styles.scss */
+/* line 254, ../sass/styles.scss */
 .nav-tabs > li > a {
   color: #999999;
 }
@@ -9163,18 +9466,23 @@ body {
   color: black;
 }
 
-/* line 244, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
+.align-center {
+  text-align: center;
+}
+
+/* line 262, ../sass/styles.scss */
 ul.entry-meta {
   border-top: 1px solid #e9E9E9;
   border-bottom: 1px solid #E9E9E9;
   margin: 0;
   padding: 6px 0;
 }
-/* line 249, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 ul.entry-meta i {
   color: #666666;
 }
-/* line 250, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 ul.entry-meta li {
   display: inline-block;
   margin-right: 10px;
@@ -9183,11 +9491,11 @@ ul.entry-meta li {
   font-size: 1.2rem;
   color: #999;
 }
-/* line 257, ../sass/styles.scss */
+/* line 275, ../sass/styles.scss */
 ul.entry-meta li:last-child {
   border: 0;
 }
-/* line 258, ../sass/styles.scss */
+/* line 276, ../sass/styles.scss */
 ul.entry-meta li a {
   color: #999999;
 }
@@ -9195,23 +9503,23 @@ ul.entry-meta li a {
 ul.entry-meta li a:active, ul.entry-meta li a:hover, ul.entry-meta li a:focus {
   color: #679b29;
 }
-/* line 260, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 ul.entry-meta li [class^="icon-"], ul.entry-meta li #user-login-form a[href*="http://openid.net/"]:before, #user-login-form ul.entry-meta li a[href*="http://openid.net/"]:before, ul.entry-meta li #user-login-form a[href="#"]:before, #user-login-form ul.entry-meta li a[href="#"]:before, #user-login-form ul.entry-meta li a[href*="user/register"]:before, #user-login-form ul.entry-meta li a[href*="user/password"]:before,
 ul.entry-meta li [class*=" icon-"] {
   margin-right: 3px;
 }
-/* line 264, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 ul.entry-meta .links {
   display: inline-block;
   margin: 0;
 }
-/* line 267, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 ul.entry-meta .links li {
   padding: 0;
   border: 0;
   margin-right: 4px;
 }
-/* line 271, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 ul.entry-meta .links li a {
   color: #999999;
 }
@@ -9220,29 +9528,29 @@ ul.entry-meta .links li a:active, ul.entry-meta .links li a:hover, ul.entry-meta
   color: #679b29;
 }
 
-/* line 278, ../sass/styles.scss */
+/* line 296, ../sass/styles.scss */
 .node header,
 .node .field-type-image {
   margin-bottom: 15px;
 }
 
-/* line 283, ../sass/styles.scss */
+/* line 301, ../sass/styles.scss */
 .node .field-type-image {
   text-align: center;
 }
 
-/* line 287, ../sass/styles.scss */
+/* line 305, ../sass/styles.scss */
 .more-link {
   font-size: 1.5rem;
   font-weight: bold;
   display: inline-block;
 }
 
-/* line 294, ../sass/styles.scss */
+/* line 312, ../sass/styles.scss */
 aside[role="menu"] .block {
   margin-bottom: 20px;
 }
-/* line 298, ../sass/styles.scss */
+/* line 316, ../sass/styles.scss */
 aside[role="menu"] > a,
 aside[role="menu"] .nav > li > a {
   color: #4c4c4c;
@@ -9255,7 +9563,7 @@ aside[role="menu"] .nav > li > a:focus {
   color: #679b29;
 }
 
-/* line 301, ../sass/styles.scss */
+/* line 319, ../sass/styles.scss */
 .simple-list {
   margin: 0;
   width: 100%;
@@ -9263,12 +9571,12 @@ aside[role="menu"] .nav > li > a:focus {
   list-style: none;
   color: #555555;
 }
-/* line 307, ../sass/styles.scss */
+/* line 325, ../sass/styles.scss */
 .simple-list li {
   width: 100%;
   border-bottom: solid 1px #e8e8e8;
 }
-/* line 310, ../sass/styles.scss */
+/* line 328, ../sass/styles.scss */
 .simple-list li a {
   width: 100%;
   padding: 4px 0;
@@ -9277,7 +9585,7 @@ aside[role="menu"] .nav > li > a:focus {
   text-decoration: none;
 }
 
-/* line 320, ../sass/styles.scss */
+/* line 338, ../sass/styles.scss */
 .error-page {
   margin-left: auto;
   margin-right: auto;
@@ -9285,15 +9593,15 @@ aside[role="menu"] .nav > li > a:focus {
   max-width: 460px;
   width: auto;
 }
-/* line 326, ../sass/styles.scss */
+/* line 344, ../sass/styles.scss */
 .error-page .form {
   margin-top: 40px;
 }
-/* line 328, ../sass/styles.scss */
+/* line 346, ../sass/styles.scss */
 .error-page .form .search-query {
   width: 70%;
 }
-/* line 332, ../sass/styles.scss */
+/* line 350, ../sass/styles.scss */
 .error-page .error-code {
   font-size: 16rem;
   line-height: 1.2;
@@ -9301,17 +9609,17 @@ aside[role="menu"] .nav > li > a:focus {
   color: rgba(51, 51, 51, 0.85);
   text-shadow: 1px 4px 6px #fff,0 0 0 #000,1px 4px 6px #fff;
 }
-/* line 339, ../sass/styles.scss */
+/* line 357, ../sass/styles.scss */
 .error-page h2, .error-page h3 {
   font-weight: bold;
 }
 
-/* line 344, ../sass/styles.scss */
+/* line 362, ../sass/styles.scss */
 .block .headline {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #dadada;
 }
-/* line 347, ../sass/styles.scss */
+/* line 365, ../sass/styles.scss */
 .block .headline .block-title {
   margin-bottom: -1px;
   display: inline-block;
@@ -9346,35 +9654,91 @@ aside[role="menu"] .nav > li > a:focus {
   }
 }
 */
-/* line 383, ../sass/styles.scss */
+/* line 401, ../sass/styles.scss */
+.flexslider {
+  background: transparent;
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 409, ../sass/styles.scss */
+.titles .views-row-odd,
+.titles .views-row-even {
+  margin-right: 15px;
+  padding: 15px;
+  background-color: #eff0f2;
+  border-radius: 6px;
+  border: 1px solid #C0C0C0;
+}
+/* line 415, ../sass/styles.scss */
+.titles .views-row-odd:last-child,
+.titles .views-row-even:last-child {
+  margin-right: 0;
+}
+/* line 416, ../sass/styles.scss */
+.titles .views-row-odd .views-field-title,
+.titles .views-row-even .views-field-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Ubuntu", Arial, sans-serif;
+  line-height: 2.5rem;
+}
+/* line 421, ../sass/styles.scss */
+.titles .views-row-odd .views-field-title a,
+.titles .views-row-even .views-field-title a {
+  color: #4c4c4c;
+}
+/* line 43, ../sass/_mixins.scss */
+.titles .views-row-odd .views-field-title a:active, .titles .views-row-odd .views-field-title a:hover, .titles .views-row-odd .views-field-title a:focus,
+.titles .views-row-even .views-field-title a:active,
+.titles .views-row-even .views-field-title a:hover,
+.titles .views-row-even .views-field-title a:focus {
+  color: #4c4c4c;
+}
+/* line 423, ../sass/styles.scss */
+.titles .views-row-odd .views-field-created,
+.titles .views-row-even .views-field-created {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 428, ../sass/styles.scss */
+.titles .views-row-odd .views-field-view-node a,
+.titles .views-row-even .views-field-view-node a {
+  width: 100%;
+}
+
+/* line 435, ../sass/styles.scss */
 .sidebar .nav {
   margin: 0;
 }
 
-/* line 390, ../sass/styles.scss */
+/* line 442, ../sass/styles.scss */
 .sidebar .block .nav li.dropdown.open .caret,
 .sidebar .block .nav li.dropdown.open.active .caret,
 .sidebar .block .nav .dropdown-toggle .caret {
   border-top-color: #4c4c4c;
   border-bottom-color: #4c4c4c;
 }
-/* line 395, ../sass/styles.scss */
+/* line 447, ../sass/styles.scss */
 .sidebar .block .nav li.dropdown.open a:hover .caret,
 .sidebar .block .nav li.dropdown.open a:focus .caret {
   border-top-color: #8ecd44;
   border-bottom-color: #8ecd44;
 }
-/* line 399, ../sass/styles.scss */
+/* line 451, ../sass/styles.scss */
 .sidebar .block .form-search {
   margin: 0;
 }
 
-/* line 405, ../sass/styles.scss */
+/* line 457, ../sass/styles.scss */
 #footer .block .headline {
   border-bottom: 1px solid #777;
 }
 
-/* line 409, ../sass/styles.scss */
+/* line 461, ../sass/styles.scss */
 .tweet_list {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
@@ -9384,29 +9748,29 @@ aside[role="menu"] .nav > li > a:focus {
   padding: 0;
   overflow-y: hidden;
 }
-/* line 415, ../sass/styles.scss */
+/* line 467, ../sass/styles.scss */
 .tweet_list li {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0.5em;
   list-style-type: none;
 }
-/* line 421, ../sass/styles.scss */
+/* line 473, ../sass/styles.scss */
 .tweet_list .tweet_avatar {
   padding-right: .5em;
   float: left;
 }
-/* line 423, ../sass/styles.scss */
+/* line 475, ../sass/styles.scss */
 .tweet_list .tweet_avatar img {
   vertical-align: middle;
 }
 
-/* line 430, ../sass/styles.scss */
+/* line 482, ../sass/styles.scss */
 .social ul {
   margin: 0;
   padding: 0;
 }
-/* line 433, ../sass/styles.scss */
+/* line 485, ../sass/styles.scss */
 .social ul li {
   display: inline-block;
   list-style: none;
@@ -9414,28 +9778,28 @@ aside[role="menu"] .nav > li > a:focus {
   font-size: 2rem;
 }
 
-/* line 441, ../sass/styles.scss */
+/* line 493, ../sass/styles.scss */
 aside .social ul {
   text-align: center;
 }
-/* line 443, ../sass/styles.scss */
+/* line 495, ../sass/styles.scss */
 aside .social ul li {
   font-size: 4.8rem;
   margin: 0;
 }
 
-/* line 449, ../sass/styles.scss */
+/* line 501, ../sass/styles.scss */
 .bottom1 p {
   margin: 4px 0 0 0;
 }
 
-/* line 453, ../sass/styles.scss */
+/* line 505, ../sass/styles.scss */
 #footer .social ul li {
   padding: 4px;
   margin: 0 2px;
   background-color: #131313;
 }
-/* line 457, ../sass/styles.scss */
+/* line 509, ../sass/styles.scss */
 #footer .social ul li a {
   color: #aaa;
   -webkit-transition: 500ms linear 0s;
@@ -9443,14 +9807,14 @@ aside .social ul li {
   -o-transition: 500ms linear 0s;
   transition: 500ms linear 0s;
 }
-/* line 460, ../sass/styles.scss */
+/* line 512, ../sass/styles.scss */
 #footer .social ul li a:hover {
   text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
 }
 
-/* line 466, ../sass/styles.scss */
+/* line 518, ../sass/styles.scss */
 .slider {
-  margin-bottom: 30px;
+  margin-bottom: 0;
   padding-top: 50px;
   padding-bottom: 10px;
   background: url(../img/background-scroll.jpg) no-repeat fixed;
@@ -9461,7 +9825,17 @@ aside .social ul li {
   box-shadow: inset 0 0 20px black;
 }
 
-/* line 476, ../sass/styles.scss */
+/* line 528, ../sass/styles.scss */
+.quote blockquote {
+  margin: 0;
+  border-right: 5px solid #9E9E9E;
+}
+/* line 531, ../sass/styles.scss */
+.quote blockquote p {
+  font-style: italic;
+}
+
+/* line 534, ../sass/styles.scss */
 .panels-flexible-row .slider {
   *zoom: 1;
   max-width: 576px;
@@ -9481,15 +9855,53 @@ aside .social ul li {
   clear: both;
 }
 
+/* line 538, ../sass/styles.scss */
+.icon-64 {
+  display: block !important;
+  width: 150px;
+  height: 150px;
+  padding: 33px 33.25px;
+  font-size: 7rem;
+  margin: 0 auto;
+  color: #3C3F5E;
+  border: 6px solid #3C3F5E;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/* line 550, ../sass/styles.scss */
+.icon-64:hover {
+  color: white;
+  border-color: white;
+  background-color: #3C3F5E;
+  -webkit-transform: rotate(359deg);
+  -moz-transform: rotate(359deg);
+  -ms-transform: rotate(359deg);
+  -o-transform: rotate(359deg);
+  transform: rotate(359deg);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.28);
+}
+
 /* #Footer
    ================================================== */
-/* line 484, ../sass/styles.scss */
+/* line 564, ../sass/styles.scss */
 #footer {
   font-size: 1.3rem;
   position: relative;
   background-color: #252525;
 }
-/* line 488, ../sass/styles.scss */
+/* line 568, ../sass/styles.scss */
 #footer:before {
   content: '';
   border: 10px solid transparent;
@@ -9499,7 +9911,7 @@ aside .social ul li {
   top: 0;
   margin-left: -10px;
 }
-/* line 497, ../sass/styles.scss */
+/* line 577, ../sass/styles.scss */
 #footer a {
   color: #8ecd44;
 }
@@ -9508,33 +9920,33 @@ aside .social ul li {
   color: #679b29;
 }
 
-/* line 502, ../sass/styles.scss */
+/* line 582, ../sass/styles.scss */
 #footerTop {
   padding: 30px 0;
   color: #aaa;
 }
-/* line 505, ../sass/styles.scss */
+/* line 585, ../sass/styles.scss */
 #footerTop h1, #footerTop h2, #footerTop h3, #footerTop h4, #footerTop h5 {
   text-transform: uppercase;
   color: #fff;
 }
 
-/* line 511, ../sass/styles.scss */
+/* line 591, ../sass/styles.scss */
 #footerBottom {
   background-color: #1a1a1a;
   color: #aaa;
   padding: 10px 0;
 }
 
-/* line 518, ../sass/styles.scss */
+/* line 598, ../sass/styles.scss */
 .footerNav {
   margin: 0;
 }
-/* line 520, ../sass/styles.scss */
+/* line 600, ../sass/styles.scss */
 .footerNav li a {
   color: #aaa;
 }
-/* line 522, ../sass/styles.scss */
+/* line 602, ../sass/styles.scss */
 .footerNav li a:hover {
   color: #fff;
 }

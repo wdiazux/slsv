@@ -38,5 +38,5 @@ p {  margin-bottom: 14px; }
 .node-title {
   font-size: 2.3rem;
   line-height: 4.6rem;
-  a { @include redefine-link($textColor,$linkColor); }
+  a { @include redefine-link($textColor,#E68232); }
 }

@@ -1,35 +1,29 @@
 /* #Imports
    ================================================== */
 
+// Bootstrap
 @import "base";
 @import "mybootstrap";
 @import "bootstrap/responsive-navbar";
 @import "bootstrap/variables";
+@import "font-awesome";
+// Compass
 @import "compass/css3/transform";
 @import "compass/css3/box-sizing";
+// My Style
 @import "mixins";
 @import "drupal";
 @import "layout";
 @import "type";
 @import "code";
 @import "forms";
-@import "font-awesome";
 @import "patterns";
 
 
 /* #Base styles
    ================================================== */
 
-/* #For devel */
-div,
-nav,
-header,
-footer,
-section {
-  //outline: 1px solid #B94A48 !important;
-}
-
-/* Readmore link as button */ 
+// Readmore link as button
 ul.links > .node-readmore > a {
   &:active,
   &:hover,
@@ -40,6 +34,7 @@ ul.links li a {
   @include redefine-link($textColor,$linkColorHover);
 }
 
+// Block Navigation
 #block-system-navigation {
   .menu > li {
     border-bottom: solid 1px #dadada;
@@ -59,6 +54,7 @@ ul.links li a {
   }
 }
 
+// Footer for nodes
 .node footer {
   margin-top: 10px;
 }
@@ -79,10 +75,12 @@ ul.links li a {
   }
 }
 
+// Hide title for blog page
 .page-blog #page-title {
   @include hidden();
 }
 
+// Class to move control of flexslider out the slider
 .flex-ctrl-out .flex-direction-nav a {
   display: block !important;
   left: auto !important;
@@ -104,7 +102,7 @@ ul.links li a {
   a { @include redefine-link($textColor,$linkColorHover); }
 }
 .comment div.user-picture img {
-  margin-left: 0; /* LTR */
+  margin-left: 0;
 }
 .comment {
   margin-bottom: 20px;
@@ -114,7 +112,7 @@ ul.links li a {
 .comment .attribution {
   display: block;
   width: 100px;
-  padding: 0 30px 0 0; /* LTR */
+  padding: 0 30px 0 0;
   vertical-align: top;
   overflow: hidden;
   .username {
@@ -155,7 +153,7 @@ ul.links li a {
 .comment .comment-arrow {
   background: url(../img/comment-arrow.gif) no-repeat 0 center transparent; /* LTR */
   height: 40px;
-  margin-left: -47px; /* LTR */
+  margin-left: -47px;
   margin-top: 10px;
   position: absolute;
   width: 20px;
@@ -183,8 +181,8 @@ ul.links li a {
   }
 }
 .comment-unpublished {
-  margin-right: 5px; /* LTR */
-  padding: 5px 2px 5px 5px; /* LTR */
+  margin-right: 5px;
+  padding: 5px 2px 5px 5px;
 }
 .comment-unpublished .comment-text .comment-arrow {
   border-left: 1px solid #fff4f4;
@@ -264,6 +262,10 @@ ul.entry-meta {
   border-bottom: 1px solid #E9E9E9;
   margin: 0;
   padding: 6px 0;
+  > span {
+    display: block;
+    margin-left: 10px;
+  }
   i { color: #666666; }
   li {
     display: inline-block;
@@ -398,6 +400,7 @@ aside[role="menu"] {
 }
 */
 
+// Clean flexslider container
 .flexslider {
   background: transparent;
   border: 0;

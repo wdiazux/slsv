@@ -10,28 +10,36 @@
 // Compass
 @import "compass/css3/transform";
 @import "compass/css3/box-sizing";
-// My Style
+// Mixin
 @import "mixins";
+@import "flat";
+// Drupal
 @import "drupal";
+// Site Style
 @import "layout";
 @import "type";
 @import "code";
 @import "forms";
 @import "patterns";
+@import "navbar";
+@import "breadcrumb";
+@import "sidebar";
+@import "pagination";
 
 
 /* #Base styles
    ================================================== */
 
-// Readmore link as button
-ul.links > .node-readmore > a {
-  &:active,
-  &:hover,
-  &:focus { color: $textColor; }
-}
-
+// Redefine color for links
 ul.links li a {
   @include redefine-link($textColor,$linkColorHover);
+}
+
+// Readmore link as button
+.node-readmore > a {
+  color: white !important;
+  font-weight: bold;  
+  text-transform: uppercase;
 }
 
 // Block Navigation
@@ -39,7 +47,6 @@ ul.links li a {
   .menu > li {
     border-bottom: solid 1px #dadada;
     &:last-child { border-bottom: 0; }
-    
     > a {
       padding: 6px 0 6px 20px;
       &:before {
@@ -57,16 +64,6 @@ ul.links li a {
 // Footer for nodes
 .node footer {
   margin-top: 10px;
-}
-
-// Responsive button
-.navbar .btn-navbar {
-  background-color: rgb(122, 168, 85);
-  @include background(linear-gradient(rgb(161, 233, 105), rgb(90, 168, 18)));
-  &:focus, &:hover, &:active {
-    background-image: $linkColorHover;
-    background-color: $linkColorHover;
-  }
 }
 
 .section-node section[role=main] .node {
@@ -117,7 +114,6 @@ ul.links li a {
   overflow: hidden;
   .username {
     @include redefine-link($textColor,$linkColorHover);
-    font-family: $ubuntuFontFamily;
   }
   .user-picture {
     border: 1px solid #DDDDDD;
@@ -151,7 +147,7 @@ ul.links li a {
   line-height: 1.6;
 }
 .comment .comment-arrow {
-  background: url(../img/comment-arrow.gif) no-repeat 0 center transparent; /* LTR */
+  background: url(../img/comment-arrow.gif) no-repeat 0 center transparent;
   height: 40px;
   margin-left: -47px;
   margin-top: 10px;
@@ -172,7 +168,7 @@ ul.links li a {
 .comment ul.links {
   padding: 0 0 0.25em 0;
   li {
-    padding: 0 0.5em 0 0; /* LTR */
+    padding: 0 0.5em 0 0;
   }
   .comment-reply {
     text-align: right;
@@ -197,6 +193,26 @@ ul.links li a {
 /* #Site Styles
    ================================================== */
 
+html {
+  &.overlay-open .navbar-fixed-top {
+    z-index: 400;
+  }
+  &.js {
+    // Collapsible fieldsets.
+    fieldset.collapsed {
+     height: auto;
+    }
+    // Throbbers.
+    input.form-autocomplete {
+      background-position: 100% 8px; /* LTR */
+      background-repeat: no-repeat;
+    }
+    input.throbbing {
+      background-position: 100% -13px; /* LTR */
+    }
+  }
+}
+
 body {
   line-height: 2.3rem;
 }
@@ -206,47 +222,13 @@ body {
 }
 
 #header {
-  background-color: #fff;
-  border-top: 1px solid #D4D4D4;
   .navbar { margin: 0; }
 }
 
-.navbar .navbar-inner {
-  @include border-radius(0);
-  @include box-shadow(0 2px 12px -2px $gray);
-}
 
-.navbar .nav > li > a {
-  text-shadow: none;
-}
 
 .content-inner .node-teaser {
   margin-bottom: 15px;
-}
-
-#breadcrumb-wrapper {
-  background-color: rgba(0,0,0,0.7);
-  border: 1px solid #696d72;
-  border-color: rgba(0,0,0,0.2);
-  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
-  @include box-shadow(0 1px 1px 0 rgba(255,255,255,0.3),inset 0 1px 5px rgba(0,0,0,0.1));
-}
-.breadcrumb {
-  margin: 0;
-  padding: 0;
-  font-size: $baseFontSize - .2rem;
-  background-color: transparent;
-  @include border-radius(0);
-  > li {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-    > .divider{
-      color: #B9B9B9;
-    }
-  }
-  .active {
-    color: $white;
-  }
-  a { @include redefine-link(#B9B9B9,$linkColor); }
 }
 
 .nav-tabs > li > a {
@@ -266,16 +248,14 @@ ul.entry-meta {
     display: block;
     margin-left: 10px;
   }
-  i { color: #666666; }
   li {
     display: inline-block;
     margin-right: 10px;
     padding-right: 10px;
     border-right: 1px dotted #e9e9e9;
     font-size: $baseFontSize - .2rem;
-    color: #999;
+    a { @include redefine-link($textColor,$linkColorHover); }
     &:last-child { border: 0; }
-    a { @include redefine-link($grayLight,$linkColorHover); }
     [class^="icon-"],
     [class*=" icon-"] {
       margin-right: 3px;
@@ -288,7 +268,7 @@ ul.entry-meta {
       padding: 0;
       border: 0;
       margin-right: 4px;
-      a { @include redefine-link($grayLight,$linkColorHover); }
+      a { @include redefine-link($textColor,$linkColorHover); }
     }
   }
 }
@@ -310,13 +290,6 @@ ul.entry-meta {
   display: inline-block;
 }
 
-aside[role="menu"] {
-  .block {
-    margin-bottom: 20px;
-  }
-  > a,
-  .nav > li > a { @include redefine-link($textColor,$linkColorHover); }
-}
 
 .simple-list {
   margin: 0;
@@ -367,38 +340,9 @@ aside[role="menu"] {
   .block-title {
     margin-bottom: -1px;
     display: inline-block;
-    border-bottom: 1px solid $linkColor;
+    border-bottom: 1px solid $greenInfinity;
   }
 }
-
-/*
-.sidebar .block {
-  border: 1px solid #c9c9c9;
-  background-color: #FAFAFA;
-  border-radius: 3px;
-  .headline {
-    background-color: #f8f8f8;
-    @include background(linear-gradient(top, #f8f8f8, #f2f2f2));
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    text-shadow: 0px 1px #fff;
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #fff;
-    padding: 3px 15px;
-    margin: 0;
-    h3 {
-      margin: 0;
-      border: 0;
-      color: #666;
-      font-size: 1.4rem;
-      line-height: 2.5rem;
-    }
-  }
-  .block-content {
-    padding: 10px 8px 8px 8px;
-  }
-}
-*/
 
 // Clean flexslider container
 .flexslider {
@@ -419,7 +363,6 @@ aside[role="menu"] {
   .views-field-title {
     text-align: center;
     font-size: 1.8rem;
-    font-family: $ubuntuFontFamily;
     line-height: 2.5rem;
     a { @include redefine-link($textColor,$textColor); }
   }
@@ -435,30 +378,11 @@ aside[role="menu"] {
   }
 }
 
-.sidebar .nav {
-  margin: 0;
-}
-
-.sidebar .block {
-  .nav li.dropdown.open .caret,
-  .nav li.dropdown.open.active .caret,
-  .nav .dropdown-toggle .caret {
-    border-top-color: #4c4c4c;
-    border-bottom-color: #4c4c4c;
-  }
-  .nav li.dropdown.open a:hover .caret,
-  .nav li.dropdown.open a:focus .caret {
-    border-top-color: $linkColor;
-    border-bottom-color: $linkColor;
-  }
-  .form-search {
-    margin: 0;
-  }
-}
-
-
 #footer .block .headline {
   border-bottom: 1px solid #777;
+  .block-title {
+    color: $grayLight;
+  }
 }
 
 .tweet_list {
@@ -522,10 +446,8 @@ aside .social ul {
   margin-bottom: 0;
   padding-top: 50px;
   padding-bottom: 10px;
-  background: url(../img/background-scroll.jpg) no-repeat fixed;
-  background-size: cover;
-  background-position: 50% 0px;
-  @include box-shadow(inset 0 0 20px #000000);
+  background: #79BD8F url('../img/hex_grid.png') repeat center top;
+  background-attachment: fixed;
 }
 
 .quote blockquote {
@@ -567,7 +489,7 @@ aside .social ul {
 #footer {
   font-size: $baseFontSize - 0.1rem;
   position: relative;
-  background-color: #252525;
+  background-color: $navbarBackground;
   &:before {
     content: '';
     border: 10px solid transparent;
@@ -578,7 +500,7 @@ aside .social ul {
     margin-left: -10px;
   }
   a {
-    @include redefine-link($linkColor,$linkColorHover);
+    @include redefine-link($grayDark,$green);
   }
 }
 
@@ -586,7 +508,7 @@ aside .social ul {
   padding: 30px 0;
   color: #aaa;
   h1, h2, h3, h4, h5 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #fff;
   }
 }

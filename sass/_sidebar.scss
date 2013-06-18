@@ -1,0 +1,24 @@
+.sidebar .nav {
+  margin: 0;
+}
+
+.sidebar .block {
+  margin-bottom: 20px;
+  > a, .nav > li > a {
+    @include redefine-link($textColor,$linkColor);
+  }
+  .nav li.dropdown.open .caret,
+  .nav li.dropdown.open.active .caret,
+  .nav .dropdown-toggle .caret {
+    border-top-color: #4c4c4c;
+    border-bottom-color: #4c4c4c;
+  }
+  .nav li.dropdown.open a:hover .caret,
+  .nav li.dropdown.open a:focus .caret {
+    border-top-color: $linkColor;
+    border-bottom-color: $linkColor;
+  }
+  .form-search {
+    margin: 0;
+  }
+}

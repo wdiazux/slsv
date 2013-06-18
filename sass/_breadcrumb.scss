@@ -1,0 +1,21 @@
+#breadcrumb-wrapper {
+  background-color: $breadcrumbBackground;
+  border-bottom: 1px solid $greenSea;
+}
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  padding-top: 3px;
+  font-size: $baseFontSize - .2rem;
+  background-color: transparent;
+    > li {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+    > .divider{
+      color: #B9B9B9;
+    }
+  }
+  .active {
+    color: $white;
+  }
+  a { @include redefine-link(#B9B9B9,$white); }
+}

@@ -1,0 +1,79 @@
+//
+// Pagination
+// --------------------------------------------------
+
+.pagination ul {
+  background: $paginationBackground;
+  color: $white;
+  vertical-align: top;
+  @include border-radius(6px);
+  @include box-shadow(none);
+  > li {
+    vertical-align: top;
+
+    // Pseudos and states
+    > a:first-child,
+    > a:last-child {
+      @include border-radius(50px);
+    }
+    &.active.prev > a,
+    &.active.next > a {
+      background-color: transparent;
+      color: $white;
+    }
+    &.prev > a,
+    &.next > a {
+      background: transparent;
+      border: none;
+      font-size: 1.6rem;
+      margin: 0;
+      padding: 14px 17px;
+      min-width: auto;
+      @include box-shadow(none);
+    }
+    &.next > a,
+    &.next > a:focus,
+    &.next > a:hover {
+        border-left: 2px solid mix($grayLight, white, 66%);
+        margin-left: 5px;
+        @include border-radius(0 6px 6px 0);
+    }
+    &.prev > a,
+    &.prev > a:focus,
+    &.prev > a:hover {
+        border-right: 2px solid mix($grayLight, white, 66%);
+        margin-right: 5px;
+        @include border-radius(6px 0 0 6px);
+    }
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      margin: 12px 5px;
+      color: $grayLight;
+      background-color: $grayLighter;
+      border-color: $paginationBorder;
+      border-width: 2px !important;
+    }
+    > a {
+      margin: 9px 0;
+      padding: 0 5px;
+      font-size: 1.4rem;
+      line-height: 17px;
+      min-height: 17px;
+      min-width: auto;
+      outline: none;
+      border: 5px solid $paginationBorder;
+      background: $white;
+      text-align: center;
+      @include border-radius(50px);
+      @include transition(background 0.2s ease-out, border-color 0s ease-out, color 0.2s ease-out);
+      &:hover,
+      &:focus {
+        background-color: $linkColor;
+        border-color: $linkColor;
+        color: $white;
+        @include transition(background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out);
+      }
+    }
+  }
+}

@@ -236,6 +236,9 @@ function slsv_preprocess_button(&$vars) {
       t('Update') => 'btn-info',
       t('Delete') => 'btn-danger',
       t('Remove') => 'btn-danger',
+      //my settings
+      t('Log in') => 'btn-danger',
+      t('Send message') => 'btn-primary',
     );
     foreach ($classes as $search => $class) {
       if (strpos($vars['element']['#value'], $search) !== FALSE) {

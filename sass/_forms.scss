@@ -21,11 +21,13 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
+  border: 2px solid $inputBorder;
   font-size: $baseFontSize - .1rem;
-  // Focus state
+  text-indent: 1px;
+  @include box-shadow(none);
   &:focus {
-    border-color: rgba(121, 216, 0, 0.8);
-    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(142,205,68,.6));
+    border-color: $greenInfinity;
+    @include box-shadow(none);
   }
 }
 
@@ -52,10 +54,6 @@ textarea { height: auto; }
 // SEARCH FORM
 // -----------
 
-input.search-query,
-.form-search .input-append .search-query {
-  @include border-radius(4px);
-}
 input[type="search"] {
   @include box-sizing(border-box);
 }
@@ -63,7 +61,7 @@ input[type="search"] {
 aside[role=menu] {
   .input-append,
   input.search-query {
-    background: #fff url(../img/ico-search.png) no-repeat;
+    background: $white url(../img/ico-search.png) no-repeat;
     background-position: 96% center;
     padding-right: 30px !important;
   }

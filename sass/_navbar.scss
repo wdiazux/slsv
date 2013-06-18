@@ -1,0 +1,15 @@
+.navbar {
+  border-top: 1px solid #18222C;
+  .btn {
+    background-color: $linkColorHover;
+    &:hover { background-color: $linkColor;}
+  }
+}
+
+.navbar .navbar-inner {
+  @include border-radius(0);
+}
+
+.navbar .nav > li > a {
+  text-shadow: none;
+}

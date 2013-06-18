@@ -94,13 +94,7 @@ nav[role=navigation] {
   margin: 0;
   margin-bottom: 15px;
   border-radius: 3px;
-  background-color: #C0C0C0;
-  > .active > a,
-  > .active > a:focus,
-  > .active > a:hover {
-    background-color: #96c054;
-    color: $white;
-  }
+  background-color: #d3dcb9;
 }
 
 section[role=main] {
@@ -255,6 +249,10 @@ section[role=main] {
     }
   }
 
+  body {
+    padding-top: 73px;
+  }
+
   #header {
     .nav > li {
       position: relative;
@@ -264,37 +262,26 @@ section[role=main] {
       }
       > a {
         font-size: 1.5rem;
-        text-shadow: none;
         padding: 25px 20px;
       }
-      &:hover, &:focus {
-        border-top: 4px solid $grayLight;
+      &.active, &:hover, &:focus {
         margin-top: -4px;
-        > a {
-          @include redefine-link(#555555,#555555);
-        }
-        &:before{
+        &:before {
           content: '';
           border: 4px solid transparent;
-          border-top-color: $grayLight;
           position: absolute;
           top: 0;
           left: 50%;
           margin-left: -4px;
-        } 
+        }
       }
-    }
-    .nav > li.active {
-      border-top: 4px solid $linkColor;
-      margin-top: -4px;
-      &:before{
-        content: '';
-        border: 4px solid transparent;
-        border-top-color: $linkColor;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        margin-left: -4px;
+      &:hover, &:focus {
+        border-top: 4px solid $gray;
+        &:before { border-top-color: $gray; }
+      }
+      &.active {
+        border-top: 4px solid $green;
+        &:before { border-top-color: $green; }
       }
     }
   }
@@ -303,12 +290,6 @@ section[role=main] {
     margin: 0;
     border-radius: 0;
     background-color: transparent;
-    > .active > a,
-    > .active > a:focus,
-    > .active > a:hover {
-      background-color: #e6e6e6;
-      color: $textColor;
-    }
   }
 
   #logo-wrapper {

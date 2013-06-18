@@ -24,7 +24,7 @@ javascripts_dir = "js"
 # Require any additional compass plugins installed on your system.
 require 'bootstrap-sass'
 require 'susy'
-
+require 'compass-colors'
 
 ##
 ## You probably don't need to edit anything below this.

@@ -15,12 +15,46 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3 { line-height: 4rem }
 
-h1 { font-size: 2.3rem; }
-h2 { font-size: 2.0rem; }
-h3 { font-size: 1.7rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.3rem; }
-h6 { font-size: 1.2rem; }
+h1 {
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: none;
+}
+
+#comments .title,
+#page-title,
+.pane-title {
+  font-size: 2.3rem;
+}
+
+.block .block-title {
+  font-size: 1.7rem;
+}
 
 a {
   @include transition(color .1s ease-in-out);

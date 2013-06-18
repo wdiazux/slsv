@@ -334,6 +334,12 @@ section[role=main] {
     }
   }
 
+  .blog-display .view-content {
+    .views-row-1,
+    .views-row-2 { @include span-columns(4, 12) }
+    .views-row-3 { @include span-columns(4 omega, 12) }
+  }
+
   #footerTop {
     .footer1, .footer2, {
       @include span-columns(4, 12);

@@ -1,7 +1,7 @@
 .navbar {
   border-top: 1px solid #18222C;
   .btn {
-    background-color: $linkColorHover;
+    background-color: $breadcrumbBackground;
     &:hover { background-color: $linkColor;}
   }
 }

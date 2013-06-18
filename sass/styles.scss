@@ -9,6 +9,7 @@
 @import "font-awesome";
 // Compass
 @import "compass/css3/transform";
+@import "compass/css3/transition";
 @import "compass/css3/box-sizing";
 // Mixin
 @import "mixins";
@@ -21,10 +22,12 @@
 @import "code";
 @import "forms";
 @import "patterns";
+@import "buttons";
 @import "navbar";
 @import "breadcrumb";
 @import "sidebar";
 @import "pagination";
+@import "footer";
 
 
 /* #Base styles
@@ -378,12 +381,7 @@ ul.entry-meta {
   }
 }
 
-#footer .block .headline {
-  border-bottom: 1px solid #777;
-  .block-title {
-    color: $grayLight;
-  }
-}
+
 
 .tweet_list {
   @include border-radius(0.5em);
@@ -429,19 +427,6 @@ aside .social ul {
   margin: 4px 0 0 0;
 }
 
-#footer .social ul li {
-  padding: 4px;
-  margin: 0 2px;
-  background-color: #131313;
-  a {
-    color: #aaa;
-    @include transition(500ms linear 0s);
-    &:hover {
-      text-shadow: 0 0 0.5em #87F, 0 0 0.5em #87F, 0 0 0.5em #87F;
-    }
-  }
-}
-
 .slider {
   margin-bottom: 0;
   padding-top: 50px;
@@ -481,51 +466,50 @@ aside .social ul {
   }
 }
 
-
-
-/* #Footer
-   ================================================== */
-
-#footer {
-  font-size: $baseFontSize - 0.1rem;
-  position: relative;
-  background-color: $navbarBackground;
-  &:before {
-    content: '';
-    border: 10px solid transparent;
-    border-top-color: #fff;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin-left: -10px;
-  }
-  a {
-    @include redefine-link($grayDark,$green);
-  }
-}
-
-#footerTop {
-  padding: 30px 0;
-  color: #aaa;
-  h1, h2, h3, h4, h5 {
-    text-transform: capitalize;
-    color: #fff;
-  }
-}
-
-#footerBottom {
-  background-color: #1a1a1a;
-  color: #aaa;
-  padding: 10px 0;
-}
-
-
-.footerNav {
-  margin: 0;
-  li a {
-    color:#aaa;
+.blog-display .view-content {
+  .views-row {
+    margin-bottom: 15px;
+    padding: 30px;
+    height: 202px;
+    background-color: white;
+    border-radius: 0 5px 0 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    position: relative;
+    &:before {
+      content: "";
+      width: 85%;
+      height: 5px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-color: $red;
+      @include transition-property(width);
+      @include transition-duration(.5s);
+    }
     &:hover {
-      color: #fff;
+      @include box-shadow(0 2px 8px rgba(0,0,0,0.2));
+      &:before {
+        width: 100%;
+        @include transition-property(width);
+        @include transition-duration(.5s);
+      }
+    }
+    .views-field-created {
+      font-size: 1.3rem;
+      .views-label {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+    .views-field-name {
+      font-size: 1.3rem;
+      font-style: italic;
+      a { @include redefine-link($red,$redDark); }
+    }
+    .views-field-title {
+      margin: 10px 0;
+      font-size: 2rem;
+      a { @include redefine-link($red,$redDark); }
     }
   }
 }

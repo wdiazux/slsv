@@ -1,0 +1,30 @@
+// BUTTONS
+// --------------------------------------------------
+
+.btn {
+  padding: 9px 20px;
+  border: none;
+  background-image: none;
+  color: $white;
+  text-decoration: none;
+  text-shadow: none;
+  @include box-shadow(none);
+  @include transition(0.25s);
+
+  &:hover,
+  &:focus {
+    color: white;
+    @include transition(0.25s);
+  }
+
+  &:active,
+  &.active {
+    @include box-shadow(none);
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  &.disabled,
+  &[disabled] {
+    color: white;
+  }
+}

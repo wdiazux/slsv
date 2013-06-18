@@ -1,96 +1,3 @@
-// Flatness by Jenil (www.jgog.in)
-// Bootswatch 2.3.2
-// -----------------------------------------------------
-
-
-// NAVBAR
-// --------------------------------------------------
-
-.navbar {
-
-  .brand {
-    text-shadow: none;
-    &:hover {
-      color: $linkColorHover;
-    }
-  }
-
-  .navbar-inner {
-    @include box-shadow(none);
-  }
-
-  .nav > li > a {
-    text-shadow: none;
-  }
-
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
-    @include box-shadow(none);
-  }
-
-  .navbar-search .search-query {
-    border: none;
-    @include box-shadow(none);
-    line-height: normal;
-  }
-
-  .btn-navbar {
-    background-image: none;
-    @include box-shadow(none);
-  }
-
-  .btn, .btn-group {
-    margin-top: 6px;
-  }
-
-  .btn-inverse,
-  .btn-group-inverse {
-
-    .brand:hover {
-      color: $blueDark;
-    }
-
-    .navbar-search .search-query {
-      border-color: transparent;
-      @include box-shadow(none);
-      line-height: normal;
-      color: $textColor;
-
-      &:focus {		
-	padding: 4px 14px;
-	color: $textColor;
-      }
-    }
-  }
-}
-
-div.subnav {
-
-  border-color: transparent;
-  background-image: none;
-  background-color: $grayLighter;
-  @include box-shadow(none);
-
-  //&-fixed {
-  //  top: $navbarHeight;
-  //}
-
-  .nav > li > a {
-    border-color: transparent;
-    @include box-shadow(none);
-    color: $textColor;
-  }
-
-  .nav > .active > a,
-  .nav > .active > a:hover {
-    border-color: transparent;
-    background-color: darken($grayLighter, 10%);
-    @include box-shadow(none);
-    color: $textColor;
-  }
-}
-
 // NAVIGATION
 // --------------------------------------------------
 
@@ -164,13 +71,6 @@ div.subnav {
   .disabled > span:hover {
     background-color: lighten($green, 10%);
     color: $white;
-  }
-}
-
-.breadcrumb {
-
-  & > li {
-    text-shadow: none;
   }
 }
 
@@ -296,9 +196,6 @@ legend {
   background-color: darken($grayLighter, 5%);
 }
 
-// DROPDOWNS
-// --------------------------------------------------
-
 
 // ALERTS, LABELS, BADGES
 // --------------------------------------------------
@@ -311,20 +208,17 @@ legend {
   h1, h2, h3, h4, h5, h6 {
     color: $white;
   }
-/*
-  &-error {
-    background-color: $red;
-  }
-
-  &-success {
-    background-color: $green;
-  }
-
-  &-info {
-    background-color: $blue;
-  }
-*/
 }
+.alert-error {
+  background-color: $red;
+}
+.alert-success {
+  background-color: $green;
+}
+.alert-info {
+  background-color: $blue;
+}
+
 
 .label {
   padding: 6px 10px;
@@ -359,69 +253,57 @@ legend {
     background-image: none;
     @include box-shadow(none);
   }
-
   .bar + .bar {
     @include box-shadow(none);
   }
-
-  //&-striped .bar {
-  //  #gradient > .striped($blueDark);
-  //}
-
-  //&-success .bar,
-  //&-success.progress-striped .bar,
-  .bar-success {
-    background-color: $green;
-  }
-
-  //&-warning .bar,
-  //&-warning.progress-striped .bar,
-  .bar-warning {
-    background-color: $yellow;
-  }
-
-  //&-danger .bar,
-  //&-danger.progress-striped .bar,
-  .bar-danger {
-    background-color: $red;
-  }
-
-  //&-info .bar,
-  //&-info.progress-striped .bar,
-  .bar-info {
-    background-color: $blue;
-  }
+}
+.progress-striped .bar {
+  @include gradient-striped($blueDark);
 }
 
-.tooltip {
+progress-success .bar,
+progress-success.progress-striped .bar,
+.bar-success {
+  background-color: $green;
+}
+.progress-warning .bar,
+.progress-warning.progress-striped .bar,
+.bar-warning {
+  background-color: $yellow;
+}
 
-  &.in {
-    opacity: 1;
-  }
+.progress-danger .bar,
+.progress-danger.progress-striped .bar,
+.bar-danger {
+  background-color: $red;
+}
+
+.progress-info .bar,
+.progress-info.progress-striped .bar,
+.bar-info {
+  background-color: $blue;
+}
+
+.tooltip.in {
+  opacity: 1;
 }
 
 .popover {
   color: $white;
-
-  //&-title {
-  //  border-bottom: 2px solid $dropdownDividerBottom;
-  //}
+}
+.popover-title {
+  border-bottom: 2px solid $dropdownDividerBottom;
 }
 
-.modal {
-/*
-  &-header {
-    background-color: $navbarBackground;
-    border-bottom: none;
-    color: $white;
-  }
-
-  &-footer {
-    background-color: $grayLighter;
-    border-top: none;
-    @include box-shadow(none);
-  }
-*/
+.modal-header {
+  background-color: $navbarBackground;
+  border-bottom: none;
+  color: $white;
+}
+.modal-footer {
+  background-color: $grayLighter;
+  border-top: none;
+  @include box-shadow(none);
 }
 
 .close {

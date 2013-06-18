@@ -1,0 +1,21 @@
+// Clean flexslider container
+.flexslider {
+  background: transparent;
+  border: 0;
+  @include box-shadow(none);
+}
+
+// Class to move control of flexslider out the slider
+.flex-ctrl-out .flex-direction-nav a {
+  display: block !important;
+  left: auto !important;
+  top: -15px !important;
+  opacity: 1 !important;
+  background: url(../img/bg_direction_nav.png) no-repeat 0 0;
+  &.flex-prev {
+    right: 37px !important;
+  }
+  &.flex-next {
+    right: 5px !important;
+  }
+}

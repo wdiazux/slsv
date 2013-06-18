@@ -16,44 +16,50 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2, h3 { line-height: 4rem }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 2px;
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 2px;
 }
 
 h4 {
-  font-size: 2.4rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
 h5 {
   font-size: 1.6rem;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 h6 {
   font-size: 1.3rem;
   font-weight: 500;
   text-transform: none;
+  text-transform: uppercase;
 }
 
-#comments .title,
-#page-title,
-.pane-title {
-  font-size: 2.3rem;
+h3.node-title {
+  margin-bottom: 0;
 }
-
-.block .block-title {
-  font-size: 1.7rem;
+h3#page-title {
+  margin-bottom: 0;
+}
+h3.block-title {
+  font-size: 1.9rem;
 }
 
 a {
@@ -63,14 +69,13 @@ a {
   }
 }
 
-p {  margin-bottom: 14px; }
+p { margin-bottom: 14px; }
 
 #site-name {
   font-size: 3.5rem;
 }
 
 .node-title {
-  font-size: 2.3rem;
   line-height: 4.6rem;
   a { @include redefine-link($textColor,$orange); }
 }

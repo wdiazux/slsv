@@ -2,69 +2,32 @@
 // --------------------------------------------------
 
 .nav-list {
-
   & > li > a,
   & > .active > a,
   .nav-header {
     text-shadow: none;
   }
-
   .divider {
     background: none;
     border-bottom: 2px solid $dropdownDividerBottom;
   }
 }
 
-.nav-pills {
-
-  .open .dropdown-toggle {
-    background-color: $blueDark;
-  }
+.nav-pills .open .dropdown-toggle {
+  background-color: $blueDark;
 }
 
-.pagination {
-
-  ul {
-
-    @include box-shadow(none);
-
-    > li > a {
-      background-color: $green;
-      border-color: transparent;
-      color: $white;
-
-      &:hover {
-	background-color: lighten($green, 10%);
-      }
-    }
-
-    > .active > a,
-    > .active > a:hover {
-      background-color: $paginationActiveBackground;
-      color: $textColor;
-    }
-
-    > .disabled > a,
-    > .disabled > a:hover {
-      background-color: lighten($green, 10%);
-      color: $white;
-    }
-  }
-}
 
 .pager {
-
   li > a,
   li > span {
     background-color: $green;
     border: none;
     color: $white;
-
     &:hover {
       background-color: lighten($green, 10%);
     }
   }
-
   .disabled > a,
   .disabled > span,
   .disabled > a:hover,
@@ -197,29 +160,6 @@ legend {
 }
 
 
-// ALERTS, LABELS, BADGES
-// --------------------------------------------------
-
-.alert {
-  background-color: $orange;
-  color: $white;
-  text-shadow: none;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
-  }
-}
-.alert-error {
-  background-color: $red;
-}
-.alert-success {
-  background-color: $green;
-}
-.alert-info {
-  background-color: $blue;
-}
-
-
 .label {
   padding: 6px 10px;
   text-shadow: none;
@@ -238,7 +178,6 @@ legend {
 .well {
   border: none;
   @include box-shadow(none);
-
 }
 
 .progress {
@@ -330,14 +269,12 @@ progress-success.progress-striped .bar,
 }
 
 @media (max-width: 979px) {
-  .navbar {
-    .nav-collapse .nav > li > a {
-      @include redefine-link($grayDarker,$grayDarker);
-      &.active,
-      &:focus,
-      &:hover {
-	background-color: $green;
-      }
+  .navbar .nav-collapse .nav > li > a {
+    color: $grayDarker;
+    &.active,
+    &:focus,
+    &:hover {
+      background-color: $green;
     }
   }
 }

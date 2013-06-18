@@ -158,8 +158,6 @@ $navbarLinkBackgroundActive:      #2c3836;
 // -------------------------
 $dropdownBackground:            $navbarBackground;
 $dropdownBorder:                $navbarBorder;
-$dropdownDividerTop:            rgba(0,0,0,0.2);
-$dropdownDividerBottom:         rgba(0,0,0,0.2);
 
 $dropdownLinkColor:             $navbarLinkColor;
 $dropdownLinkColorHover:        $navbarLinkColorHover;
@@ -200,20 +198,20 @@ $breadcrumbBackground:    #3A8564;
 
 // Form states and alerts
 // -------------------------
-$warningText:             $yellow;
-$warningBackground:       desaturate(lighten($yellow,45%),30%);
+$warningText:             #8f8d5d;
+$warningBackground:       #f8f7d3;
 $warningBorder:           transparent;
 
-$errorText:               $red;
-$errorBackground:         desaturate(lighten($red,45%),30%);
+$errorText:               #9c4242;
+$errorBackground:         #eda2a4;
 $errorBorder:             transparent;
 
-$successText:             $green;
-$successBackground:       desaturate(lighten($green,45%),30%);
+$successText:             #709980;
+$successBackground:       #a4eed2;
 $successBorder:           transparent;
 
-$infoText:                $blue;
-$infoBackground:          desaturate(lighten($blue,43%),30%);
+$infoText:                #3c7889;
+$infoBackground:          #9dd7e6;
 $infoBorder:              transparent;
 
 

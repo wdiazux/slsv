@@ -1,0 +1,22 @@
+//
+// Modals
+// --------------------------------------------------
+
+// Base modal
+.modal-header {
+  background-color: $navbarBackground;
+  border-bottom: none;
+  color: $white;
+  @include border-radius(6px 6px 0 0);
+  // Close icon
+  .close {
+    color: $white;
+  }
+}
+
+// Footer (for actions)
+.modal-footer {
+  background-color: $grayLighter;
+  border-top: none;
+  @include box-shadow(none);
+}

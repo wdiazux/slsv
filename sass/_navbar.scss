@@ -102,3 +102,29 @@ div.subnav {
 .navbar .nav > li > a {
   text-shadow: none;
 }
+
+@media (max-width: 767px) {  
+  div.subnav {
+    .nav > li:first-child > a,
+    .nav > li + li > a {
+      border-color: transparent;
+      &:hover {
+	background-color: darken($grayLighter, 10%);
+      }
+    }
+    .nav > li:last-child > a {
+      border-radius: 0 0 4px 4px;
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .navbar .nav-collapse .nav > li > a {
+    color: $grayDarker;
+    &.active,
+    &:focus,
+    &:hover {
+      background-color: $green;
+    }
+  }
+}

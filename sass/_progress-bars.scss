@@ -1,0 +1,56 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Outer container
+.progress {
+  background: $grayLighter;
+  @include border-radius(32px);
+  @include box-shadow(none);
+}
+
+// Bar of progress
+.progress .bar {
+  background-color: $blueDark;
+  background-image: none;
+  @include box-shadow(none);
+}
+.progress .bar + .bar {
+  @include box-shadow(none);
+}
+
+// Striped bars
+.progress-striped .bar {
+  @include gradient-striped($blueDark);
+}
+
+// COLORS
+// ------
+
+// Danger (red)
+.progress-danger .bar,
+.progress-danger.progress-striped .bar,
+.bar-danger {
+  background-color: $red;
+}
+
+// Success (green)
+progress-success .bar,
+progress-success.progress-striped .bar,
+.bar-success {
+  background-color: $green;
+}
+
+// Info (teal)
+.progress-info .bar,
+.progress-info.progress-striped .bar,
+.bar-info {
+  background-color: $blue;
+}
+
+// Warning (orange)
+.progress-warning .bar,
+.progress-warning.progress-striped .bar,
+.bar-warning {
+  background-color: $yellow;
+}

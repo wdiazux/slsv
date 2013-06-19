@@ -1,5 +1,12 @@
-/* #Imports
-   ================================================== */
+/*!
+ * SLSV
+ *
+ * Copyright 2013 SLSV
+ * Licensed under the MIT License
+ * http://opensource.org/licenses/MIT
+ *
+ * Designed and built by @leprosys
+*/
 
 // Bootstrap
 @import "base";
@@ -7,30 +14,56 @@
 @import "bootstrap/responsive-navbar";
 @import "bootstrap/variables";
 @import "font-awesome";
+
 // Compass
+//@import "compass/css3/opacity";
 @import "compass/css3/transform";
 @import "compass/css3/transition";
 @import "compass/css3/box-sizing";
+
 // Mixin
 @import "mixins";
 @import "flat";
-@import "alerts";
-// Drupal
-@import "drupal";
-// Site Style
+
+// Grid system and page structure
 @import "html";
 @import "layout";
-@import "type";
-@import "code";
-@import "forms";
-@import "patterns";
-@import "buttons";
-@import "navbar";
-@import "breadcrumb";
-@import "sidebar";
-@import "pagination";
 @import "footer";
+
+// Drupal
+@import "drupal";
+@import "sidebar";
 @import "nodes";
 @import "blocks";
 @import "comments";
+
+// Base CSS
+@import "type";
+@import "code";
+@import "forms";
+
+// Components: common
+@import "wells";
+@import "close";
+
+// Components: Buttons & Alerts
+@import "buttons";
+@import "alerts";
+
+// Components: Nav
+@import "navs";
+@import "navbar";
+@import "breadcrumb";
+@import "pagination";
+@import "pager";
+
+// Components: Popovers
+@import "modals";
+@import "tooltips";
+@import "popover";
+
+// Components: Misc
+@import "labels-badges";
+@import "progress-bars";
+@import "patterns";
 @import "flexslider";

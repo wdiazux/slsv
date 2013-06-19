@@ -121,3 +121,8 @@ aside .social ul {
     @include box-shadow(0 0 4px rgba(0, 0, 0, 0.28));
   }
 }
+
+legend {
+  border-bottom: none;
+  color: $textColor;
+}

@@ -19,8 +19,16 @@
 
         // Tooltips
         if( $.fn.tooltip() ) {
-	    $('[rel="tooltip"]').tooltip();
+	    $('a[data-toggle="tooltip"]').tooltip();
 	}
+
+        // Popover
+        if( $.fn.popover() ) {
+            $("a[data-toggle=popover]").popover()
+                .click(function(e) {
+                    e.preventDefault();
+                });
+        }
 
         // Dropdowns
         var $dropdowns = $('li.dropdown'); // Specifying the element is faster for older browsers

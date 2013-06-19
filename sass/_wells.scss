@@ -1,0 +1,10 @@
+//
+// Wells
+// --------------------------------------------------
+
+
+// Base class
+.well {
+  border: none;
+  @include box-shadow(none);
+}

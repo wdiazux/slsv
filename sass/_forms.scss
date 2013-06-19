@@ -49,7 +49,81 @@ input[type="color"],
   height: 3.2rem;
 }
 
-textarea { height: auto; }
+textarea {
+  height: auto;
+  @include border-radius(3px);
+}
+
+.form-actions {
+  border-top: none;
+  @include border-radius($baseBorderRadius);
+  background-color: darken($grayLighter, 5%);
+}
+
+input[disabled],
+input[readonly],
+textarea[disabled],
+textarea[readonly] {
+  background-color: #eaeded;
+  border-color: transparent;
+  color: #cad2d3;
+  cursor: default;
+}
+
+input[type="file"]{
+  line-height: 1.6rem;
+}
+
+
+// INPUT GROUPS
+// ------------
+
+.input-append,
+.input-prepend {
+  .add-on {
+    height: 32px;
+    border: 2px solid $inputBorder;
+    text-shadow: none;
+  }
+}
+.input-prepend .add-on {
+  margin-right: -2px;
+}
+.input-append .add-on {
+  margin-left: -2px;
+}
+
+// FORM FIELD FEEDBACK STATES
+// --------------------------
+
+// Warning
+.control-group.warning,
+.control-group.warning input:focus,
+.control-group.warning textarea:focus {
+  border-color: $yellow;
+  @include box-shadow(none);
+}
+// Error
+.control-group.error,
+.control-group.error input:focus,
+.control-group.error textarea:focus {
+  border-color: $red;
+  @include box-shadow(none);
+}
+// Success
+.control-group.success,
+.control-group.success input:focus,
+.control-group.success textarea:focus {
+  border-color: $green;
+  @include box-shadow(none);
+}
+// Info
+.control-group.info,
+.control-group.info input:focus,
+.control-group.info textarea:focus {
+  border-color: $blue;
+  @include box-shadow(none);
+}
 
 // SEARCH FORM
 // -----------

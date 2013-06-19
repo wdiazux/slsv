@@ -1,0 +1,18 @@
+//
+// Navs
+// --------------------------------------------------
+
+.nav-list {
+  & > li > a,
+  & > .active > a,
+  .nav-header {
+    text-shadow: none;
+  }
+  .divider {
+    border-bottom: 2px solid $grayLight;
+  }
+}
+
+.nav-pills .open .dropdown-toggle {
+  background-color: $blueDark;
+}

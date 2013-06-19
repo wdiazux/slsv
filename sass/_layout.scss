@@ -113,16 +113,9 @@ section[role=main] {
   }
   .bottom2 {
     text-align: center;
-    .footerNav {
-      text-align: center;
-      li {
-        display: inline;
-        list-style: none;
-        padding: 0 5px;
-        &:first-child {
-          padding-left: 0;
-        }
-      }
+    .social {
+      float: none;
+      margin: 0 auto;
     }
   }
 }
@@ -229,8 +222,8 @@ section[role=main] {
 
     .bottom2 {
       text-align: right;
-      .footerNav {
-        text-align: right;
+      .social {
+        float: right;
       }
     }
   }

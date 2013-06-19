@@ -45,16 +45,8 @@ body {
   margin: 0;
 }
 
-#header {
-  .navbar { margin: 0; }
-}
-
 .content-inner .node-teaser {
   margin-bottom: 15px;
-}
-
-.nav-tabs > li > a {
-  @include redefine-link($grayLight,$black);
 }
 
 .align-center {

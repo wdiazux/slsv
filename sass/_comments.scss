@@ -1,42 +1,44 @@
+// Comments
+// -------------------------
 
-.comment h3.comment-title {
-  margin-bottom: 0.5rem;
-  a { @include redefine-link($textColor,$linkColorHover); }
-}
-.comment div.user-picture img {
-  margin-left: 0;
-}
 .comment {
   margin-bottom: 20px;
   display: table;
   vertical-align: top;
 }
+h3.comment-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  a { @include redefine-link($textColor,$linkColorHover); }
+}
 .comment .attribution {
   display: block;
-  width: 100px;
-  padding: 0 30px 0 0;
-  vertical-align: top;
   overflow: hidden;
+  width: 100px;
   .username {
     @include redefine-link($textColor,$linkColorHover);
   }
-  .user-picture {
-    border: 1px solid #DDDDDD;
-    display: inline-block;
-    padding: 6px;
-    @include box-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
-    @include border-radius(500px);
-    img {
-      margin: 0;
-      width: 55px;
-      height: 55px;
-      @extend .img-circle;
-    }
+}
+.comment .attribution .user-picture {
+  display: block;
+  padding: 6px;
+  width: 70px;
+  border: 2px solid $grayLighter;
+  @include border-radius(50%);
+  img {
+    margin: 0;
+    width: 55px;
+    height: 55px;
+    @extend .img-circle;
   }
+}
+.comment .attribution .submitted {
+  display: table;
+  padding-right: 10px;
 }
 .comment .submitted p {
   margin: 4px 0;
-  font-size: 1.071em;
   line-height: 1.2;
 }
 .comment .submitted .comment-time {
@@ -47,10 +49,6 @@
   font-size: 0.786em;
   text-transform: lowercase;
 }
-.comment .content {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
 .comment .comment-arrow {
   background: url(../img/comment-arrow.gif) no-repeat 0 center transparent;
   height: 40px;
@@ -59,13 +57,17 @@
   position: absolute;
   width: 20px;
 }
+
+// Comments content
 .comment .comment-text {
   padding: 10px 25px;
-  border: 1px solid #d3d7d9;
   display: table-cell;
   vertical-align: top;
   position: relative;
   width: 100%;
+}
+.comment .content {
+  font-size: $baseFontSize - .1rem;
 }
 .comment .indented {
   margin-left: 40px; /* LTR */
@@ -81,6 +83,8 @@
     float: right;
   }
 }
+
+// Unpublised comments
 .comment-unpublished {
   margin-right: 5px;
   padding: 5px 2px 5px 5px;

@@ -21,9 +21,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
+  color: $grayDarker;
   border: 2px solid $inputBorder;
   font-size: $baseFontSize - .1rem;
-  text-indent: 1px;
+  padding: 4px 9px;
   @include box-shadow(none);
   &:focus {
     border-color: $greenInfinity;

@@ -14,7 +14,7 @@ $comment_form = render($content['comment_form']);
 <section id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ($comments && $node->type != 'forum'): ?>
     <?php print render($title_prefix); ?>
-    <h2 class="title"><?php print t('Comments'); ?></h2>
+    <h3 class="title"><?php print t('Comments'); ?></h3>
     <?php print render($title_suffix); ?>
   <?php endif; ?>
 
@@ -22,7 +22,7 @@ $comment_form = render($content['comment_form']);
 
   <?php if ($comment_form): ?>
     <section id="comment-form-wrapper" class="well">
-      <h2 class="title comment-form"><?php print t('Add new comment'); ?></h2>
+      <h3 class="title comment-form"><?php print t('Add new comment'); ?></h3>
       <?php print $comment_form; ?>
     </section> <!-- /#comment-form-wrapper -->
   <?php endif; ?>

@@ -1,47 +1,68 @@
-// NAVBAR
+//
+// Navbars (Redux)
 // --------------------------------------------------
 
+
+// COMMON STYLES
+// -------------
+
+// Base class and wrapper
 .navbar {
+  margin: 0;
+  border-top: 1px solid #18222C;
+}
 
-  .brand {
-    text-shadow: none;
-    &:hover {
-      color: $linkColorHover;
-    }
+// Inner for background effects
+// Gradient is applied to its own element because overflow visible is not honored by IE when filter is present
+.navbar-inner {
+  @include box-shadow(none);
+  @include border-radius(0);
+}
+
+// Brand: website or project name
+// -------------------------
+.navbar .brand {
+  text-shadow: none;
+  &:hover {
+    color: $linkColorHover;
   }
+}
 
-  .navbar-inner {
-    @include box-shadow(none);
-  }
+// Navbar search
+// -------------------------
 
-  .nav > li > a {
-    text-shadow: none;
-  }
+.navbar-search .search-query {
+  border: none;
+  @include box-shadow(none);
+  line-height: normal;
+}
 
-  .nav > .active > a,
-  .nav > .active > a:hover,
-  .nav > .active > a:focus {
-    @include box-shadow(none);
-  }
+// NAVIGATION
+// ----------
 
-  .navbar-search .search-query {
-    border: none;
-    @include box-shadow(none);
-    line-height: normal;
-  }
+.navbar .nav > li > a {
+  text-shadow: none;
+}
 
-  .btn-navbar {
-    background-image: none;
-    @include box-shadow(none);
-  }
+// Active nav items
+.nav > .active > a,
+.nav > .active > a:hover,
+.nav > .active > a:focus {
+  @include box-shadow(none);
+}
 
-  .btn, .btn-group {
-    margin-top: 6px;
-  }
+// Navbar button for toggling navbar items in responsive layouts
+// These definitions need to come after '.navbar .btn'
+.navbar .btn-navbar {
+  background-image: none;
+  @include box-shadow(none);
+  background-color: $breadcrumbBackground;
+  &:hover { background-color: $linkColor;}
+}
 
+.navbar {
   .btn-inverse,
   .btn-group-inverse {
-
     .brand:hover {
       color: $blueDark;
     }
@@ -60,69 +81,13 @@
   }
 }
 
-div.subnav {
-  border-color: transparent;
-  background-image: none;
-  background-color: $grayLighter;
-  @include box-shadow(none);
-
-  .nav > li > a {
-    border-color: transparent;
-    @include box-shadow(none);
-    color: $textColor;
-  }
-
-  .nav > .active > a,
-  .nav > .active > a:hover {
-    border-color: transparent;
-    background-color: darken($grayLighter, 10%);
-    @include box-shadow(none);
-    color: $textColor;
-  }
-}
-div.subnav-fixed {
-  top: $navbarHeight;
-}
-
-
-.navbar {
-  border-top: 1px solid #18222C;
-  .btn {
-    background-color: $breadcrumbBackground;
-    &:hover { background-color: $linkColor;}
-  }
-}
-
-.navbar .navbar-inner {
-  @include border-radius(0);
-}
-
-.navbar .nav > li > a {
-  text-shadow: none;
-}
-
-@media (max-width: 767px) {  
-  div.subnav {
-    .nav > li:first-child > a,
-    .nav > li + li > a {
-      border-color: transparent;
-      &:hover {
-	background-color: darken($grayLighter, 10%);
-      }
-    }
-    .nav > li:last-child > a {
-      border-radius: 0 0 4px 4px;
-    }
-  }
-}
-
 @media (max-width: 979px) {
   .navbar .nav-collapse .nav > li > a {
-    color: $grayDarker;
+    color: $navbarBackground;
     &.active,
     &:focus,
     &:hover {
-      color: $grayDarker;
+      color: $navbarBackground;
       background-color: $green;
     }
   }

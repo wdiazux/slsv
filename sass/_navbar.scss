@@ -61,15 +61,10 @@
 }
 
 div.subnav {
-
   border-color: transparent;
   background-image: none;
   background-color: $grayLighter;
   @include box-shadow(none);
-
-  //&-fixed {
-  //  top: $navbarHeight;
-  //}
 
   .nav > li > a {
     border-color: transparent;
@@ -84,6 +79,9 @@ div.subnav {
     @include box-shadow(none);
     color: $textColor;
   }
+}
+div.subnav-fixed {
+  top: $navbarHeight;
 }
 
 
@@ -124,6 +122,7 @@ div.subnav {
     &.active,
     &:focus,
     &:hover {
+      color: $grayDarker;
       background-color: $green;
     }
   }

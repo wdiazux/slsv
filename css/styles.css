@@ -9849,7 +9849,7 @@ div.subnav {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 74, ../sass/_navbar.scss */
+/* line 69, ../sass/_navbar.scss */
 div.subnav .nav > li > a {
   border-color: transparent;
   -webkit-box-shadow: none;
@@ -9857,7 +9857,7 @@ div.subnav .nav > li > a {
   box-shadow: none;
   color: #666666;
 }
-/* line 81, ../sass/_navbar.scss */
+/* line 76, ../sass/_navbar.scss */
 div.subnav .nav > .active > a,
 div.subnav .nav > .active > a:hover {
   border-color: transparent;
@@ -9868,54 +9868,60 @@ div.subnav .nav > .active > a:hover {
   color: #666666;
 }
 
-/* line 90, ../sass/_navbar.scss */
+/* line 83, ../sass/_navbar.scss */
+div.subnav-fixed {
+  top: 50px;
+}
+
+/* line 88, ../sass/_navbar.scss */
 .navbar {
   border-top: 1px solid #18222C;
 }
-/* line 92, ../sass/_navbar.scss */
+/* line 90, ../sass/_navbar.scss */
 .navbar .btn {
   background-color: #3a8564;
 }
-/* line 94, ../sass/_navbar.scss */
+/* line 92, ../sass/_navbar.scss */
 .navbar .btn:hover {
   background-color: #82b964;
 }
 
-/* line 98, ../sass/_navbar.scss */
+/* line 96, ../sass/_navbar.scss */
 .navbar .navbar-inner {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 
-/* line 102, ../sass/_navbar.scss */
+/* line 100, ../sass/_navbar.scss */
 .navbar .nav > li > a {
   text-shadow: none;
 }
 
 @media (max-width: 767px) {
-  /* line 109, ../sass/_navbar.scss */
+  /* line 107, ../sass/_navbar.scss */
   div.subnav .nav > li:first-child > a,
   div.subnav .nav > li + li > a {
     border-color: transparent;
   }
-  /* line 111, ../sass/_navbar.scss */
+  /* line 109, ../sass/_navbar.scss */
   div.subnav .nav > li:first-child > a:hover,
   div.subnav .nav > li + li > a:hover {
     background-color: #cfd9db;
   }
-  /* line 115, ../sass/_navbar.scss */
+  /* line 113, ../sass/_navbar.scss */
   div.subnav .nav > li:last-child > a {
     border-radius: 0 0 4px 4px;
   }
 }
 @media (max-width: 979px) {
-  /* line 122, ../sass/_navbar.scss */
+  /* line 120, ../sass/_navbar.scss */
   .navbar .nav-collapse .nav > li > a {
     color: #222222;
   }
-  /* line 126, ../sass/_navbar.scss */
+  /* line 124, ../sass/_navbar.scss */
   .navbar .nav-collapse .nav > li > a.active, .navbar .nav-collapse .nav > li > a:focus, .navbar .nav-collapse .nav > li > a:hover {
+    color: #222222;
     background-color: #82b964;
   }
 }

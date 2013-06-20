@@ -7,23 +7,32 @@
   margin: 0;
 }
 
+// Fix blocks style
 .sidebar .block {
   margin-bottom: 20px;
-  > a, .nav > li > a {
-    @include redefine-link($textColor,$linkColor);
+ 
+  .form-search {
+    margin: 0;
   }
+}
+
+// Redefine link color
+.sidebar > a,
+.sidebar .nav > li > a {
+  @include redefine-link($textColor,$linkColor);
+}
+
+// Fix caret color
+.sidebar {
   .nav li.dropdown.open .caret,
   .nav li.dropdown.open.active .caret,
   .nav .dropdown-toggle .caret {
-    border-top-color: #4c4c4c;
-    border-bottom-color: #4c4c4c;
+    border-top-color: $textColor;
+    border-bottom-color: $textColor;
   }
   .nav li.dropdown.open a:hover .caret,
   .nav li.dropdown.open a:focus .caret {
     border-top-color: $linkColor;
     border-bottom-color: $linkColor;
-  }
-  .form-search {
-    margin: 0;
   }
 }

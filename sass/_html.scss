@@ -14,11 +14,11 @@ html {
     }
     // Throbbers.
     input.form-autocomplete {
-      background-position: 100% 8px; /* LTR */
+      background-position: 100% 8px;
       background-repeat: no-repeat;
     }
     input.throbbing {
-      background-position: 100% -13px; /* LTR */
+      background-position: 100% -13px;
     }
   }
 }
@@ -35,64 +35,10 @@ body {
   margin-bottom: 15px;
 }
 
-.align-center {
-  text-align: center;
-}
-
-.error-page {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  max-width: 460px;
-  width: auto;
-  .form {
-    margin-top: 40px;
-    .search-query {
-      width: 70%;
-    }
-  }
-  .error-code {
-    font-size: 16rem;
-    line-height: 1.2;
-    color: #333;
-    color: rgba(51,51,51,0.85);
-    text-shadow: 1px 4px 6px #fff,0 0 0 #000,1px 4px 6px #fff;
-  }
-  h2, h3 {
-    font-weight: bold;
-  }
-}
-
 .slider {
   margin-bottom: 0;
   padding-top: 50px;
   padding-bottom: 10px;
   background: #79BD8F url('../img/hex_grid.png') repeat center top;
   background-attachment: fixed;
-}
-
-.icon-64 {
-  display: block !important;
-  width: 150px;
-  height: 150px;
-  padding: 33px 33.25px;
-  font-size: 7rem;
-  margin: 0 auto;
-  color: #3C3F5E;
-  border: 6px solid #3C3F5E;
-  @include border-radius(50%);
-  @include transition(all 0.4s ease-in-out);
-  @include transform(rotate(0deg));
-  &:hover {
-    color: $white;
-    border-color: $white;
-    background-color: #3C3F5E;
-    @include transform(rotate(359deg));
-    @include box-shadow(0 0 4px rgba(0, 0, 0, 0.28));
-  }
-}
-
-legend {
-  border-bottom: none;
-  color: $textColor;
 }

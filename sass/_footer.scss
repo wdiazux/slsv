@@ -2,14 +2,16 @@
 // Footer
 // -------------------------
 
+// Main container
 #footer {
   font-size: $baseFontSize - 0.1rem;
+  color: #aaa;
   position: relative;
   background-color: $navbarBackground;
   &:before {
     content: '';
     border: 10px solid transparent;
-    border-top-color: #fff;
+    border-top-color: $white;
     position: absolute;
     left: 50%;
     top: 0;
@@ -20,39 +22,33 @@
   }
 }
 
+// Block titles
 #footer .block .headline {
   border-bottom: 1px solid #777;
   .block-title {
     color: $grayLight;
+    text-transform: capitalize;
   }
 }
 
+// Footer
 #footerTop {
   padding: 30px 0;
-  color: #aaa;
-  h1, h2, h3, h4, h5 {
-    text-transform: capitalize;
-    color: #fff;
-  }
 }
 
+// Bottom
+// -------------------------
 #footerBottom {
   background-color: #1a1a1a;
-  color: #aaa;
   padding: 10px 0;
 }
 
-
-.footerNav {
-  margin: 0;
-  li a {
-    color:#aaa;
-    &:hover {
-      color: #fff;
-    }
-  }
+// push text down on bottom
+.bottom1 p {
+  margin: 4px 0 0 0;
 }
 
+// Social icons on the bottom
 #footerBottom .social {
   margin: 0;
   display: table;
@@ -103,8 +99,4 @@
       background-color: #72858c;
     }
   }
-}
-
-.bottom1 p {
-  margin: 4px 0 0 0;
 }

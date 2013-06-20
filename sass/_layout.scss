@@ -57,21 +57,15 @@ section[role=main],
 
 .container {
   @include container;
-  //soverflow: hidden;
-}
-
-.navbar {
-  .navbar-inner {
-    padding: 0;
-    margin: 0;
-  }
 }
 
 #logo-wrapper {
   display: table-cell;
   width: 100%;
 }
-#menu-icon {
+
+// Container of btn-navbar
+#btn-responsive {
   display: table-cell;
   vertical-align: middle;
 }
@@ -97,14 +91,10 @@ nav[role=navigation] {
   background-color: #d3dcb9;
 }
 
+// Main content
 section[role=main] {
   display: table;
   margin: 40px 0;
-}
-.is-full {
-  section[role=main] {
-  margin: 0 0 40px 0;
-  }
 }
 
 #footerBottom {
@@ -113,6 +103,7 @@ section[role=main] {
   }
   .bottom2 {
     text-align: center;
+    // block social icons
     .social {
       float: none;
       margin: 0 auto;
@@ -222,6 +213,7 @@ section[role=main] {
 
     .bottom2 {
       text-align: right;
+      // block social icons
       .social {
         float: right;
       }
@@ -314,7 +306,7 @@ section[role=main] {
     }
   }
 
-  #menu-icon {
+  #btn-responsive {
     display: inline-block;
     @include hidden;
   }  

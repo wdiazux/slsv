@@ -2,6 +2,7 @@
 // -------------------------
 
 
+// Submited
 ul.entry-meta {
   border-top: 1px solid #e9E9E9;
   border-bottom: 1px solid #E9E9E9;
@@ -36,37 +37,19 @@ ul.entry-meta {
   }
 }
 
-.node {
-  header,
-  .field-type-image {
-    margin-bottom: 15px;
-  }
+.node header,
+.node .field-type-image {
+  margin-bottom: 15px;
 }
 
+// Featured image on node
 .node .field-type-image {
   text-align: center;
-}
-
-.more-link {
-  font-size: $baseFontSize + .1rem;
-  font-weight: bold;
-  display: inline-block;
 }
 
 // Footer for nodes
 .node footer {
   margin-top: 10px;
-}
-
-.section-node section[role=main] .node {
-  footer {
-    margin-bottom: 30px;
-  }
-}
-
-// Hide title for blog page
-.page-blog #page-title {
-  @include hidden();
 }
 
 // Redefine color for links
@@ -79,4 +62,12 @@ ul.links li a {
   color: white !important;
   font-weight: bold;  
   text-transform: uppercase;
+}
+
+// PAGES
+// --------------
+
+// Hide title for blog page
+.page-blog #page-title {
+  @include hidden();
 }

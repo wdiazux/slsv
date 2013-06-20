@@ -2,6 +2,15 @@
 // Forms
 // --------------------------------------------------
 
+// GENERAL STYLES
+// --------------
+
+// Groups of fields with labels on top (legends)
+legend {
+  font-size: 2rem;
+  color: $textColor;
+  border-bottom: none;
+}
 
 // Form controls
 // -------------------------

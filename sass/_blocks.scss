@@ -22,6 +22,7 @@
   }
 }
 
+// Head block
 .block .headline {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #dadada;
@@ -32,45 +33,39 @@
   }
 }
 
-.tweet_list {
-  @include border-radius(0.5em);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow-y: hidden;
-  li {
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0.5em;
-    list-style-type: none;
-  }
-  .tweet_avatar {
-    padding-right: .5em; float: left;
-    img {
-      vertical-align: middle;
-    }
-  }
-}
+// CUSTOM BLOCKS
+// --------------
 
-
-.social ul {
-  margin: 0;
-  padding: 0;
-  li {
-    display: inline-block;
-    list-style: none;
-    margin: 0 5px;
-    font-size: 2rem;
-  }
-}
-
+// Quote block
 .quote blockquote {
   margin: 0;
   border-right: 5px solid #9E9E9E;
   p { font-style: italic; }
 }
 
+// Spin icon
+.icon-64 {
+  display: block !important;
+  width: 150px;
+  height: 150px;
+  padding: 33px 33.25px;
+  font-size: 7rem;
+  margin: 0 auto;
+  color: #3C3F5E;
+  border: 6px solid #3C3F5E;
+  @include border-radius(50%);
+  @include transition(all 0.4s ease-in-out);
+  @include transform(rotate(0deg));
+  &:hover {
+    color: $white;
+    border-color: $white;
+    background-color: #3C3F5E;
+    @include transform(rotate(359deg));
+    @include box-shadow(0 0 4px rgba(0, 0, 0, 0.28));
+  }
+}
 
+// Block blog latest posts
 .blog-display .view-content {
   .views-row {
     margin-bottom: 15px;

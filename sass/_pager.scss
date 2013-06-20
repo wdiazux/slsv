@@ -3,21 +3,19 @@
 // --------------------------------------------------
 
 
-.pager {
-  li > a,
-  li > span {
-    background-color: $green;
-    border: none;
-    color: $white;
-    &:hover {
-      background-color: lighten($green, 10%);
-    }
-  }
-  .disabled > a,
-  .disabled > span,
-  .disabled > a:hover,
-  .disabled > span:hover {
+.pager li > a,
+.pager li > span {
+  background-color: $green;
+  border: none;
+  color: $white;
+  &:hover {
     background-color: lighten($green, 10%);
-    color: $white;
   }
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  background-color: lighten($green, 10%);
+  color: $white; 
 }

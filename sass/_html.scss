@@ -1,21 +1,7 @@
-/* #Base styles
-   ================================================== */
+//
+// Style base
+// --------------------------------------------------
 
-// Redefine color for links
-ul.links li a {
-  @include redefine-link($textColor,$linkColorHover);
-}
-
-// Readmore link as button
-.node-readmore > a {
-  color: white !important;
-  font-weight: bold;  
-  text-transform: uppercase;
-}
-
-
-/* #Site Styles
-   ================================================== */
 
 html {
   &.overlay-open .navbar-fixed-top {
@@ -74,14 +60,6 @@ body {
   }
   h2, h3 {
     font-weight: bold;
-  }
-}
-
-aside .social ul {
-  text-align: center;
-  li {
-    font-size: 4.8rem;
-    margin: 0;
   }
 }
 

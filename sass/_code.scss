@@ -1,15 +1,24 @@
+//
+// Code (inline and blocK)
+// --------------------------------------------------
+
+
 // Inline and block code styles
 @import "compass/typography/text/force-wrap";
 
+// Inline and block code styles
 code,
 pre {
   font-size: $baseFontSize - .2rem;
 }
 
+// Inline code
+code {
+  @include force-wrap;
+}
+
+// Blocks of code
 pre {
   font-size: $baseFontSize - .1rem;
 }
 
-code {
-  @include force-wrap;
-}

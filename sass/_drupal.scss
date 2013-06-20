@@ -1,5 +1,7 @@
-/* #Drupal Styles
-   ================================================== */
+//
+// DRUPAL
+// -------------------------
+
 
 html {
   &.overlay-open .navbar-fixed-top {
@@ -174,6 +176,14 @@ input.error {
   }
 }
 
+// Search results
+.search-results h3.title {
+  font-size: 2rem;
+  a {
+    @include redefine-link($textColor,$linkColorHover);
+  }
+}
+
 // Inline containers.
 .container-inline div, .container-inline label {
   display: block;
@@ -193,7 +203,6 @@ table tr.error {
   }
   input, textarea, select, .uneditable-input {
     color: $errorText;
-    border: 1px solid $inputBorder;
   }
   .help-block, .help-inline {
     color: $placeholderText;

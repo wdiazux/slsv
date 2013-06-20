@@ -10,8 +10,8 @@
  */
 
 
-/* #Grid
-   ================================================== */
+// Grid
+// --------------------------------------------------
 
 $total-columns:         4;             // a 4-column grid for Mobile First
 $column-width:          6.5rem;         // each column is 3.8em wide
@@ -22,8 +22,8 @@ $grid-padding:          $gutter-width; // grid-padding equal to gutters
 $container-style:       magic;
 
 
-/* #Bootstrap
-   ================================================== */
+// Global values
+// --------------------------------------------------
 
 @import "bootstrap/variables";
 
@@ -226,7 +226,6 @@ $popoverArrowColor:       $blueDark;
 $popoverTitleBackground:  $blueDark;
 
 
-/* #Imports
-   ================================================== */
-
+// Imports
+// -------------------------
 @import "susy"; /* Add the susy responsive layout mixins. */

@@ -1,23 +1,27 @@
-/* =============================================================================
-   Mixins
-   ========================================================================== */
+//
+// Mixins
+// -------------------------
 
-/* Element to 100% */
+
+// Element to 100%
 @mixin full() {
   width: 100%;
   clear: both;
 }
 
+// Hidde elements
 @mixin hidden() {
   visibility: hidden;
   display: none;
 }
 
+// Show elements again
 @mixin visible() {
   display: inherit;
   visibility: visible;
 }
 
+// Change colors to links easy
 @mixin redefine-link($color1, $color2) {
   color: $color1;
   &:active,
@@ -25,12 +29,14 @@
   &:focus { color: $color2; }
 }
 
+// Insert icon before
 @mixin icon-before($icon) {
   @extend [class^="icon-"];
   margin-right: 0.5em;
   content: $icon;
 }
 
+// Create a grid
 @mixin all-columns() {
   $i: $total-columns;
   @while $i > 0 {

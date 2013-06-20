@@ -1,3 +1,4 @@
+//
 // Comments
 // -------------------------
 
@@ -6,6 +7,13 @@
   display: table;
   vertical-align: top;
 }
+// Comment main title
+#comments h2.title,
+#comments h3.title {
+  border-bottom: 8px solid $wellBackground;
+  margin-bottom: 20px;
+}
+// Title of comments
 h3.comment-title {
   margin: 0;
   font-size: 1.8rem;
@@ -92,8 +100,4 @@ h3.comment-title {
 .comment-unpublished .comment-text .comment-arrow {
   border-left: 1px solid #fff4f4;
   border-right: 1px solid #fff4f4;
-}
-#comments h2.title {
-  border-bottom: 8px solid #F0F0F0;
-  margin-bottom: 20px;
 }

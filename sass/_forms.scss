@@ -2,9 +2,12 @@
 // Forms
 // --------------------------------------------------
 
+
 // Form controls
 // -------------------------
 
+// Shared size and type resets
+select,
 textarea,
 input[type="text"],
 input[type="password"],
@@ -21,17 +24,20 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
+  height: 3.2rem;
   color: $grayDarker;
-  border: 2px solid $inputBorder;
   font-size: $baseFontSize - .1rem;
   padding: 4px 9px;
-  @include box-shadow(none);
-  &:focus {
-    border-color: $greenInfinity;
-    @include box-shadow(none);
-  }
 }
 
+// Reset height since textareas have rows
+textarea {
+  height: auto;
+  @include border-radius(3px);
+}
+
+// Everything else
+textarea,
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -47,52 +53,36 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  height: 3.2rem;
+  border: 2px solid $inputBorder;
+  @include box-shadow(none);
+  &:focus {
+    border-color: $greenInfinity;
+    @include box-shadow(none);
+  }
 }
 
-textarea {
-  height: auto;
-  @include border-radius(3px);
-}
-
-.form-actions {
-  border-top: none;
-  @include border-radius($baseBorderRadius);
-  background-color: darken($grayLighter, 5%);
-}
-
-input[disabled],
-input[readonly],
-textarea[disabled],
-textarea[readonly] {
-  background-color: #eaeded;
-  border-color: transparent;
-  color: #cad2d3;
-  cursor: default;
-}
-
-input[type="file"]{
+// Set the height of select and file controls to match text inputs
+select,
+input[type="file"] {
   line-height: 1.6rem;
 }
 
+// DISABLED STATE
+// --------------
 
-// INPUT GROUPS
-// ------------
+// Disabled and read-only inputs
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  cursor: default;
+  background-color: $grayLighter;
+  border-color: transparent;
+  color: $grayLight;
+}
 
-.input-append,
-.input-prepend {
-  .add-on {
-    height: 32px;
-    border: 2px solid $inputBorder;
-    text-shadow: none;
-  }
-}
-.input-prepend .add-on {
-  margin-right: -2px;
-}
-.input-append .add-on {
-  margin-left: -2px;
-}
 
 // FORM FIELD FEEDBACK STATES
 // --------------------------
@@ -126,42 +116,53 @@ input[type="file"]{
   @include box-shadow(none);
 }
 
+
+// FORM ACTIONS
+// ------------
+
+.form-actions {
+  border-top: none;
+  @include border-radius($baseBorderRadius);
+  background-color: darken($grayLighter, 5%);
+}
+
+
+// INPUT GROUPS
+// ------------
+
+.input-append,
+.input-prepend {
+  .add-on {
+    height: 32px;
+    border: 2px solid $inputBorder;
+    text-shadow: none;
+  }
+}
+.input-prepend .add-on {
+  margin-right: -2px;
+}
+.input-append .add-on {
+  margin-left: -2px;
+}
+
+
 // SEARCH FORM
 // -----------
 
-input[type="search"] {
+input.search-query {
   @include box-sizing(border-box);
 }
 
-aside[role=menu] {
-  .input-append,
-  input.search-query {
-    background: $white url(../img/ico-search.png) no-repeat;
-    background-position: 96% center;
-    padding-right: 30px !important;
-  }
+.sidebar input.search-query {
+  background: $white url(../img/ico-search.png) no-repeat;
+  background-position: 96% center;
+  padding-right: 30px !important;
 }
 
-.search-results h3.title {
-  font-weight: bold;
-}
-
-.content-inner .search-form .control-group {
+.search-form .control-group {
   display: inline-block;
 }
 
-// FOOTER STYLE
-// ------------
-
-#footer {
-  input,
-  textarea {
-    color: #dddddd;
-    border-color: #222;
-    background-color: #444;
-    @include placeholder(#838383);
-  }
-}
 
 // Login Form
 // -------------
@@ -186,3 +187,18 @@ aside[role=menu] {
     }
   }
 }
+
+
+// FOOTER STYLE
+// ------------
+
+#footer {
+  input,
+  textarea {
+    color: $grayLight;
+    border-color: #222;
+    background-color: #444;
+    @include placeholder($grayDarker);
+  }
+}
+

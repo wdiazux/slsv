@@ -1,3 +1,7 @@
+// Nodes
+// -------------------------
+
+
 ul.entry-meta {
   border-top: 1px solid #e9E9E9;
   border-bottom: 1px solid #E9E9E9;
@@ -63,4 +67,16 @@ ul.entry-meta {
 // Hide title for blog page
 .page-blog #page-title {
   @include hidden();
+}
+
+// Redefine color for links
+ul.links li a {
+  @include redefine-link($textColor,$linkColorHover);
+}
+
+// Readmore link as button
+.node-readmore > a {
+  color: white !important;
+  font-weight: bold;  
+  text-transform: uppercase;
 }

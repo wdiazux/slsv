@@ -25,7 +25,6 @@
   </div>
 
   <div class="comment-text well">
-    <div class="comment-arrow"></div>
 
     <?php if ($new): ?>
       <span class="new label label-warning"><?php print $new; ?></span>

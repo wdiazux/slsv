@@ -132,7 +132,7 @@ section[role=main] {
 .toolbar-menu {
   width: 100%;
   #toolbar-menu {
-   @include hidden; 
+    @include hidden; 
   }
   .responsive-nav {
     display: inline;

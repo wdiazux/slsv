@@ -57,14 +57,6 @@ h3.comment-title {
   font-size: 0.786em;
   text-transform: lowercase;
 }
-.comment .comment-arrow {
-  background: url(../img/comment-arrow.gif) no-repeat 0 center transparent;
-  height: 40px;
-  margin-left: -47px;
-  margin-top: 10px;
-  position: absolute;
-  width: 20px;
-}
 
 // Comments content
 .comment .comment-text {
@@ -73,6 +65,16 @@ h3.comment-title {
   vertical-align: top;
   position: relative;
   width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 22px solid transparent;
+    border-right: 26px solid $wellBackground;
+    border-bottom: 22px solid transparent;
+    margin: 8px 0 0 -50px;
+  }
 }
 .comment .content {
   font-size: $baseFontSize - .1rem;

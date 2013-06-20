@@ -95,19 +95,19 @@
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-      <h3 id="page-title"><?php print $title; ?></h1>
+        <h3 id="page-title"><?php print $title; ?></h3>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
     
     </div><!-- /content-inner -->
-    
+
     <?php
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);

@@ -5,7 +5,6 @@ No hay amor para IE.
 
 El estado actual es en desarrollo, aún no esta implementado en el sitio.
 
-Si desean utilizarlo sin el full height de la pagina principal como nosotros lo hacemos, tiene que eliminar el archivo `page--front.tpl.php`.
 
 Instalacion
 -----------
@@ -13,6 +12,8 @@ Instalacion
 $ git clone git://github.com/leprosys/slsv.git
 ```
 Colocar la carpeta slsv en `sites/all/themes/`
+
+Si desean utilizarlo sin el full height de la pagina principal como nosotros lo hacemos, tiene que eliminar el archivo `templates/page--front.tpl.php`.
 
 Dependencias
 ------------

@@ -43,7 +43,6 @@ input[type="color"],
 // Reset height since textareas have rows
 textarea {
   height: auto;
-  @include border-radius(3px);
 }
 
 // Everything else
@@ -172,6 +171,9 @@ input.search-query {
 }
 
 #block-search-form {
+  .search-query:focus {
+    border-color: $green;
+  }
   .container-inline {
     display: table;
   }
@@ -193,6 +195,10 @@ input.search-query {
 
 .search-form .control-group {
   display: inline-block;
+}
+
+.search-form .search-query {
+  @include border-radius($inputBorderRadius);
 }
 
 

@@ -4,7 +4,7 @@
 
 
 .btn {
-  padding: 9px 20px;
+  padding: 9px 12px;
   border: none;
   background-image: none;
   color: $white;
@@ -30,6 +30,26 @@
     color: white;
   }
 }
+
+
+// Button Sizes
+// --------------------------------------------------
+
+// Large
+.btn-large {
+  padding: $paddingLarge;
+}
+
+// Small
+.btn-small {
+  padding: $paddingSmall;
+}
+
+// Mini
+.btn-mini {
+  padding: $paddingMini;
+}
+
 
 // BUTTON GROUP
 // ----------------------

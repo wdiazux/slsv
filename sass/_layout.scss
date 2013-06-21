@@ -111,6 +111,13 @@ section[role=main] {
   }
 }
 
+// Responsive inputs
+.content-inner {
+  input, select,
+  .uneditable-input {
+    width: 100%;
+  }
+}
 .sidebar .block {
   input[type="text"],
   input[type="password"],
@@ -166,8 +173,11 @@ section[role=main] {
       @include set-container-width(8);
     }
   }
-  input, textarea, select, .uneditable-input {
-    width: auto;
+  .content-inner {
+    input, select,
+    .uneditable-input {
+      width: auto;
+    }
   }
 }
 

@@ -5,6 +5,8 @@ No hay amor para IE.
 
 El estado actual es en desarrollo, aún no esta implementado en el sitio.
 
+Si desean utilizarlo sin el full height de la pagina principal como nosotros lo hacemos, tiene que eliminar el archivo `page--front.tpl.php`.
+
 Instalacion
 -----------
 ```bash

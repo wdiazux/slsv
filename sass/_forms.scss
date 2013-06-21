@@ -163,6 +163,7 @@ textarea[readonly] {
   border-left: none;
 }
 
+
 // SEARCH FORM
 // -----------
 
@@ -196,9 +197,16 @@ input.search-query {
 .search-form .control-group {
   display: inline-block;
 }
-
 .search-form .search-query {
   @include border-radius($inputBorderRadius);
+}
+
+// Search results
+.search-results h3.title {
+  font-size: 2rem;
+  a {
+    @include redefine-link($textColor,$linkColorHover);
+  }
 }
 
 

@@ -8955,60 +8955,37 @@ input.error {
   margin-top: 0;
 }
 
-/* line 163, ../sass/_drupal.scss */
-.input-append {
-  padding-right: 40px;
-  width: 100%;
-}
-/* line 166, ../sass/_drupal.scss */
-.input-append input, .input-append textarea, .input-append select, .input-append .uneditable-input {
-  width: 100% !important;
-}
-
-/* line 172, ../sass/_drupal.scss */
-.search-results h3.title {
-  font-size: 2rem;
-}
-/* line 174, ../sass/_drupal.scss */
-.search-results h3.title a {
-  color: #666666;
-}
-/* line 29, ../sass/_mixins.scss */
-.search-results h3.title a:active, .search-results h3.title a:hover, .search-results h3.title a:focus {
-  color: #23a96e;
-}
-
-/* line 180, ../sass/_drupal.scss */
+/* line 164, ../sass/_drupal.scss */
 .container-inline div, .container-inline label {
   display: block;
 }
 
-/* line 186, ../sass/_drupal.scss */
+/* line 170, ../sass/_drupal.scss */
 div.error,
 table tr.error {
   background-color: #eda2a4;
   color: #9c4242;
 }
 
-/* line 190, ../sass/_drupal.scss */
+/* line 174, ../sass/_drupal.scss */
 .control-group.error {
   background: none;
 }
-/* line 192, ../sass/_drupal.scss */
+/* line 176, ../sass/_drupal.scss */
 .control-group.error label, .control-group.error .control-label {
   color: #9c4242;
   font-weight: 600;
 }
-/* line 196, ../sass/_drupal.scss */
+/* line 180, ../sass/_drupal.scss */
 .control-group.error input, .control-group.error textarea, .control-group.error select, .control-group.error .uneditable-input {
   color: #9c4242;
 }
-/* line 199, ../sass/_drupal.scss */
+/* line 183, ../sass/_drupal.scss */
 .control-group.error .help-block, .control-group.error .help-inline {
   color: #999999;
 }
 
-/* line 207, ../sass/_drupal.scss */
+/* line 191, ../sass/_drupal.scss */
 ul li.collapsed,
 ul li.expanded,
 ul li.leaf {
@@ -9016,16 +8993,16 @@ ul li.leaf {
   list-style-image: none;
 }
 
-/* line 214, ../sass/_drupal.scss */
+/* line 198, ../sass/_drupal.scss */
 .vertical-tabs .form-type-textfield input {
   width: auto;
 }
-/* line 217, ../sass/_drupal.scss */
+/* line 201, ../sass/_drupal.scss */
 .vertical-tabs .form-item {
   margin: 1em 0;
 }
 
-/* line 223, ../sass/_drupal.scss */
+/* line 207, ../sass/_drupal.scss */
 .password-strength {
   width: 17em;
   float: right;
@@ -9033,39 +9010,39 @@ ul li.leaf {
   margin-top: 14em;
 }
 
-/* line 228, ../sass/_drupal.scss */
+/* line 212, ../sass/_drupal.scss */
 .password-strength-title {
   display: inline;
 }
 
-/* line 231, ../sass/_drupal.scss */
+/* line 215, ../sass/_drupal.scss */
 .password-strength-text {
   float: right;
   /* LTR */
   font-weight: bold;
 }
 
-/* line 235, ../sass/_drupal.scss */
+/* line 219, ../sass/_drupal.scss */
 .password-indicator {
   background-color: #e6ebed;
   height: 0.3em;
   width: 100%;
 }
-/* line 239, ../sass/_drupal.scss */
+/* line 223, ../sass/_drupal.scss */
 .password-indicator div {
   height: 100%;
   width: 0%;
   background-color: #82b964;
 }
 
-/* line 246, ../sass/_drupal.scss */
+/* line 230, ../sass/_drupal.scss */
 input.password-confirm,
 input.password-field {
   width: 16em;
   margin-bottom: 0.4em;
 }
 
-/* line 250, ../sass/_drupal.scss */
+/* line 234, ../sass/_drupal.scss */
 div.password-confirm {
   float: right;
   /* LTR */
@@ -9074,7 +9051,7 @@ div.password-confirm {
   width: 17em;
 }
 
-/* line 256, ../sass/_drupal.scss */
+/* line 240, ../sass/_drupal.scss */
 div.form-item div.password-suggestions {
   padding: 0.2em 0.5em;
   margin: 0.7em 0;
@@ -9082,12 +9059,12 @@ div.form-item div.password-suggestions {
   border: 1px solid #B4B4B4;
 }
 
-/* line 262, ../sass/_drupal.scss */
+/* line 246, ../sass/_drupal.scss */
 div.password-suggestions ul {
   margin-bottom: 0;
 }
 
-/* line 266, ../sass/_drupal.scss */
+/* line 250, ../sass/_drupal.scss */
 .confirm-parent,
 .password-parent {
   clear: left;
@@ -9096,21 +9073,11 @@ div.password-suggestions ul {
   width: 36.3em;
 }
 
-/* line 273, ../sass/_drupal.scss */
-.progress-wrapper .progress {
-  margin-bottom: 10px;
-}
-/* line 275, ../sass/_drupal.scss */
-.progress-wrapper .progress .bar {
-  border: 0 none;
-  margin: 0;
-}
-
-/* line 283, ../sass/_drupal.scss */
+/* line 258, ../sass/_drupal.scss */
 .pagination ul > li > a.progress-disabled {
   float: left;
 }
-/* line 286, ../sass/_drupal.scss */
+/* line 261, ../sass/_drupal.scss */
 .pagination ul > li > a .throbber {
   margin: 0 -0.25em 0 0.5em;
   position: relative;
@@ -9883,41 +9850,41 @@ textarea[readonly] {
   border-left: none;
 }
 
-/* line 169, ../sass/_forms.scss */
+/* line 170, ../sass/_forms.scss */
 input.search-query {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 174, ../sass/_forms.scss */
+/* line 175, ../sass/_forms.scss */
 #block-search-form .search-query:focus {
   border-color: #82b964;
 }
-/* line 177, ../sass/_forms.scss */
+/* line 178, ../sass/_forms.scss */
 #block-search-form .container-inline {
   display: table;
 }
-/* line 180, ../sass/_forms.scss */
+/* line 181, ../sass/_forms.scss */
 #block-search-form .input-append {
   width: auto;
   padding: 0;
 }
-/* line 185, ../sass/_forms.scss */
+/* line 186, ../sass/_forms.scss */
 #block-search-form .append-first,
 #block-search-form .append-second {
   display: table-cell;
 }
-/* line 188, ../sass/_forms.scss */
+/* line 189, ../sass/_forms.scss */
 #block-search-form .append-first {
   width: 100%;
 }
-/* line 191, ../sass/_forms.scss */
+/* line 192, ../sass/_forms.scss */
 #block-search-form .control-group {
   margin: 0;
 }
 
-/* line 196, ../sass/_forms.scss */
+/* line 197, ../sass/_forms.scss */
 .search-form .control-group {
   display: inline-block;
 }
@@ -9929,7 +9896,20 @@ input.search-query {
   border-radius: 4px;
 }
 
-/* line 208, ../sass/_forms.scss */
+/* line 205, ../sass/_forms.scss */
+.search-results h3.title {
+  font-size: 2rem;
+}
+/* line 207, ../sass/_forms.scss */
+.search-results h3.title a {
+  color: #666666;
+}
+/* line 29, ../sass/_mixins.scss */
+.search-results h3.title a:active, .search-results h3.title a:hover, .search-results h3.title a:focus {
+  color: #23a96e;
+}
+
+/* line 216, ../sass/_forms.scss */
 #user-login-form a {
   color: #666666;
 }
@@ -9937,36 +9917,36 @@ input.search-query {
 #user-login-form a:active, #user-login-form a:hover, #user-login-form a:focus {
   color: #82b964;
 }
-/* line 209, ../sass/_forms.scss */
+/* line 217, ../sass/_forms.scss */
 #user-login-form a[href*="http://openid.net/"]:before {
   margin-right: 0.5em;
   content: "\f059";
 }
-/* line 212, ../sass/_forms.scss */
+/* line 220, ../sass/_forms.scss */
 #user-login-form a[href="#"]:before {
   margin-right: 0.5em;
   content: "\f00d";
 }
-/* line 215, ../sass/_forms.scss */
+/* line 223, ../sass/_forms.scss */
 #user-login-form ul {
   margin-left: 0;
 }
-/* line 217, ../sass/_forms.scss */
+/* line 225, ../sass/_forms.scss */
 #user-login-form ul li {
   list-style: none;
 }
-/* line 219, ../sass/_forms.scss */
+/* line 227, ../sass/_forms.scss */
 #user-login-form ul li a[href*="user/register"]:before {
   margin-right: 0.5em;
   content: "\f007";
 }
-/* line 222, ../sass/_forms.scss */
+/* line 230, ../sass/_forms.scss */
 #user-login-form ul li a[href*="user/password"]:before {
   margin-right: 0.5em;
   content: "\f084";
 }
 
-/* line 235, ../sass/_forms.scss */
+/* line 243, ../sass/_forms.scss */
 #footer input,
 #footer textarea {
   color: #bdc3c7;

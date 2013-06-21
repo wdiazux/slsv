@@ -5,6 +5,7 @@ No hay amor para IE.
 
 El estado actual es en desarrollo, aún no esta implementado en el sitio.
 
+La versión demo en html ya no es igual al tema en drupal, probar en drupal para ver la diferencia :)
 
 Instalacion
 -----------

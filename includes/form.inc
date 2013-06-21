@@ -50,9 +50,16 @@ function slsv_form_search_block_form_alter(&$form, &$form_state) {
   $form['search_block_form']['#title'] = t('Search');
   $form['search_block_form']['#attributes']['class'][] = 'search-query';
   $form['search_block_form']['#attributes']['placeholder'] = t('Search');
+  $form['search_block_form']['#prefix'] = '<div class="input-append append-first">';
+  $form['search_block_form']['#suffix'] = '</div>';
+
+  $form['actions']['submit']['#value'] = '<i class="icon-search"></i>';
+  $form['actions']['submit']['#attributes']['class'][] = 'btn-success';
+  $form['actions']['submit']['#prefix'] = '<div class="input-append append-second">';
+  $form['actions']['submit']['#suffix'] = '</div>';
 
   // Hide the default button from display
-  $form['actions']['submit']['#attributes']['class'][] = 'element-invisible';
+  //$form['actions']['submit']['#attributes']['class'][] = 'element-invisible';
 }
 
 /**

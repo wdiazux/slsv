@@ -797,9 +797,9 @@ input[type="color"],
   font-size: 1.5rem;
   line-height: 21px;
   color: #95a5a6;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   vertical-align: middle;
 }
 
@@ -1449,9 +1449,9 @@ select:focus:invalid:focus {
   margin-bottom: 0;
   *margin-left: 0;
   vertical-align: top;
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 /* line 448, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append input:focus,
@@ -1505,26 +1505,26 @@ select:focus:invalid:focus {
 /* line 484, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend .add-on:first-child,
 .input-prepend .btn:first-child {
-  -webkit-border-radius: 15px 0 0 15px;
-  -moz-border-radius: 15px 0 0 15px;
-  border-radius: 15px 0 0 15px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 /* line 493, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
-  -webkit-border-radius: 15px 0 0 15px;
-  -moz-border-radius: 15px 0 0 15px;
-  border-radius: 15px 0 0 15px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 /* line 495, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append input + .btn-group .btn:last-child,
 .input-append select + .btn-group .btn:last-child,
 .input-append .uneditable-input + .btn-group .btn:last-child {
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 /* line 501, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-append .add-on,
@@ -1536,9 +1536,9 @@ select:focus:invalid:focus {
 .input-append .add-on:last-child,
 .input-append .btn:last-child,
 .input-append .btn-group:last-child > .dropdown-toggle {
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 /* line 515, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
@@ -1553,25 +1553,25 @@ select:focus:invalid:focus {
 .input-prepend.input-append input + .btn-group .btn,
 .input-prepend.input-append select + .btn-group .btn,
 .input-prepend.input-append .uneditable-input + .btn-group .btn {
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 /* line 522, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend.input-append .add-on:first-child,
 .input-prepend.input-append .btn:first-child {
   margin-right: -1px;
-  -webkit-border-radius: 15px 0 0 15px;
-  -moz-border-radius: 15px 0 0 15px;
-  border-radius: 15px 0 0 15px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 /* line 527, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend.input-append .add-on:last-child,
 .input-prepend.input-append .btn:last-child {
   margin-left: -1px;
-  -webkit-border-radius: 0 15px 15px 0;
-  -moz-border-radius: 0 15px 15px 0;
-  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 /* line 531, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
 .input-prepend.input-append .btn-group:first-child {
@@ -2660,29 +2660,29 @@ input[type="button"].btn-block {
 .btn-success {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #8dbf72;
-  background-image: -moz-linear-gradient(top, #82b964, #9ec987);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#82b964), to(#9ec987));
-  background-image: -webkit-linear-gradient(top, #82b964, #9ec987);
-  background-image: -o-linear-gradient(top, #82b964, #9ec987);
-  background-image: linear-gradient(to bottom, #82b964, #9ec987);
+  background-color: #26b979;
+  background-image: -moz-linear-gradient(top, #23a96e, #2cd38a);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#23a96e), to(#2cd38a));
+  background-image: -webkit-linear-gradient(top, #23a96e, #2cd38a);
+  background-image: -o-linear-gradient(top, #23a96e, #2cd38a);
+  background-image: linear-gradient(to bottom, #23a96e, #2cd38a);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF82B964', endColorstr='#FF9EC987', GradientType=0);
-  border-color: #9ec987 #9ec987 #74b152;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF23A96E', endColorstr='#FF2CD38A', GradientType=0);
+  border-color: #2cd38a #2cd38a #1f9460;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #9ec987;
+  *background-color: #2cd38a;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 /* line 513, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
   color: white;
-  background-color: #9ec987;
-  *background-color: #90c176;
+  background-color: #2cd38a;
+  *background-color: #27be7c;
 }
 /* line 521, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_mixins.scss */
 .btn-success:active, .btn-success.active {
-  background-color: #82b964 \9;
+  background-color: #23a96e \9;
 }
 
 /* line 161, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
@@ -2996,7 +2996,7 @@ input[type="submit"].btn.btn-mini {
 }
 /* line 149, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
 .btn-group.open .btn-success.dropdown-toggle {
-  background-color: #9ec987;
+  background-color: #2cd38a;
 }
 /* line 152, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_button-groups.scss */
 .btn-group.open .btn-info.dropdown-toggle {
@@ -8145,9 +8145,9 @@ section[role=main],
 /* line 58, ../sass/_layout.scss */
 .container {
   *zoom: 1;
-  max-width: 512px;
-  max-width: 32rem;
-  _width: 512px;
+  max-width: 486px;
+  max-width: 30.4rem;
+  _width: 486px;
   padding-left: 32px;
   padding-left: 2rem;
   padding-right: 32px;
@@ -8283,26 +8283,26 @@ section[role=main] {
 @media (min-width: 48em) {
   /* line 181, ../sass/_layout.scss */
   section[role=main] .content-inner {
-    width: 74.13793%;
+    width: 74.08759%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 3.64964%;
   }
   /* line 184, ../sass/_layout.scss */
   section[role=main] aside[role=menu] {
-    width: 22.41379%;
+    width: 22.26277%;
     float: right;
     margin-right: 0;
   }
 
   /* line 190, ../sass/_layout.scss */
   #footerTop .footer1 {
-    width: 48.27586%;
+    width: 48.17518%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 3.64964%;
   }
   /* line 193, ../sass/_layout.scss */
   #footerTop .footer2 {
-    width: 48.27586%;
+    width: 48.17518%;
     float: right;
     margin-right: 0;
   }
@@ -8316,9 +8316,9 @@ section[role=main] {
 @media (min-width: 50em) {
   /* line 209, ../sass/_layout.scss */
   #footerBottom .bottom1 {
-    width: 48.27586%;
+    width: 48.17518%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 3.64964%;
     text-align: left;
   }
   /* line 214, ../sass/_layout.scss */
@@ -8541,14 +8541,14 @@ section[role=main] {
 
   /* line 280, ../sass/_layout.scss */
   #logo-wrapper {
-    width: 23.29545%;
+    width: 23.19712%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2.40385%;
   }
 
   /* line 283, ../sass/_layout.scss */
   #menu-wrapper {
-    width: 74.43182%;
+    width: 74.39904%;
     float: right;
     margin-right: 0;
   }
@@ -8591,13 +8591,13 @@ section[role=main] {
 
   /* line 314, ../sass/_layout.scss */
   section[role=main] .content-inner {
-    width: 74.43182%;
+    width: 74.39904%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2.40385%;
   }
   /* line 317, ../sass/_layout.scss */
   section[role=main] aside[role=menu] {
-    width: 23.29545%;
+    width: 23.19712%;
     float: right;
     margin-right: 0;
   }
@@ -8605,26 +8605,26 @@ section[role=main] {
   /* line 324, ../sass/_layout.scss */
   .blog-display .view-content .views-row-1,
   .blog-display .view-content .views-row-2 {
-    width: 31.81818%;
+    width: 31.73077%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2.40385%;
   }
   /* line 325, ../sass/_layout.scss */
   .blog-display .view-content .views-row-3 {
-    width: 31.81818%;
+    width: 31.73077%;
     float: right;
     margin-right: 0;
   }
 
   /* line 329, ../sass/_layout.scss */
   #footerTop .footer1, #footerTop .footer2 {
-    width: 31.81818%;
+    width: 31.73077%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2.40385%;
   }
   /* line 332, ../sass/_layout.scss */
   #footerTop .footer3 {
-    width: 31.81818%;
+    width: 31.73077%;
     float: right;
     margin-right: 0;
     clear: none;
@@ -8632,13 +8632,13 @@ section[role=main] {
 
   /* line 339, ../sass/_layout.scss */
   #footerBottom .bottom1 {
-    width: 48.86364%;
+    width: 48.79808%;
     float: left;
-    margin-right: 2.27273%;
+    margin-right: 2.40385%;
   }
   /* line 342, ../sass/_layout.scss */
   #footerBottom .bottom2 {
-    width: 48.86364%;
+    width: 48.79808%;
     float: right;
     margin-right: 0;
   }
@@ -8910,39 +8910,30 @@ ul.action-links [class^="icon-"], ul.action-links #user-login-form a[href*="http
   padding-right: 0.5em;
 }
 
-/* line 141, ../sass/_drupal.scss */
-input,
-textarea,
-select,
-.uneditable-input {
-  max-width: 100%;
-  width: auto;
-}
-
-/* line 146, ../sass/_drupal.scss */
+/* line 138, ../sass/_drupal.scss */
 input.error {
   color: #9c4242;
   border-color: transparent;
 }
 
-/* line 150, ../sass/_drupal.scss */
+/* line 142, ../sass/_drupal.scss */
 .form-type-checkbox input, .form-type-radio input {
   float: left;
 }
 
-/* line 153, ../sass/_drupal.scss */
+/* line 145, ../sass/_drupal.scss */
 .form-actions {
   clear: both;
 }
 
-/* line 156, ../sass/_drupal.scss */
+/* line 148, ../sass/_drupal.scss */
 .help-block, .control-group .help-inline {
   color: #999999;
   font-size: 12px;
   margin: -8px 0 10px;
   padding: 0 3px;
 }
-/* line 166, ../sass/_drupal.scss */
+/* line 158, ../sass/_drupal.scss */
 .help-block .description,
 .help-block .checkbox,
 .help-block .form-type-checkbox,
@@ -8957,21 +8948,21 @@ input.error {
   margin-top: 0;
 }
 
-/* line 171, ../sass/_drupal.scss */
+/* line 163, ../sass/_drupal.scss */
 .input-append {
   padding-right: 40px;
   width: 100%;
 }
-/* line 174, ../sass/_drupal.scss */
+/* line 166, ../sass/_drupal.scss */
 .input-append input, .input-append textarea, .input-append select, .input-append .uneditable-input {
   width: 100% !important;
 }
 
-/* line 180, ../sass/_drupal.scss */
+/* line 172, ../sass/_drupal.scss */
 .search-results h3.title {
   font-size: 2rem;
 }
-/* line 182, ../sass/_drupal.scss */
+/* line 174, ../sass/_drupal.scss */
 .search-results h3.title a {
   color: #666666;
 }
@@ -8980,37 +8971,37 @@ input.error {
   color: #23a96e;
 }
 
-/* line 188, ../sass/_drupal.scss */
+/* line 180, ../sass/_drupal.scss */
 .container-inline div, .container-inline label {
   display: block;
 }
 
-/* line 194, ../sass/_drupal.scss */
+/* line 186, ../sass/_drupal.scss */
 div.error,
 table tr.error {
   background-color: #eda2a4;
   color: #9c4242;
 }
 
-/* line 198, ../sass/_drupal.scss */
+/* line 190, ../sass/_drupal.scss */
 .control-group.error {
   background: none;
 }
-/* line 200, ../sass/_drupal.scss */
+/* line 192, ../sass/_drupal.scss */
 .control-group.error label, .control-group.error .control-label {
   color: #9c4242;
   font-weight: 600;
 }
-/* line 204, ../sass/_drupal.scss */
+/* line 196, ../sass/_drupal.scss */
 .control-group.error input, .control-group.error textarea, .control-group.error select, .control-group.error .uneditable-input {
   color: #9c4242;
 }
-/* line 207, ../sass/_drupal.scss */
+/* line 199, ../sass/_drupal.scss */
 .control-group.error .help-block, .control-group.error .help-inline {
   color: #999999;
 }
 
-/* line 215, ../sass/_drupal.scss */
+/* line 207, ../sass/_drupal.scss */
 ul li.collapsed,
 ul li.expanded,
 ul li.leaf {
@@ -9018,16 +9009,16 @@ ul li.leaf {
   list-style-image: none;
 }
 
-/* line 222, ../sass/_drupal.scss */
+/* line 214, ../sass/_drupal.scss */
 .vertical-tabs .form-type-textfield input {
   width: auto;
 }
-/* line 225, ../sass/_drupal.scss */
+/* line 217, ../sass/_drupal.scss */
 .vertical-tabs .form-item {
   margin: 1em 0;
 }
 
-/* line 231, ../sass/_drupal.scss */
+/* line 223, ../sass/_drupal.scss */
 .password-strength {
   width: 17em;
   float: right;
@@ -9035,39 +9026,39 @@ ul li.leaf {
   margin-top: 14em;
 }
 
-/* line 236, ../sass/_drupal.scss */
+/* line 228, ../sass/_drupal.scss */
 .password-strength-title {
   display: inline;
 }
 
-/* line 239, ../sass/_drupal.scss */
+/* line 231, ../sass/_drupal.scss */
 .password-strength-text {
   float: right;
   /* LTR */
   font-weight: bold;
 }
 
-/* line 243, ../sass/_drupal.scss */
+/* line 235, ../sass/_drupal.scss */
 .password-indicator {
   background-color: #e6ebed;
   height: 0.3em;
   width: 100%;
 }
-/* line 247, ../sass/_drupal.scss */
+/* line 239, ../sass/_drupal.scss */
 .password-indicator div {
   height: 100%;
   width: 0%;
   background-color: #82b964;
 }
 
-/* line 254, ../sass/_drupal.scss */
+/* line 246, ../sass/_drupal.scss */
 input.password-confirm,
 input.password-field {
   width: 16em;
   margin-bottom: 0.4em;
 }
 
-/* line 258, ../sass/_drupal.scss */
+/* line 250, ../sass/_drupal.scss */
 div.password-confirm {
   float: right;
   /* LTR */
@@ -9076,7 +9067,7 @@ div.password-confirm {
   width: 17em;
 }
 
-/* line 264, ../sass/_drupal.scss */
+/* line 256, ../sass/_drupal.scss */
 div.form-item div.password-suggestions {
   padding: 0.2em 0.5em;
   margin: 0.7em 0;
@@ -9084,12 +9075,12 @@ div.form-item div.password-suggestions {
   border: 1px solid #B4B4B4;
 }
 
-/* line 270, ../sass/_drupal.scss */
+/* line 262, ../sass/_drupal.scss */
 div.password-suggestions ul {
   margin-bottom: 0;
 }
 
-/* line 274, ../sass/_drupal.scss */
+/* line 266, ../sass/_drupal.scss */
 .confirm-parent,
 .password-parent {
   clear: left;
@@ -9098,21 +9089,21 @@ div.password-suggestions ul {
   width: 36.3em;
 }
 
-/* line 281, ../sass/_drupal.scss */
+/* line 273, ../sass/_drupal.scss */
 .progress-wrapper .progress {
   margin-bottom: 10px;
 }
-/* line 283, ../sass/_drupal.scss */
+/* line 275, ../sass/_drupal.scss */
 .progress-wrapper .progress .bar {
   border: 0 none;
   margin: 0;
 }
 
-/* line 291, ../sass/_drupal.scss */
+/* line 283, ../sass/_drupal.scss */
 .pagination ul > li > a.progress-disabled {
   float: left;
 }
-/* line 294, ../sass/_drupal.scss */
+/* line 286, ../sass/_drupal.scss */
 .pagination ul > li > a .throbber {
   margin: 0 -0.25em 0 0.5em;
   position: relative;
@@ -9707,9 +9698,10 @@ legend {
   font-size: 2rem;
   color: #666666;
   border-bottom: none;
+  margin-bottom: 10px;
 }
 
-/* line 35, ../sass/_forms.scss */
+/* line 36, ../sass/_forms.scss */
 select,
 textarea,
 input[type="text"],
@@ -9733,7 +9725,7 @@ input[type="color"],
   padding: 4px 9px;
 }
 
-/* line 43, ../sass/_forms.scss */
+/* line 44, ../sass/_forms.scss */
 textarea {
   height: auto;
   -webkit-border-radius: 3px;
@@ -9741,7 +9733,7 @@ textarea {
   border-radius: 3px;
 }
 
-/* line 64, ../sass/_forms.scss */
+/* line 65, ../sass/_forms.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -9763,7 +9755,7 @@ input[type="color"],
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 67, ../sass/_forms.scss */
+/* line 68, ../sass/_forms.scss */
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -9786,13 +9778,13 @@ input[type="color"]:focus,
   box-shadow: none;
 }
 
-/* line 75, ../sass/_forms.scss */
+/* line 76, ../sass/_forms.scss */
 select,
 input[type="file"] {
   line-height: 1.6rem;
 }
 
-/* line 88, ../sass/_forms.scss */
+/* line 89, ../sass/_forms.scss */
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -9805,7 +9797,7 @@ textarea[readonly] {
   color: #bdc3c7;
 }
 
-/* line 102, ../sass/_forms.scss */
+/* line 103, ../sass/_forms.scss */
 .control-group.warning,
 .control-group.warning input:focus,
 .control-group.warning textarea:focus {
@@ -9815,7 +9807,7 @@ textarea[readonly] {
   box-shadow: none;
 }
 
-/* line 109, ../sass/_forms.scss */
+/* line 110, ../sass/_forms.scss */
 .control-group.error,
 .control-group.error input:focus,
 .control-group.error textarea:focus {
@@ -9825,7 +9817,7 @@ textarea[readonly] {
   box-shadow: none;
 }
 
-/* line 116, ../sass/_forms.scss */
+/* line 117, ../sass/_forms.scss */
 .control-group.success,
 .control-group.success input:focus,
 .control-group.success textarea:focus {
@@ -9835,7 +9827,7 @@ textarea[readonly] {
   box-shadow: none;
 }
 
-/* line 123, ../sass/_forms.scss */
+/* line 124, ../sass/_forms.scss */
 .control-group.info,
 .control-group.info input:focus,
 .control-group.info textarea:focus {
@@ -9845,7 +9837,7 @@ textarea[readonly] {
   box-shadow: none;
 }
 
-/* line 132, ../sass/_forms.scss */
+/* line 133, ../sass/_forms.scss */
 .form-actions {
   border-top: none;
   -webkit-border-radius: 6px;
@@ -9854,44 +9846,75 @@ textarea[readonly] {
   background-color: #dde4e6;
 }
 
-/* line 144, ../sass/_forms.scss */
+/* line 145, ../sass/_forms.scss */
 .input-append .add-on,
 .input-prepend .add-on {
   height: 32px;
   border: 2px solid #dce4ec;
   text-shadow: none;
 }
-
 /* line 150, ../sass/_forms.scss */
+.input-append .btn,
+.input-prepend .btn {
+  padding: .55rem 1.2rem;
+}
+
+/* line 154, ../sass/_forms.scss */
 .input-prepend .add-on {
   margin-right: -2px;
 }
 
-/* line 153, ../sass/_forms.scss */
+/* line 157, ../sass/_forms.scss */
 .input-append .add-on {
   margin-left: -2px;
 }
 
-/* line 161, ../sass/_forms.scss */
+/* line 160, ../sass/_forms.scss */
+.input-append input {
+  border-right: none;
+}
+
+/* line 163, ../sass/_forms.scss */
+.input-prepend input {
+  border-left: none;
+}
+
+/* line 170, ../sass/_forms.scss */
 input.search-query {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 165, ../sass/_forms.scss */
-.sidebar input.search-query {
-  background: white url(../img/ico-search.png) no-repeat;
-  background-position: 96% center;
-  padding-right: 30px !important;
+/* line 175, ../sass/_forms.scss */
+#block-search-form .container-inline {
+  display: table;
+}
+/* line 178, ../sass/_forms.scss */
+#block-search-form .input-append {
+  width: auto;
+  padding: 0;
+}
+/* line 183, ../sass/_forms.scss */
+#block-search-form .append-first,
+#block-search-form .append-second {
+  display: table-cell;
+}
+/* line 186, ../sass/_forms.scss */
+#block-search-form .append-first {
+  width: 100%;
+}
+/* line 189, ../sass/_forms.scss */
+#block-search-form .control-group {
+  margin: 0;
 }
 
-/* line 171, ../sass/_forms.scss */
+/* line 194, ../sass/_forms.scss */
 .search-form .control-group {
   display: inline-block;
 }
 
-/* line 179, ../sass/_forms.scss */
+/* line 202, ../sass/_forms.scss */
 #user-login-form a {
   color: #666666;
 }
@@ -9899,36 +9922,36 @@ input.search-query {
 #user-login-form a:active, #user-login-form a:hover, #user-login-form a:focus {
   color: #82b964;
 }
-/* line 180, ../sass/_forms.scss */
+/* line 203, ../sass/_forms.scss */
 #user-login-form a[href*="http://openid.net/"]:before {
   margin-right: 0.5em;
   content: "\f059";
 }
-/* line 183, ../sass/_forms.scss */
+/* line 206, ../sass/_forms.scss */
 #user-login-form a[href="#"]:before {
   margin-right: 0.5em;
   content: "\f00d";
 }
-/* line 186, ../sass/_forms.scss */
+/* line 209, ../sass/_forms.scss */
 #user-login-form ul {
   margin-left: 0;
 }
-/* line 188, ../sass/_forms.scss */
+/* line 211, ../sass/_forms.scss */
 #user-login-form ul li {
   list-style: none;
 }
-/* line 190, ../sass/_forms.scss */
+/* line 213, ../sass/_forms.scss */
 #user-login-form ul li a[href*="user/register"]:before {
   margin-right: 0.5em;
   content: "\f007";
 }
-/* line 193, ../sass/_forms.scss */
+/* line 216, ../sass/_forms.scss */
 #user-login-form ul li a[href*="user/password"]:before {
   margin-right: 0.5em;
   content: "\f084";
 }
 
-/* line 206, ../sass/_forms.scss */
+/* line 229, ../sass/_forms.scss */
 #footer input,
 #footer textarea {
   color: #bdc3c7;
@@ -9964,7 +9987,7 @@ input.search-query {
   text-shadow: none;
 }
 
-/* line 5, ../sass/_buttons.scss */
+/* line 6, ../sass/_buttons.scss */
 .btn {
   padding: 9px 20px;
   border: none;
@@ -9980,7 +10003,7 @@ input.search-query {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-/* line 16, ../sass/_buttons.scss */
+/* line 17, ../sass/_buttons.scss */
 .btn:hover, .btn:focus {
   color: white;
   -webkit-transition: 0.25s;
@@ -9988,16 +10011,22 @@ input.search-query {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-/* line 22, ../sass/_buttons.scss */
+/* line 23, ../sass/_buttons.scss */
 .btn:active, .btn.active {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   color: rgba(255, 255, 255, 0.75);
 }
-/* line 28, ../sass/_buttons.scss */
+/* line 29, ../sass/_buttons.scss */
 .btn.disabled, .btn[disabled] {
   color: white;
+}
+
+/* line 37, ../sass/_buttons.scss */
+.btn-group + .dropdown-toggle .caret {
+  margin-left: 8px;
+  margin-right: 5px;
 }
 
 /* line 6, ../sass/_alerts.scss */
@@ -10305,8 +10334,7 @@ input.search-query {
 
 /* line 7, ../sass/_tooltips.scss */
 .tooltip.in {
-  opacity: 0.99;
-  filter: alpha(opacity=99);
+  opacity: 1;
 }
 
 /* line 6, ../sass/_popover.scss */
@@ -10327,6 +10355,7 @@ badge {
 
 /* line 7, ../sass/_progress-bars.scss */
 .progress {
+  height: 15px;
   background: #ecf0f1;
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
@@ -10336,23 +10365,32 @@ badge {
   box-shadow: none;
 }
 
-/* line 14, ../sass/_progress-bars.scss */
+/* line 15, ../sass/_progress-bars.scss */
 .progress .bar {
   background-color: #37607c;
   background-image: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  -webkit-border-top-left-radius: 32px;
+  -moz-border-radius-topleft: 32px;
+  border-top-left-radius: 32px;
+  -webkit-border-bottom-left-radius: 32px;
+  -moz-border-radius-bottomleft: 32px;
+  border-bottom-left-radius: 32px;
 }
 
-/* line 19, ../sass/_progress-bars.scss */
+/* line 21, ../sass/_progress-bars.scss */
 .progress .bar + .bar {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
 }
 
-/* line 24, ../sass/_progress-bars.scss */
+/* line 27, ../sass/_progress-bars.scss */
 .progress-striped .bar {
   background-color: #37607c;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
@@ -10362,31 +10400,31 @@ badge {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 
-/* line 34, ../sass/_progress-bars.scss */
+/* line 37, ../sass/_progress-bars.scss */
 .progress-danger .bar,
 .progress-danger.progress-striped .bar,
-.bar-danger {
+.progress .bar-danger {
   background-color: #e74c3c;
 }
 
-/* line 41, ../sass/_progress-bars.scss */
+/* line 44, ../sass/_progress-bars.scss */
 progress-success .bar,
 progress-success.progress-striped .bar,
-.bar-success {
+.progress .bar-success {
   background-color: #82b964;
 }
 
-/* line 48, ../sass/_progress-bars.scss */
+/* line 51, ../sass/_progress-bars.scss */
 .progress-info .bar,
 .progress-info.progress-striped .bar,
-.bar-info {
+.progress .bar-info {
   background-color: #3498db;
 }
 
-/* line 55, ../sass/_progress-bars.scss */
+/* line 58, ../sass/_progress-bars.scss */
 .progress-warning .bar,
 .progress-warning.progress-striped .bar,
-.bar-warning {
+.progress .bar-warning {
   background-color: #fdb53f;
 }
 
@@ -10421,4 +10459,13 @@ progress-success.progress-striped .bar,
   background: #2e2f31;
   color: #bdc3c7;
   opacity: 1;
+}
+
+/* line 13, ../sass/_nivo.scss */
+.theme-default .nivo-directionNav a {
+  background: url(../img/arrows.png) no-repeat;
+}
+/* line 16, ../sass/_nivo.scss */
+.theme-default a.nivo-nextNav {
+  background-position: -30px 0 !important;
 }

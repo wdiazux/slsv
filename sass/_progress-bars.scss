@@ -5,6 +5,7 @@
 
 // Outer container
 .progress {
+  height: 15px;
   background: $grayLighter;
   @include border-radius(32px);
   @include box-shadow(none);
@@ -15,9 +16,11 @@
   background-color: $blueDark;
   background-image: none;
   @include box-shadow(none);
+  @include border-left-radius(32px);
 }
 .progress .bar + .bar {
   @include box-shadow(none);
+  @include border-radius(0);
 }
 
 // Striped bars
@@ -31,27 +34,27 @@
 // Danger (red)
 .progress-danger .bar,
 .progress-danger.progress-striped .bar,
-.bar-danger {
+.progress .bar-danger {
   background-color: $red;
 }
 
 // Success (green)
 progress-success .bar,
 progress-success.progress-striped .bar,
-.bar-success {
+.progress .bar-success {
   background-color: $green;
 }
 
 // Info (teal)
 .progress-info .bar,
 .progress-info.progress-striped .bar,
-.bar-info {
+.progress .bar-info {
   background-color: $blue;
 }
 
 // Warning (orange)
 .progress-warning .bar,
 .progress-warning.progress-striped .bar,
-.bar-warning {
+.progress .bar-warning {
   background-color: $yellow;
 }

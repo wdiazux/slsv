@@ -2,6 +2,7 @@
 // BUTTONS
 // --------------------------------------------------
 
+
 .btn {
   padding: 9px 20px;
   border: none;
@@ -27,5 +28,14 @@
   &.disabled,
   &[disabled] {
     color: white;
+  }
+}
+
+// BUTTON GROUP
+// ----------------------
+.btn-group + .dropdown-toggle {
+  .caret {
+    margin-left: 8px;
+    margin-right: 5px;
   }
 }

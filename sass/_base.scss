@@ -14,7 +14,7 @@
 // --------------------------------------------------
 
 $total-columns:         4;             // a 4-column grid for Mobile First
-$column-width:          5.5rem;        // each column is 5.5rem wide
+$column-width:          5.1rem;        // each column is 5.5rem wide
 $gutter-width:          2rem;          // 1em gutters between columns
 $grid-padding:          $gutter-width; // grid-padding equal to gutters
 
@@ -110,7 +110,7 @@ $btnPrimaryBackgroundHighlight:     lighten($btnPrimaryBackground, 10%);
 $btnInfoBackground:                 $blue;
 $btnInfoBackgroundHighlight:        lighten($btnInfoBackground, 10%);
 
-$btnSuccessBackground:              $green;
+$btnSuccessBackground:              $greenInfinity;
 $btnSuccessBackgroundHighlight:     lighten($btnSuccessBackground, 10%);
 
 $btnWarningBackground:              $yellow;
@@ -126,7 +126,7 @@ $btnInverseBackgroundHighlight:     lighten($btnInverseBackground, 10%);
 // Forms
 // -------------------------
 $inputBorder:                   #dce4ec;
-$inputBorderRadius:             15px;
+//$inputBorderRadius:             15px;
 $inputDisabledBackground:       #eaeded;
 
 

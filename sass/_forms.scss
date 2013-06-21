@@ -10,6 +10,7 @@ legend {
   font-size: 2rem;
   color: $textColor;
   border-bottom: none;
+  margin-bottom: 10px;
 }
 
 // Form controls
@@ -146,6 +147,9 @@ textarea[readonly] {
     border: 2px solid $inputBorder;
     text-shadow: none;
   }
+  .btn {
+    padding: .55rem 1.2rem;
+  }
 }
 .input-prepend .add-on {
   margin-right: -2px;
@@ -153,7 +157,12 @@ textarea[readonly] {
 .input-append .add-on {
   margin-left: -2px;
 }
-
+.input-append input {
+  border-right: none;
+}
+.input-prepend input {
+  border-left: none;
+}
 
 // SEARCH FORM
 // -----------
@@ -162,10 +171,24 @@ input.search-query {
   @include box-sizing(border-box);
 }
 
-.sidebar input.search-query {
-  background: $white url(../img/ico-search.png) no-repeat;
-  background-position: 96% center;
-  padding-right: 30px !important;
+#block-search-form {
+  .container-inline {
+    display: table;
+  }
+  .input-append {
+    width: auto;
+    padding: 0;
+  }
+  .append-first,
+  .append-second {
+    display: table-cell;
+  }
+  .append-first {
+    width: 100%;
+  }
+  .control-group {
+    margin: 0;
+  }
 }
 
 .search-form .control-group {
@@ -210,4 +233,3 @@ input.search-query {
     @include placeholder($grayDarker);
   }
 }
-

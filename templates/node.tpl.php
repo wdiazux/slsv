@@ -47,7 +47,7 @@
     ?>
   </footer>
 
-  <?php if (module_exists('disqus') && !$teaser): ?>
+  <?php if (module_exists('disqus') && isset($variables['disqus']) && !$teaser): ?>
     <section id="comments">
       <h2 class="title"><?php print t('Comments'); ?></h2>
       <?php print render($content['disqus']); ?>

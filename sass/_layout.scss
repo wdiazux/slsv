@@ -316,10 +316,6 @@ section[role=main] {
     }
   }
 
-  #btn-responsive {
-    display: inline-block;
-    @include hidden;
-  }  
   section[role=main] {
     .content-inner {
       @include span-columns(9, 12)

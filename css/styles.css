@@ -2508,7 +2508,7 @@ button.close {
 
 /* line 81, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-small {
-  padding: 6px 12px;
+  padding: 4px 8px;
   font-size: 1.2rem;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -2529,7 +2529,7 @@ button.close {
 
 /* line 96, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_buttons.scss */
 .btn-mini {
-  padding: 3px 8px;
+  padding: 3px 6px;
   font-size: 1rem;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -4444,14 +4444,14 @@ input[type="submit"].btn.btn-mini {
 /* line 111, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_pagination.scss */
 .pagination-small ul > li > a,
 .pagination-small ul > li > span {
-  padding: 6px 12px;
+  padding: 4px 8px;
   font-size: 1.2rem;
 }
 
 /* line 119, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_pagination.scss */
 .pagination-mini ul > li > a,
 .pagination-mini ul > li > span {
-  padding: 3px 8px;
+  padding: 3px 6px;
   font-size: 1rem;
 }
 
@@ -5514,7 +5514,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   box-sizing: border-box;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 59.99em) {
   /* line 13, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
   body {
     padding-top: 0;
@@ -5725,7 +5725,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
     padding-right: 10px;
   }
 }
-@media (min-width: 980px) {
+@media (min-width: 60.99em) {
   /* line 184, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/bootstrap-sass-2.3.2.0/vendor/assets/stylesheets/bootstrap/_responsive-navbar.scss */
   .nav-collapse.collapse {
     height: auto !important;
@@ -8589,47 +8589,40 @@ section[role=main] {
     display: none;
   }
 
-  /* line 319, ../sass/_layout.scss */
-  #btn-responsive {
-    display: inline-block;
-    visibility: hidden;
-    display: none;
-  }
-
-  /* line 324, ../sass/_layout.scss */
+  /* line 320, ../sass/_layout.scss */
   section[role=main] .content-inner {
     width: 74.39904%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 327, ../sass/_layout.scss */
+  /* line 323, ../sass/_layout.scss */
   section[role=main] aside[role=menu] {
     width: 23.19712%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 334, ../sass/_layout.scss */
+  /* line 330, ../sass/_layout.scss */
   .blog-display .view-content .views-row-1,
   .blog-display .view-content .views-row-2 {
     width: 31.73077%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 335, ../sass/_layout.scss */
+  /* line 331, ../sass/_layout.scss */
   .blog-display .view-content .views-row-3 {
     width: 31.73077%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 339, ../sass/_layout.scss */
+  /* line 335, ../sass/_layout.scss */
   #footerTop .footer1, #footerTop .footer2 {
     width: 31.73077%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 342, ../sass/_layout.scss */
+  /* line 338, ../sass/_layout.scss */
   #footerTop .footer3 {
     width: 31.73077%;
     float: right;
@@ -8637,13 +8630,13 @@ section[role=main] {
     clear: none;
   }
 
-  /* line 349, ../sass/_layout.scss */
+  /* line 345, ../sass/_layout.scss */
   #footerBottom .bottom1 {
     width: 48.79808%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 352, ../sass/_layout.scss */
+  /* line 348, ../sass/_layout.scss */
   #footerBottom .bottom2 {
     width: 48.79808%;
     float: right;
@@ -9984,7 +9977,7 @@ input.search-query {
 
 /* line 6, ../sass/_buttons.scss */
 .btn {
-  padding: 9px 12px;
+  padding: 6px 10px;
   border: none;
   background-image: none;
   color: white;
@@ -10025,12 +10018,12 @@ input.search-query {
 
 /* line 44, ../sass/_buttons.scss */
 .btn-small {
-  padding: 6px 12px;
+  padding: 4px 8px;
 }
 
 /* line 49, ../sass/_buttons.scss */
 .btn-mini {
-  padding: 3px 8px;
+  padding: 3px 6px;
 }
 
 /* line 57, ../sass/_buttons.scss */
@@ -10160,7 +10153,7 @@ input.search-query {
   color: #666666;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 59.99em) {
   /* line 85, ../sass/_navbar.scss */
   .navbar .nav-collapse .nav > li > a {
     color: #2e2f31;

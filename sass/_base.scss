@@ -19,7 +19,7 @@ $gutter-width:          2rem;          // 1em gutters between columns
 $grid-padding:          $gutter-width; // grid-padding equal to gutters
 
 /* Container Style */
-$container-style:       magic;
+//$container-style:       magic;
 
 
 // Global values
@@ -92,8 +92,8 @@ $fontSizeSmall:         1.2rem;
 $fontSizeMini:          1rem;
 
 $paddingLarge:          13px 25px;
-$paddingSmall:          6px 12px;
-$paddingMini:           3px 8px;
+$paddingSmall:          4px 8px;
+$paddingMini:           3px 6px;
 
 $baseBorderRadius:      6px;
 $borderRadiusLarge:     $baseBorderRadius;
@@ -143,6 +143,7 @@ $wellBackground:                  $grayLighter;
 
 // Navbar
 // -------------------------
+$navbarCollapseWidth:             59.99em;
 
 $navbarHeight:                    50px;
 $navbarBackgroundHighlight:       #2e2f31;

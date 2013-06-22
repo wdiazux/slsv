@@ -81,7 +81,7 @@
   }
 }
 
-@media (max-width: 979px) {
+@include at-breakpoint(8 $navbarCollapseWidth) {
   .navbar .nav-collapse .nav > li > a {
     color: $navbarBackground;
     &.active,

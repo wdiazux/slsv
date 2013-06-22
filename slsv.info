@@ -2,10 +2,10 @@ name        = SLSV
 screenshot  = screenshot.png
 description = Drupal theme for <a href="http://www.slsv.org">SLSV</a>.
 core        = 7.x
+version     = 1.0
 
 ; The stylesheet.
 stylesheets[all][] = css/styles.css
-
 
 ; JavaScripts
 scripts[] = js/bootstrap.min.js
@@ -63,7 +63,6 @@ exclude[css][] = 'modules/forum/forum.css'
 exclude[css][] = 'modules/help/help.css'
 exclude[css][] = 'modules/menu/menu.css'
 exclude[css][] = 'modules/node/node.css'
-;exclude[css][] = 'modules/openid/openid.css'
 exclude[css][] = 'modules/poll/poll.css'
 exclude[css][] = 'modules/search/search.css'
 exclude[css][] = 'modules/statistics/statistics.css'

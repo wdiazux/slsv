@@ -1,4 +1,4 @@
-[SLSV Theme](http://leprosys.github.com/slsv/)
+[SLSV Theme](http://drupal.wdiaz.org/)
 ==========
 Es un tema de Drupal para  http://www.slsv.org utilizando [Twitter Bootstrap](http://twitter.github.com/bootstrap/), [Susy](http://susy.oddbird.net/) y [Zen](http://drupal.org/project/zen). A pesar de que en el tema se hace uso de codigo de las herramientas anteriormente mensionadas no son depenendencias para poder ser utilizado.
 No hay amor para IE.

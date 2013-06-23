@@ -45,9 +45,9 @@
 }
 
 // Active nav items
-.nav > .active > a,
-.nav > .active > a:hover,
-.nav > .active > a:focus {
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
   @include box-shadow(none);
 }
 
@@ -81,6 +81,35 @@
   }
 }
 
+
+// Dropdown menus
+// --------------
+
+// Caret should match text color on hover/focus
+.navbar .nav li.dropdown > a:hover .caret,
+.navbar .nav li.dropdown > a:focus .caret {
+  border-top-color: $white;
+  border-bottom-color: $white;
+}
+
+// Remove background color from open dropdown
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  background-color: transparent;
+  color: $white;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: $white;
+  border-bottom-color: $white;
+}
+
+
+// Mixins
+// ------
+
 @include at-breakpoint(8 $navbarCollapseWidth) {
   .navbar .nav-collapse .nav > li > a {
     color: $navbarBackground;
@@ -90,5 +119,23 @@
       color: $navbarBackground;
       background-color: $green;
     }
+  }
+
+  // Remove background color from open dropdown
+  .navbar .nav li.dropdown.open > .dropdown-toggle,
+  .navbar .nav li.dropdown.active > .dropdown-toggle,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: $green;
+    color: $navbarBackground;
+  }
+  .navbar .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: $navbarBackground;
+    border-bottom-color: $navbarBackground;
+  }
+  .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+  .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+  .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-top-color: $navbarBackground;
+    border-bottom-color: $navbarBackground;
   }
 }

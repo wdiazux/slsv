@@ -51,6 +51,7 @@ section[role=main],
 #footerTop,
 #footerBottom {
   @include full;
+  display: table;
 }
 
 @include border-box-sizing;

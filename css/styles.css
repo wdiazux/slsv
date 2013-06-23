@@ -8133,6 +8133,7 @@ section[role=main],
 #footerBottom {
   width: 100%;
   clear: both;
+  display: table;
 }
 
 /* line 14, ../../../../../../../../../usr/lib64/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
@@ -8142,7 +8143,7 @@ section[role=main],
   box-sizing: border-box;
 }
 
-/* line 58, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 .container {
   *zoom: 1;
   max-width: 486px;
@@ -8162,37 +8163,37 @@ section[role=main],
   clear: both;
 }
 
-/* line 62, ../sass/_layout.scss */
+/* line 63, ../sass/_layout.scss */
 #logo-wrapper {
   display: table-cell;
   width: 100%;
 }
 
-/* line 68, ../sass/_layout.scss */
+/* line 69, ../sass/_layout.scss */
 #btn-responsive {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 73, ../sass/_layout.scss */
+/* line 74, ../sass/_layout.scss */
 #breadcrumb-wrapper {
   width: 100%;
   clear: both;
 }
 
-/* line 77, ../sass/_layout.scss */
+/* line 78, ../sass/_layout.scss */
 .no-sidebars .content-inner {
   margin: 0 !important;
   width: 100% !important;
   clear: both !important;
 }
 
-/* line 83, ../sass/_layout.scss */
+/* line 84, ../sass/_layout.scss */
 nav[role=navigation] {
   width: 100%;
 }
 
-/* line 87, ../sass/_layout.scss */
+/* line 88, ../sass/_layout.scss */
 .nav-collapse .nav {
   margin: 0;
   margin-bottom: 15px;
@@ -8200,33 +8201,33 @@ nav[role=navigation] {
   background-color: #d3dcb9;
 }
 
-/* line 95, ../sass/_layout.scss */
+/* line 96, ../sass/_layout.scss */
 section[role=main] {
   display: table;
   margin: 40px 0;
 }
 
-/* line 101, ../sass/_layout.scss */
+/* line 102, ../sass/_layout.scss */
 #footerBottom .bottom1 {
   text-align: center;
 }
-/* line 104, ../sass/_layout.scss */
+/* line 105, ../sass/_layout.scss */
 #footerBottom .bottom2 {
   text-align: center;
 }
-/* line 107, ../sass/_layout.scss */
+/* line 108, ../sass/_layout.scss */
 #footerBottom .bottom2 .social {
   float: none;
   margin: 0 auto;
 }
 
-/* line 117, ../sass/_layout.scss */
+/* line 118, ../sass/_layout.scss */
 .content-inner input, .content-inner select,
 .content-inner .uneditable-input {
   width: 100%;
 }
 
-/* line 135, ../sass/_layout.scss */
+/* line 136, ../sass/_layout.scss */
 .sidebar .block input[type="text"],
 .sidebar .block input[type="password"],
 .sidebar .block input[type="datetime"],
@@ -8244,16 +8245,16 @@ section[role=main] {
   width: 100%;
 }
 
-/* line 139, ../sass/_layout.scss */
+/* line 140, ../sass/_layout.scss */
 .toolbar-menu {
   width: 100%;
 }
-/* line 141, ../sass/_layout.scss */
+/* line 142, ../sass/_layout.scss */
 .toolbar-menu #toolbar-menu {
   visibility: hidden;
   display: none;
 }
-/* line 144, ../sass/_layout.scss */
+/* line 145, ../sass/_layout.scss */
 .toolbar-menu .responsive-nav {
   display: inline;
   width: 100%;
@@ -8264,7 +8265,7 @@ section[role=main] {
 /* # Mobile (Landscape)
    ================================================== */
 @media (min-width: 30em) {
-  /* line 159, ../sass/_layout.scss */
+  /* line 160, ../sass/_layout.scss */
   .container {
     max-width: 728px;
     max-width: 45.5rem;
@@ -8273,13 +8274,13 @@ section[role=main] {
 /*  # Small Tablet (Portrait)
     ================================================== */
 @media (min-width: 37.5em) {
-  /* line 172, ../sass/_layout.scss */
+  /* line 173, ../sass/_layout.scss */
   .container {
     max-width: 1152px;
     max-width: 72rem;
   }
 
-  /* line 178, ../sass/_layout.scss */
+  /* line 179, ../sass/_layout.scss */
   .content-inner input, .content-inner select,
   .content-inner .uneditable-input {
     width: auto;
@@ -8288,32 +8289,32 @@ section[role=main] {
 /* # Tablet (Portrait)
    ================================================== */
 @media (min-width: 48em) {
-  /* line 191, ../sass/_layout.scss */
+  /* line 192, ../sass/_layout.scss */
   section[role=main] .content-inner {
     width: 74.08759%;
     float: left;
     margin-right: 3.64964%;
   }
-  /* line 194, ../sass/_layout.scss */
+  /* line 195, ../sass/_layout.scss */
   section[role=main] aside[role=menu] {
     width: 22.26277%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 200, ../sass/_layout.scss */
+  /* line 201, ../sass/_layout.scss */
   #footerTop .footer1 {
     width: 48.17518%;
     float: left;
     margin-right: 3.64964%;
   }
-  /* line 203, ../sass/_layout.scss */
+  /* line 204, ../sass/_layout.scss */
   #footerTop .footer2 {
     width: 48.17518%;
     float: right;
     margin-right: 0;
   }
-  /* line 206, ../sass/_layout.scss */
+  /* line 207, ../sass/_layout.scss */
   #footerTop .footer3 {
     clear: both;
   }
@@ -8321,18 +8322,18 @@ section[role=main] {
 /* # Small Tablet (Landscape)
    ================================================== */
 @media (min-width: 50em) {
-  /* line 219, ../sass/_layout.scss */
+  /* line 220, ../sass/_layout.scss */
   #footerBottom .bottom1 {
     width: 48.17518%;
     float: left;
     margin-right: 3.64964%;
     text-align: left;
   }
-  /* line 224, ../sass/_layout.scss */
+  /* line 225, ../sass/_layout.scss */
   #footerBottom .bottom2 {
     text-align: right;
   }
-  /* line 227, ../sass/_layout.scss */
+  /* line 228, ../sass/_layout.scss */
   #footerBottom .bottom2 .social {
     float: right;
   }
@@ -8340,7 +8341,7 @@ section[role=main] {
 /* # Netbooks
    ================================================== */
 @media (min-width: 60em) {
-  /* line 241, ../sass/_layout.scss */
+  /* line 242, ../sass/_layout.scss */
   .container {
     max-width: 1536px;
     max-width: 96rem;
@@ -8490,30 +8491,30 @@ section[role=main] {
     margin-right: 0;
   }
 
-  /* line 247, ../sass/_layout.scss */
+  /* line 248, ../sass/_layout.scss */
   body {
     padding-top: 73px;
   }
 
-  /* line 252, ../sass/_layout.scss */
+  /* line 253, ../sass/_layout.scss */
   #header .nav > li {
     position: relative;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
-  /* line 255, ../sass/_layout.scss */
+  /* line 256, ../sass/_layout.scss */
   #header .nav > li:last-child {
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
-  /* line 258, ../sass/_layout.scss */
+  /* line 259, ../sass/_layout.scss */
   #header .nav > li > a {
     font-size: 1.5rem;
     padding: 25px 20px;
   }
-  /* line 262, ../sass/_layout.scss */
+  /* line 263, ../sass/_layout.scss */
   #header .nav > li.active, #header .nav > li:hover, #header .nav > li:focus {
     margin-top: -4px;
   }
-  /* line 264, ../sass/_layout.scss */
+  /* line 265, ../sass/_layout.scss */
   #header .nav > li.active:before, #header .nav > li:hover:before, #header .nav > li:focus:before {
     content: '';
     border: 4px solid transparent;
@@ -8522,107 +8523,107 @@ section[role=main] {
     left: 50%;
     margin-left: -4px;
   }
-  /* line 273, ../sass/_layout.scss */
+  /* line 274, ../sass/_layout.scss */
   #header .nav > li:hover, #header .nav > li:focus {
     border-top: 4px solid #95a5a6;
   }
-  /* line 275, ../sass/_layout.scss */
+  /* line 276, ../sass/_layout.scss */
   #header .nav > li:hover:before, #header .nav > li:focus:before {
     border-top-color: #95a5a6;
   }
-  /* line 277, ../sass/_layout.scss */
+  /* line 278, ../sass/_layout.scss */
   #header .nav > li.active {
     border-top: 4px solid #82b964;
   }
-  /* line 279, ../sass/_layout.scss */
+  /* line 280, ../sass/_layout.scss */
   #header .nav > li.active:before {
     border-top-color: #82b964;
   }
 
-  /* line 284, ../sass/_layout.scss */
+  /* line 285, ../sass/_layout.scss */
   .nav-collapse .nav {
     margin: 0;
     border-radius: 0;
     background-color: transparent;
   }
 
-  /* line 290, ../sass/_layout.scss */
+  /* line 291, ../sass/_layout.scss */
   #logo-wrapper {
     width: 23.19712%;
     float: left;
     margin-right: 2.40385%;
   }
 
-  /* line 293, ../sass/_layout.scss */
+  /* line 294, ../sass/_layout.scss */
   #menu-wrapper {
     width: 74.39904%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 298, ../sass/_layout.scss */
+  /* line 299, ../sass/_layout.scss */
   #logo-wrapper,
   #menu-wrapper {
     min-width: 0;
     clear: none;
   }
 
-  /* line 303, ../sass/_layout.scss */
+  /* line 304, ../sass/_layout.scss */
   nav[role=navigation] {
     float: right;
     width: auto;
     height: auto;
   }
 
-  /* line 309, ../sass/_layout.scss */
+  /* line 310, ../sass/_layout.scss */
   .toolbar-menu {
     width: auto;
   }
-  /* line 311, ../sass/_layout.scss */
+  /* line 312, ../sass/_layout.scss */
   .toolbar-menu #toolbar-menu {
     display: inherit;
     visibility: visible;
   }
-  /* line 314, ../sass/_layout.scss */
+  /* line 315, ../sass/_layout.scss */
   .toolbar-menu .responsive-nav {
     visibility: hidden;
     display: none;
   }
 
-  /* line 320, ../sass/_layout.scss */
+  /* line 321, ../sass/_layout.scss */
   section[role=main] .content-inner {
     width: 74.39904%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 323, ../sass/_layout.scss */
+  /* line 324, ../sass/_layout.scss */
   section[role=main] aside[role=menu] {
     width: 23.19712%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 330, ../sass/_layout.scss */
+  /* line 331, ../sass/_layout.scss */
   .blog-display .view-content .views-row-1,
   .blog-display .view-content .views-row-2 {
     width: 31.73077%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 331, ../sass/_layout.scss */
+  /* line 332, ../sass/_layout.scss */
   .blog-display .view-content .views-row-3 {
     width: 31.73077%;
     float: right;
     margin-right: 0;
   }
 
-  /* line 335, ../sass/_layout.scss */
+  /* line 336, ../sass/_layout.scss */
   #footerTop .footer1, #footerTop .footer2 {
     width: 31.73077%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 338, ../sass/_layout.scss */
+  /* line 339, ../sass/_layout.scss */
   #footerTop .footer3 {
     width: 31.73077%;
     float: right;
@@ -8630,13 +8631,13 @@ section[role=main] {
     clear: none;
   }
 
-  /* line 345, ../sass/_layout.scss */
+  /* line 346, ../sass/_layout.scss */
   #footerBottom .bottom1 {
     width: 48.79808%;
     float: left;
     margin-right: 2.40385%;
   }
-  /* line 348, ../sass/_layout.scss */
+  /* line 349, ../sass/_layout.scss */
   #footerBottom .bottom2 {
     width: 48.79808%;
     float: right;

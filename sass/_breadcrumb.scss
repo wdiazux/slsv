@@ -13,14 +13,15 @@
   padding-top: 3px;
   font-size: $baseFontSize - .2rem;
   background-color: transparent;
-    > li {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  > li {
+    display: inline-block;
     > .divider{
+      padding: 0 5px;
       color: #B9B9B9;
     }
   }
   .active {
     color: $white;
   }
-  a { @include redefine-link(#B9B9B9,$white); }
+  a { @include redefine-link($grayLight,$white); }
 }

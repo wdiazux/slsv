@@ -139,3 +139,13 @@
     border-bottom-color: $navbarBackground;
   }
 }
+
+@include at-breakpoint($desktop) {
+  .navbar .dropdown-menu {
+    margin: 6px 0 0;
+  }
+  // Menu position and menu carets
+  .navbar .nav > li > .dropdown-menu:before {
+    border-bottom: none;
+  }
+}

@@ -40,3 +40,14 @@
 .nav-tabs > .active > a:focus {
   color: $grayDark;
 }
+
+
+// DROPDOWNS
+// ---------
+
+// Default dropdown links
+// -------------------------
+// Make carets use linkColor to start
+.nav .dropdown-toggle .caret {
+  margin-top: 9px;
+}

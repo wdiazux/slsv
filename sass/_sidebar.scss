@@ -36,3 +36,23 @@
     border-bottom-color: $linkColor;
   }
 }
+
+// Add icons to User Menu
+// ----------------------
+#block-system-user-menu {
+  a[href="/user"]:before {
+    @include icon-before("\f007");
+  }
+  a[href="/user/logout"]:before {
+    @include icon-before("\f08b");
+  }
+
+  // Make links block level
+  .nav > li > a {
+    display: inline-block;
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background: none;
+  }
+}

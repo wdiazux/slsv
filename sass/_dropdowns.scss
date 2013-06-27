@@ -1,0 +1,42 @@
+//
+// Dropdown menus
+// --------------------------------------------------
+
+
+// The dropdown menu (ul)
+// ----------------------
+.dropdown-menu {
+  border: none;
+}
+
+// Hover/Focus state
+// -----------
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  background: $green;
+}
+
+// Active state
+// ------------
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  background: $green;
+}
+
+@include at-breakpoint(8 $navbarCollapseWidth) {
+  // The dropdown menu (ul)
+  // ----------------------
+  .navbar .dropdown-menu {
+    // Links within the dropdown menu
+    > li > a {
+      color: $navbarBackground !important;
+      &:hover, &:focus, &:active {
+        color: $white !important;
+      }
+    }
+  }
+}
+

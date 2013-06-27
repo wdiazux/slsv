@@ -225,7 +225,7 @@ input.search-query {
     li {
       list-style: none;
       a[href*="user/register"]:before {
-        @include icon-before("\f007");
+        @include icon-before("\f044");
       }
       a[href*="user/password"]:before {
         @include icon-before("\f084");

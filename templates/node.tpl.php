@@ -49,7 +49,7 @@
 
   <?php if (module_exists('disqus') && isset($variables['disqus']) && !$teaser): ?>
     <section id="comments">
-      <h2 class="title"><?php print t('Comments'); ?></h2>
+      <h3 class="title"><?php print t('Comments'); ?></h3>
       <?php print render($content['disqus']); ?>
     </section>
   <?php else: ?>

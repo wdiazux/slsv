@@ -31,6 +31,14 @@
   }
 }
 
+// Links as buttons
+a.btn {
+  @include redefine-link($white,$white);
+}
+#footer a.btn-inverse {
+  @include redefine-link(#aaa,$white);
+}
+
 
 // Button Sizes
 // --------------------------------------------------

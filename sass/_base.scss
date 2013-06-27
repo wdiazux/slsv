@@ -104,7 +104,6 @@ $borderRadiusSmall:     $baseBorderRadius;
 // -------------------------
 $btnBackground:                     $grayLight;
 $btnBackgroundHighlight:            lighten($btnBackground, 10%);
-$btnHover:                          mix($grayLight, white, 80%);
 $btnBorder:                         #ddd;
 
 $btnPrimaryBackground:              $blueDark;
@@ -122,7 +121,7 @@ $btnWarningBackgroundHighlight:     lighten($btnWarningBackground, 10%);
 $btnDangerBackground:               $red;
 $btnDangerBackgroundHighlight:      lighten($btnDangerBackground, 10%);
 
-$btnInverseBackground:              #0A1108;
+$btnInverseBackground:              #222;
 $btnInverseBackgroundHighlight:     lighten($btnInverseBackground, 10%);
 
 

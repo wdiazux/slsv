@@ -36,7 +36,7 @@ a.btn {
   @include redefine-link($white,$white);
 }
 #footer a.btn-inverse {
-  @include redefine-link(#aaa,$white);
+  @include redefine-link(#1a1a1a,$white);
 }
 
 

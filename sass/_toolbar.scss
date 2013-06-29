@@ -93,6 +93,31 @@
   padding: 0 10px;
 }
 
+
+// Responsive
+// ----------
+
+.toolbar {
+  body {
+    padding-top: 103px;
+  }
+  .navbar-fixed-top {
+    top: 30px;
+  }
+}
+.toolbar-drawer {
+  body {
+    padding-top: 137px;
+  }
+  .navbar-fixed-top {
+    top: 64px;
+  }
+}
+
+
+// Mixins
+// ----------
+
 @include at-breakpoint(72rem 12) {
   .toolbar-menu {
     max-height: 30px;

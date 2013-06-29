@@ -47,12 +47,12 @@
                 if (windowsize > 1105) {
                     $bodyPadding = 73;
                 }
-                else if (windowsize > 959 && windowsize < 1105) {
-                    $bodyPadding = 65;
-                }
-	        else if (windowsize < 960) {
+                else if (windowsize < 960) {
                     $bodyPadding = 0;
-	        };
+	        }
+                else {
+                    $bodyPadding = 65;
+                };
 
                 var $newPadding = $toolbar.outerHeight()+$bodyPadding;
                 $('body').css('padding-top', $newPadding);
@@ -135,7 +135,7 @@
 
             // ul to select
             var $mainMenu = $('.toolbar-menu').children('#toolbar-menu');
-            var optionsList = '<option value="" selected>Navegar...</option>';
+            var optionsList = '<option value="" selected>Barra de Administración...</option>';
             $mainMenu.find('li').each(function() {
                 var $this   = $(this),
                     $anchor = $this.children('a'),
@@ -160,4 +160,3 @@
     });
 
 })(jQuery, Drupal, this, this.document);
-

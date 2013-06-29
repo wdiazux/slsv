@@ -11,8 +11,8 @@
 
 // Hidde elements
 @mixin hidden() {
-  visibility: hidden;
-  display: none;
+  visibility: hidden !important;
+  display: none !important;
 }
 
 // Show elements again

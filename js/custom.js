@@ -30,6 +30,41 @@
                 });
         }
 
+
+        // Responsive toolbar height
+        var $toolbar = $('#toolbar');
+
+        if ( $toolbar.length ){
+            // Change text link
+            $('a.toggle').empty();
+
+            // Change height dinamically
+            var $window = $(window);
+
+            function checkWidth() {
+                var windowsize = $window.width();
+                var $bodyPadding = 0;
+                if (windowsize > 1105) {
+                    $bodyPadding = 73;
+                }
+                else if (windowsize > 959 && windowsize < 1105) {
+                    $bodyPadding = 65;
+                }
+	        else if (windowsize < 960) {
+                    $bodyPadding = 0;
+	        };
+
+                var $newPadding = $toolbar.outerHeight()+$bodyPadding;
+                $('body').css('padding-top', $newPadding);
+                $('.navbar-fixed-top').css('top',$toolbar.outerHeight());
+            }
+            // Execute on load
+            checkWidth();
+            // Bind event listener
+            $(window).resize(checkWidth);
+        }
+
+
         // Dropdowns
         var $dropdowns = $('li.dropdown'); // Specifying the element is faster for older browsers
         /**

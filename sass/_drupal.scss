@@ -23,31 +23,7 @@ html {
   }
 }
 
-
-// Toolbar
-#toolbar {
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-  z-index: 1100;
-  @include box-shadow(none);
-    line-height: normal;
-}
-
 body {
-  // Core admin toolbar.
-  &.toolbar {
-    padding-top: 102px !important;
-  }
-  &.toolbar-drawer {
-    padding-top: 137px !important;
-  }
-  &.toolbar .navbar-fixed-top {
-   top: 30px;
-  }
-  &.toolbar-drawer .navbar-fixed-top {
-   top: 65px;
-  }
   &.admin-expanded.admin-vertical.admin-nw .navbar,
   &.admin-expanded.admin-vertical.admin-sw .navbar {
     margin-left: 260px;
@@ -70,48 +46,6 @@ body {
     .navbar-fixed-top {
       top: 28px;
     }
-  }
-}
-
-@media (max-width: 1145px) {
-  body.toolbar {
-    padding-top: 122px !important;
-    .navbar-fixed-top {
-      top: 50px !important;
-    }
-  }
-  body.toolbar-drawer {
-    padding-top: 157px !important;
-    .navbar-fixed-top {
-      top: 84px !important;
-    }
-  }
-}
-
-@media (max-width: 980px) {
-  body.toolbar {
-    padding-top: 50px !important;
-  }
-  body.toolbar-drawer {
-    padding-top: 85px !important;
-  }
-}
-
-@media (max-width: 954px) {
-  body.toolbar {
-    padding-top: 61px !important;
-  }
-  body.toolbar-drawer {
-    padding-top: 95px !important;
-  }
-}
-
-@media (max-width: 328px) {
-  body.toolbar {
-    padding-top: 81px !important;
-  }
-  body.toolbar-drawer {
-    padding-top: 143px !important;
   }
 }
 

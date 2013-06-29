@@ -136,20 +136,6 @@ section[role=main] {
   input[type="color"] { width: 100%; }
 }
 
-// Admin toolbar responsive
-.toolbar-menu {
-  width: 100%;
-  #toolbar-menu {
-    @include hidden; 
-  }
-  .responsive-nav {
-    display: inline;
-    width: 100%;
-    padding: 0.18rem;
-    margin: 10px auto 10px auto;
-  }
-}
-
 
 /* # Mobile (Landscape)
    ================================================== */

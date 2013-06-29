@@ -1,0 +1,123 @@
+/**
+ * Base styles.
+ */
+#toolbar {
+  background: #666;
+  color: #ccc;
+  font-size: 1.3rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1100;
+  // Links
+  a {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  ul {
+    margin: 0;
+    display: inline-block;
+    list-style: none;
+    li, li a {
+      float: left;
+    }
+  }
+  .collapsed {
+    @include hidden;
+  }
+}
+
+
+/**
+ * Administration menu.
+ */
+#toolbar .toolbar-menu {
+  background: #000;
+  padding: 5px 50px 5px 10px;
+  position: relative;
+  ul > li > a {
+    padding: 0 10px;
+
+    &:focus, &:active, &:hover,
+    &.active:hover {
+      background: #444;
+      @include border-radius(10px);
+    }
+  }
+}
+
+#toolbar #toolbar-home a {
+  &:before {
+    @include icon-before("\f015");
+    font-size: 1.4rem;
+  }
+  span {
+    @include hidden;
+  }
+}
+#toolbar #toolbar-user {
+  float: right;
+}
+#toolbar #toolbar-home,
+#toolbar #toolbar-menu {
+  float: left;
+}
+#toolbar .toolbar-menu a.toggle {
+  background: url(../img/toolbar.png) 0 -20px no-repeat;
+  bottom: 0;
+  cursor: pointer;
+  height: 25px;
+  overflow: hidden;
+  position: absolute;
+  right: 10px; /* LTR */
+  text-indent: -9999px;
+  width: 25px;
+  &:focus, &:hover {
+    background-position: -50px -20px;
+  }
+}
+#toolbar div.toolbar-menu a.toggle-active {
+  background-position:  -25px -20px;
+  &.toggle:focus, &.toggle:hover {
+    background-position: -75px -20px;
+  }
+}
+
+
+/**
+ * Collapsed drawer of additional toolbar content.
+ */
+#toolbar .toolbar-drawer {
+  position: relative;
+  padding: 0 10px;
+}
+
+@include at-breakpoint(72rem 12) {
+  .toolbar-menu {
+    max-height: 30px;
+  }
+}
+
+@include at-breakpoint(12 71.99rem) {
+  .toolbar-menu {
+    max-height: 65px;
+  }
+}
+
+@media (max-width: $navbarCollapseWidth) {
+  #toolbar-menu {
+    @include hidden;
+  }
+
+  #toolbar .responsive-nav {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 319px) {
+  .toolbar-menu {
+    max-height: none;
+  }
+}

@@ -383,7 +383,7 @@ function slsv_preprocess_node(&$variables, $hook) {
     // Publication date
     $submitted = '<li><i class="icon-calendar"></i>';
     $submitted .= $variables['pubdate'] . '</li>';
-  
+
     // Username
     $submitted .= '<li><i class="icon-user"></i>';
     $submitted .= $variables['name'] . '</li>';
@@ -455,7 +455,7 @@ function slsv_preprocess_node(&$variables, $hook) {
 
   // Add icon to link comment-add
   if (isset($variables['content']['links']['comment']['#links']['comment-add'])) {
-	  $variables['content']['links']['comment']['#links']['comment-add']['title'] = '<i class="icon-plus-sign"></i> ' . t('Add new comment'); 
+	  $variables['content']['links']['comment']['#links']['comment-add']['title'] = '<i class="icon-plus-sign"></i> ' . t('Add new comment');
 	  $variables['content']['links']['comment']['#links']['comment-add']['html'] = TRUE;
   }
 

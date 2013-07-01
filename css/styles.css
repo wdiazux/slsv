@@ -9148,14 +9148,15 @@ div.password-suggestions ul {
 
 /* line 11, ../sass/_sidebar.scss */
 .sidebar .block {
+  position: relative;
   margin-bottom: 20px;
 }
-/* line 14, ../sass/_sidebar.scss */
+/* line 15, ../sass/_sidebar.scss */
 .sidebar .block .form-search {
   margin: 0;
 }
 
-/* line 21, ../sass/_sidebar.scss */
+/* line 22, ../sass/_sidebar.scss */
 .sidebar > a,
 .sidebar .nav > li > a {
   color: #666666;
@@ -9168,35 +9169,35 @@ div.password-suggestions ul {
   color: #82b964;
 }
 
-/* line 29, ../sass/_sidebar.scss */
+/* line 30, ../sass/_sidebar.scss */
 .sidebar .nav li.dropdown.open .caret,
 .sidebar .nav li.dropdown.open.active .caret,
 .sidebar .nav .dropdown-toggle .caret {
   border-top-color: #666666;
   border-bottom-color: #666666;
 }
-/* line 34, ../sass/_sidebar.scss */
+/* line 35, ../sass/_sidebar.scss */
 .sidebar .nav li.dropdown.open a:hover .caret,
 .sidebar .nav li.dropdown.open a:focus .caret {
   border-top-color: #82b964;
   border-bottom-color: #82b964;
 }
 
-/* line 43, ../sass/_sidebar.scss */
+/* line 44, ../sass/_sidebar.scss */
 #block-system-user-menu a[href="/user"]:before {
   margin-right: 0.5em;
   content: "\f007";
 }
-/* line 46, ../sass/_sidebar.scss */
+/* line 47, ../sass/_sidebar.scss */
 #block-system-user-menu a[href="/user/logout"]:before {
   margin-right: 0.5em;
   content: "\f08b";
 }
-/* line 51, ../sass/_sidebar.scss */
+/* line 52, ../sass/_sidebar.scss */
 #block-system-user-menu .nav > li > a {
   display: inline-block;
 }
-/* line 55, ../sass/_sidebar.scss */
+/* line 56, ../sass/_sidebar.scss */
 #block-system-user-menu .nav > li > a:hover,
 #block-system-user-menu .nav > li > a:focus {
   background: none;

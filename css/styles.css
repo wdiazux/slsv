@@ -8163,51 +8163,51 @@ a .icon-rotate-90:before, a .icon-rotate-180:before, a .icon-rotate-270:before, 
   padding: 0 10px;
 }
 
-/* line 101, ../sass/_toolbar.scss */
-.toolbar body {
+/* line 100, ../sass/_toolbar.scss */
+body.toolbar {
   padding-top: 103px;
 }
-/* line 104, ../sass/_toolbar.scss */
-.toolbar .navbar-fixed-top {
+/* line 102, ../sass/_toolbar.scss */
+body.toolbar .navbar-fixed-top {
   top: 30px;
 }
 
-/* line 109, ../sass/_toolbar.scss */
-.toolbar-drawer body {
+/* line 107, ../sass/_toolbar.scss */
+body.toolbar-drawer {
   padding-top: 137px;
 }
-/* line 112, ../sass/_toolbar.scss */
-.toolbar-drawer .navbar-fixed-top {
+/* line 109, ../sass/_toolbar.scss */
+body.toolbar-drawer .navbar-fixed-top {
   top: 64px;
 }
 
 @media (min-width: 72em) {
-  /* line 122, ../sass/_toolbar.scss */
+  /* line 119, ../sass/_toolbar.scss */
   .toolbar-menu {
     max-height: 30px;
   }
 }
 @media (max-width: 71.99em) {
-  /* line 128, ../sass/_toolbar.scss */
+  /* line 125, ../sass/_toolbar.scss */
   .toolbar-menu {
     max-height: 65px;
   }
 }
 @media (max-width: 59.99em) {
-  /* line 134, ../sass/_toolbar.scss */
+  /* line 131, ../sass/_toolbar.scss */
   #toolbar-menu {
     visibility: hidden !important;
     display: none !important;
   }
 
-  /* line 138, ../sass/_toolbar.scss */
+  /* line 135, ../sass/_toolbar.scss */
   #toolbar .responsive-nav {
     display: block;
     width: 100%;
   }
 }
 @media (max-width: 319px) {
-  /* line 145, ../sass/_toolbar.scss */
+  /* line 142, ../sass/_toolbar.scss */
   .toolbar-menu {
     max-height: none;
   }

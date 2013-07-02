@@ -97,18 +97,15 @@
 // Responsive
 // ----------
 
-.toolbar {
-  body {
-    padding-top: 103px;
-  }
+body.toolbar {
+  padding-top: 103px;
   .navbar-fixed-top {
     top: 30px;
   }
 }
-.toolbar-drawer {
-  body {
-    padding-top: 137px;
-  }
+
+body.toolbar-drawer {
+  padding-top: 137px;
   .navbar-fixed-top {
     top: 64px;
   }

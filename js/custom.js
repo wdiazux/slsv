@@ -33,21 +33,18 @@
 
         // Responsive toolbar height
         var $toolbar = $('#toolbar');
+        var $window = $(window);
 
         if ( $toolbar.length ){
-            // Change text link
-            $('a.toggle').empty();
+            var $windowsize = $window.width();
 
             // Change height dinamically
-            var $window = $(window);
-
             function checkWidth() {
-                var windowsize = $window.width();
                 var $bodyPadding = 0;
-                if (windowsize > 1105) {
+                if ($windowsize > 1105) {
                     $bodyPadding = 73;
                 }
-                else if (windowsize < 960) {
+                else if ($windowsize < 960) {
                     $bodyPadding = 0;
 	        }
                 else {
@@ -154,7 +151,7 @@
 
             $('.responsive-nav').on('change', function() {
                 window.location = $(this).val();
-            }); 
+            });
         })();
 
     });

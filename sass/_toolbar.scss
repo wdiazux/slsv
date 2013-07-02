@@ -97,20 +97,22 @@
 // Responsive
 // ----------
 
-body.toolbar {
-  padding-top: 103px;
-  .navbar-fixed-top {
-    top: 30px;
+@media (min-width: 1005px){
+  body.toolbar {
+    padding-top: 103px;
+
+    .navbar-fixed-top {
+      top: 30px;
+    }
+  }
+  body.toolbar-drawer {
+    padding-top: 137px;
+
+    .navbar-fixed-top {
+      top: 64px;
+    }
   }
 }
-
-body.toolbar-drawer {
-  padding-top: 137px;
-  .navbar-fixed-top {
-    top: 64px;
-  }
-}
-
 
 // Mixins
 // ----------

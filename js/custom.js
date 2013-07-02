@@ -35,9 +35,6 @@
         var $toolbar = $('#toolbar');
 
         if ( $toolbar.length ){
-            // Change text link
-            $('a.toggle').empty();
-
             // Change height dinamically
             var $window = $(window);
 
